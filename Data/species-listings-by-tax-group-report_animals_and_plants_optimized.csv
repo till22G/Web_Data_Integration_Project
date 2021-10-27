@@ -1,4 +1,4 @@
-ScientificName,CommonName,WhereListed,Region,RegionName,ESAListingStatus,Group
+scientific_name,common_name,where_listed,region,region_name,esa_listing_status,category
 Pediocactus knowltonii,Knowlton's cactus,Wherever found,2,Southwest,Endangered,Flowering Plants
 Schiedea sarmentosa,No common name,Wherever found,1,Pacific,Endangered,Flowering Plants
 Deinandra increscens ssp. villosa,Gaviota Tarplant,Wherever found,8,Pacific Southwest,Endangered,Flowering Plants
