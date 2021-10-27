@@ -41,7 +41,7 @@ Ambrosia cheiranthifolia,South Texas ambrosia,Wherever found,2,Southwest,Endange
 Ambrosia pumila,San Diego ambrosia,Wherever found,8,Pacific Southwest,Endangered,Flowering Plants
 Ambrysus amargosus,Ash Meadows naucorid,Wherever found,8,Pacific Southwest,Threatened,Insects
 Ambystoma bishopi,Reticulated flatwoods salamander,Wherever found,4,Southeast,Endangered,Amphibians
-Ambystoma californiense,California tiger Salamander,"['U.S.A. (CA - Santa Barbara County)', 'U.S.A. (CA - Sonoma County)', 'U.S.A. (Central CA DPS)']",[8],['Pacific Southwest'],"['Endangered', 'Threatened']",Amphibians
+Ambystoma californiense,California tiger Salamander,U.S.A. (CA - Santa Barbara County)|U.S.A. (CA - Sonoma County)|U.S.A. (Central CA DPS),0,Pacific Southwest,Endangered|Threatened,Amphibians
 Ambystoma cingulatum,Frosted Flatwoods salamander,Wherever found,4,Southeast,Threatened,Amphibians
 Ambystoma macrodactylum croceum,Santa Cruz long-toed salamander,Wherever found,8,Pacific Southwest,Endangered,Amphibians
 Ambystoma tigrinum stebbinsi,Sonora tiger Salamander,Wherever found,2,Southwest,Endangered,Amphibians
@@ -198,7 +198,7 @@ Canis lupus baileyi,Mexican wolf,"Wherever found, except where listed as an expe
 Canis rufus,Red wolf,"Wherever found, except where listed as an experimental population",4,Southeast,Endangered,Mammals
 Caprimulgus noctitherus,Puerto Rican nightjar,Wherever found,4,Southeast,Endangered,Birds
 Cardamine micranthera,Small-anthered bittercress,Wherever found,4,Southeast,Endangered,Flowering Plants
-Caretta caretta,Loggerhead sea turtle,"['Northwest Atlantic Ocean DPS', 'North Pacific Ocean DPS']",[4],['Southeast'],"['Threatened', 'Endangered']",Reptiles
+Caretta caretta,Loggerhead sea turtle,Northwest Atlantic Ocean DPS|North Pacific Ocean DPS,0,Southeast,Threatened|Endangered,Reptiles
 Carex albida,White sedge,Wherever found,8,Pacific Southwest,Endangered,Flowering Plants
 Carex lutea,Golden sedge,Wherever found,4,Southeast,Endangered,Flowering Plants
 Carex specuicola,Navajo sedge,Wherever found,2,Southwest,Threatened,Flowering Plants
@@ -228,14 +228,14 @@ Chamaesyce deltoidea serpyllum,Wedge spurge,Wherever found,4,Southeast,Endangere
 Chamaesyce deltoidea ssp. deltoidea,Deltoid spurge,Wherever found,4,Southeast,Endangered,Flowering Plants
 Chamaesyce garberi,Garber's spurge,Wherever found,4,Southeast,Threatened,Flowering Plants
 Chamaesyce hooveri,Hoover's spurge,Wherever found,8,Pacific Southwest,Threatened,Flowering Plants
-Charadrius melodus,Piping Plover,"['[Atlantic Coast and Northern Great Plains populations] - Wherever found, except those areas where listed as endangered.', '[Great Lakes watershed DPS] - Great Lakes, watershed in States of IL, IN, MI, MN, NY, OH, PA, and WI and Canada (Ont.)']","[5, 3]","['Northeast', 'Midwest']","['Threatened', 'Endangered']",Birds
+Charadrius melodus,Piping Plover,"[Atlantic Coast and Northern Great Plains populations] - Wherever found, except those areas where listed as endangered.|[Great Lakes watershed DPS] - Great Lakes, watershed in States of IL, IN, MI, MN, NY, OH, PA, and WI and Canada (Ont.)",0|1,Northeast|Midwest,Threatened|Endangered,Birds
 Charadrius nivosus nivosus,Western snowy plover,"Pacific Coast population DPS-U.S.A. (CA, OR, WA), Mexico (within 50 miles of Pacific coast)",8,Pacific Southwest,Threatened,Birds
 Charpentiera densiflora,Papala,Wherever found,1,Pacific,Endangered,Flowering Plants
 Chasiempis ibidis,Oahu elepaio,Wherever found,1,Pacific,Endangered,Birds
 Chasmistes brevirostris,Shortnose Sucker,Wherever found,8,Pacific Southwest,Endangered,Fishes
 Chasmistes cujus,Cui-ui,Wherever found,8,Pacific Southwest,Endangered,Fishes
 Chasmistes liorus,June sucker,Wherever found,6,Mountain-Prairie,Threatened,Fishes
-Chelonia mydas,Green sea turtle,"['North Atlantic DPS', 'South Atlantic DPS', 'Central South Pacific DPS', 'Central North Pacific DPS', 'Central West Pacific DPS', 'East Pacific DPS']","[4, 1, 8]","['Southeast', 'Pacific', 'Pacific Southwest']","['Threatened', 'Endangered']",Reptiles
+Chelonia mydas,Green sea turtle,North Atlantic DPS|South Atlantic DPS|Central South Pacific DPS|Central North Pacific DPS|Central West Pacific DPS|East Pacific DPS,0|1|2,Southeast|Pacific|Pacific Southwest,Threatened|Endangered,Reptiles
 Chilabothrus granti,Virgin Islands tree boa,Wherever found,4,Southeast,Endangered,Reptiles
 Chionanthus pygmaeus,Pygmy fringe-tree,Wherever found,4,Southeast,Endangered,Flowering Plants
 Chlorogalum purpureum,Purple amole,Wherever found,8,Pacific Southwest,Threatened,Flowering Plants
@@ -1302,7 +1302,7 @@ Rallus obsoletus [=longirostris] yumanensis,Yuma Ridgways (clapper) rail,Whereve
 Rallus owstoni,Guam rail,"Wherever found, except where listed as an experimental population",1,Pacific,Endangered,Birds
 Rana chiricahuensis,Chiricahua leopard frog,Wherever found,2,Southwest,Threatened,Amphibians
 Rana draytonii,California red-legged frog,Wherever found,8,Pacific Southwest,Threatened,Amphibians
-Rana muscosa,Mountain yellow-legged frog,"['Northern California DPS', 'Southern California DPS']",[8],['Pacific Southwest'],['Endangered'],Amphibians
+Rana muscosa,Mountain yellow-legged frog,Northern California DPS|Southern California DPS,0,Pacific Southwest,Endangered,Amphibians
 Rana pretiosa,Oregon spotted frog,Wherever found,1,Pacific,Threatened,Amphibians
 Rana sevosa,dusky gopher frog,Wherever found,4,Southeast,Endangered,Amphibians
 Rana sierrae,Sierra Nevada Yellow-legged Frog,Wherever found,8,Pacific Southwest,Endangered,Amphibians
@@ -1446,7 +1446,7 @@ Stenogyne kauaulaensis,No common name,Wherever found,1,Pacific,Endangered,Flower
 Stenogyne kealiae,No common name,Wherever found,1,Pacific,Endangered,Flowering Plants
 Stephanomeria malheurensis,Malheur wire-lettuce,Wherever found,1,Pacific,Endangered,Flowering Plants
 Sterna antillarum browni,California least tern,Wherever found,8,Pacific Southwest,Endangered,Birds
-Sterna dougallii dougallii,Roseate tern,"['Northeast U.S. nesting population', 'Western Hemisphere except NE U.S.']","[5, 4]","['Northeast', 'Southeast']","['Endangered', 'Threatened']",Birds
+Sterna dougallii dougallii,Roseate tern,Northeast U.S. nesting population|Western Hemisphere except NE U.S.,0|1,Northeast|Southeast,Endangered|Threatened,Birds
 Sternotherus depressus,Flattened musk turtle,Black Warrior R. system upstream from Bankhead Dam,4,Southeast,Threatened,Reptiles
 Streptanthus albidus ssp. albidus,Metcalf Canyon jewelflower,Wherever found,8,Pacific Southwest,Endangered,Flowering Plants
 Streptanthus niger,Tiburon jewelflower,Wherever found,8,Pacific Southwest,Endangered,Flowering Plants
