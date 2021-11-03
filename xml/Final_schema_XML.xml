@@ -16,11 +16,11 @@
     <Where_Listed>Wherever found</Where_Listed>
   </Where_Listed_l>
   <Different_From_l>
-    <Different_From></Different_From_l>
+    <Different_From></Different_From>
   </Different_From_l>
   <Endemic_To_l>
     <Endamic_To></Endamic_To>
-  </Endamic_To_l>
+  </Endemic_To_l>
   <Regions>
     <Region>2</Region>
   </Regions>
@@ -41,4 +41,4 @@
     <Family></Family>
   </Families>
 </Species>
-<Animals_And_Plants>
+</Animals_And_Plants>
