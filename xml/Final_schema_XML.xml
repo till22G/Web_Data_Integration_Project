@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Animals_and_Plants>
+<Animals_And_Plants>
 <Species>
   <ID></ID>
   <Provenance></Provenance>
@@ -18,9 +18,9 @@
   <Different_From_l>
     <Different_From></Different_From_l>
   </Different_From_l>
-  <Endemic_to_l>
-    <Endamic_to></Endamic_to>
-  </Endamic_to_l>
+  <Endemic_To_l>
+    <Endamic_To></Endamic_To>
+  </Endamic_To_l>
   <Regions>
     <Region>2</Region>
   </Regions>
@@ -41,4 +41,4 @@
     <Family></Family>
   </Families>
 </Species>
-<Animals_and_Plants>
+<Animals_And_Plants>
