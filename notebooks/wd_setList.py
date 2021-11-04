@@ -28,10 +28,10 @@ elif person == 'tillman' or person == 'kevin':
     
     if person == 'tillman':
         start = 10000
-        end   = 20000 
+        end   = 110000 
     elif person == 'kevin':
-        start = 20000
-        end   = 30000
+        start = 110000 
+        end   = 200000
         
     df_identifier_list = pd.DataFrame(identifier_list[start:end], columns = ['resources'])
     df_identifier_list.to_csv(path_ids,  index = False)
