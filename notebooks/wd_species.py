@@ -303,26 +303,6 @@ def appendXML(root, r_dict):
 
     new_subelement = SubElement(new_element, 'Provenance').text = 'wikidata'
     
-    
-    '''# loop through dictionary
-    for key in r_dict:
-        if key in mapping_dict.keys():
-
-            # try whether nested elements are provided by the mapping dictionary
-            try:
-                new_subelement = SubElement(new_element, mapping_dict[key]['SubElement'])
-
-                # differentiate bewteen list elements and simple strings
-                if type(r_dict[key]) == str:
-                    new_subsubelement = SubElement(new_element, mapping_dict[key]['SubSubElement']).text = r_dict[key]
-                else:    
-                    for value in r_dict[key]:
-                        new_subsubelement = SubElement(new_element, mapping_dict[key]['SubSubElement']).text = value
-
-            # else only use the direct term - applies if no list of elements expected (ID, conservation status, etc--)
-            except:    
-                new_subelement = SubElement(new_element, mapping_dict[key]).text = r_dict[key]
-                '''
                 
                 
     # loop through dictionary
@@ -422,10 +402,7 @@ def retrieveAttributesForResources():
 
             # try to avoid http error: too many requests
             time.sleep(1)
-        
-        else:
-            print('\n*****\n - All identifiers retrieved! - \n*****\n')
-            break
+       
 
     return df_results
 
