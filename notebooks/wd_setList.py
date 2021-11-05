@@ -16,7 +16,7 @@ except:
 
 
 
-path_ids = '../data/wikidata/wd_identifier_list_1.csv'
+path_ids = '../Data/wikidata/wd_identifier_list_1.csv'
 identifier_list = list(pd.read_csv(path_ids)['resources'])
 
 if person == None:

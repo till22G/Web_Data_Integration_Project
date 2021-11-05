@@ -16,7 +16,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON, XML
 
 
 def getPathIDs():
-    path_ids = '../data/wikidata/wd_identifier_list_1.csv'
+    path_ids = '../Data/wikidata/wd_identifier_list_1.csv'
     return path_ids
 
 def getPathXML():
@@ -24,7 +24,7 @@ def getPathXML():
     return path_XML
 
 def getPathDF():
-    path_df = '../data/wikidata/wd_species_df.csv'
+    path_df = '../Data/wikidata/wd_species_df.csv'
     return path_df
 
 
