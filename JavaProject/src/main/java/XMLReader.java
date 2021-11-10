@@ -28,7 +28,7 @@ public class XMLReader {
             // create a new document builder
             DocumentBuilder builder = factory.newDocumentBuilder();
             // parse a document -- make sure the file is located on root level
-            Document document = builder.parse("src/main/resources/Final_schema_XML.xml");
+            Document document = builder.parse("src/main/resources/Final_schema_XML_test.xml");
             // get elements of the document
             NodeList speciesNodeList = document.getElementsByTagName("Species");
             // parse the node
@@ -90,12 +90,9 @@ public class XMLReader {
                                 // call function and give it a NodeList which returns a List of String
                                 species.setRegion_Names(getTextOfChildren(children.item(j).getChildNodes()));
                                 break;
-                            case "Esa_Listing_Statuses":
+                            case "Listing_Statuses":
                                 // call function and give it a NodeList which returns a List of String
-                                species.setEsa_Listing_Statuses(getTextOfChildren(children.item(j).getChildNodes()));
-                                break;
-                            case "Conversation_Status":
-                                species.setConversation_Status(children.item(j).getTextContent());
+                                species.setListing_Statuses(getTextOfChildren(children.item(j).getChildNodes()));
                                 break;
                             case "Categories":
                                 // call function and give it a NodeList which returns a List of String
@@ -118,19 +115,22 @@ public class XMLReader {
         } catch(SAXException | IOException | ParserConfigurationException exception) {
             exception.printStackTrace();
         }
+
+
     }
 
     // create a list to store non whitespace nodes
     public static List<String> getTextOfChildren(NodeList nList){
 
+
         // instantiate returning list
         List<String> arrayList = new ArrayList<>();
 
         // loop through node list
-        for(int k = 1; k < nList.getLength(); k++){
+        for(int k = 0; k < nList.getLength(); k++){
 
             // add textContent of child to the list if it is not a whitespace node
-            if(nList.item(k).getNodeType() != 3 && nList.item(k).getTextContent().isEmpty()) {
+            if(nList.item(k).getNodeType() != 3 && !nList.item(k).getTextContent().isEmpty()) {
                 // add item to the list if it's not a whitespace node
                 arrayList.add(nList.item(k).getTextContent());
             }

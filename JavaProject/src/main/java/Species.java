@@ -13,8 +13,8 @@ public class Species {
         private List<String> Endemic_To_l;
         private List<String> Regions;
         private List<String> Region_Names;
-        private List<String> Esa_Listing_Statuses;
-        private String Conversation_Status;
+        private List<String> listing_Statuses;
+        //private String Conversation_Status;
         private List<String> Categories;
         private List<String> Orders;
         private List<String> Families;
@@ -32,8 +32,8 @@ public class Species {
                        List<String> endemic_To_l,
                        List<String> regions,
                        List<String> region_Names,
-                       List<String> esa_Listing_Statuses,
-                       String conversation_Status,
+                       List<String> listing_Statuses,
+                       //String conversation_Status,
                        List<String> categories,
                        List<String> orders,
                        List<String> families) {
@@ -48,8 +48,8 @@ public class Species {
                 this.Endemic_To_l = endemic_To_l;
                 this.Regions = regions;
                 this.Region_Names = region_Names;
-                this.Esa_Listing_Statuses = esa_Listing_Statuses;
-                this.Conversation_Status = conversation_Status;
+                this.listing_Statuses = listing_Statuses;
+                //this.Conversation_Status = conversation_Status;
                 this.Categories = categories;
                 this.Orders = orders;
                 this.Families = families;
@@ -135,21 +135,14 @@ public class Species {
                 this.Region_Names = region_Names;
         }
 
-        public List<String> getEsa_Listing_Statuses() {
-                return Esa_Listing_Statuses;
+        public List<String> getListing_Statuses() {
+                return listing_Statuses;
         }
 
-        public void setEsa_Listing_Statuses(List<String> esa_Listing_Statuses) {
-                this.Esa_Listing_Statuses = esa_Listing_Statuses;
+        public void setListing_Statuses(List<String> listing_Statuses) {
+                this.listing_Statuses = listing_Statuses;
         }
 
-        public String getConversation_Status() {
-                return Conversation_Status;
-        }
-
-        public void setConversation_Status(String conversation_Status) {
-                this.Conversation_Status = conversation_Status;
-        }
 
         public List<String> getCategories() {
                 return Categories;
