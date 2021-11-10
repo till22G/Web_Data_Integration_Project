@@ -29,10 +29,9 @@
   <Region_Names>
     <Region_Name>Southwest</Region_Name>
   </Region_Names>
-  <Esa_Listing_Statuses>
-    <Esa_Listing_Status>Endangered</Esa_Listing_Status>
-  </Esa_Listing_Statuses>
-  <Conversation_Status></Conversation_Status>
+  <Listing_Statuses>
+    <Listing_Status>Endangered</Listing_Status>
+  </Listing_Statuses>
   <Categories>
     <Category>Flowering Plants</Category>
   </Categories>
@@ -67,10 +66,9 @@
     <Region_Names>
       <Region_Name>Southeast</Region_Name>
     </Region_Names>
-    <Esa_Listing_Statuses>
-      <Esa_Listing_Status>Endangered =(</Esa_Listing_Status>
-    </Esa_Listing_Statuses>
-    <Conversation_Status>converstation status test</Conversation_Status>
+    <Listing_Statuses>
+      <Listing_Status>Endangered =(</Listing_Status>
+    </Listing_Statuses>
     <Categories>
       <Category>Flowering Plants ole</Category>
     </Categories>
