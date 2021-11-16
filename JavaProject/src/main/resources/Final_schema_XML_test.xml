@@ -41,6 +41,10 @@
   <Families>
     <Family></Family>
   </Families>
+  <States>
+    <State>BW</State>
+    <State>RP</State>
+  </States>
 </Species>
   <Species>
     <ID>02</ID>
@@ -78,5 +82,8 @@
     <Families>
       <Family>test family</Family>
     </Families>
+    <States>
+      <State>OH</State>
+    </States>
   </Species>
 </Animals_And_Plants>

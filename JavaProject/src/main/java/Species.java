@@ -18,6 +18,7 @@ public class Species {
         private List<String> Categories;
         private List<String> Orders;
         private List<String> Families;
+        private List<String> States;
 
         public Species() {
         }
@@ -36,7 +37,8 @@ public class Species {
                        //String conversation_Status,
                        List<String> categories,
                        List<String> orders,
-                       List<String> families) {
+                       List<String> families,
+                       List<String> states) {
 
                 this.ID = ID;
                 this.Provenance = provenance;
@@ -53,6 +55,7 @@ public class Species {
                 this.Categories = categories;
                 this.Orders = orders;
                 this.Families = families;
+                this.States = states;
         }
 
         public String getID() {
@@ -166,5 +169,13 @@ public class Species {
 
         public void setFamilies(List<String> families) {
                 this.Families = families;
+        }
+
+        public List<String> getStates() {
+                return States;
+        }
+
+        public void setStates(List<String> states) {
+                this.States = states;
         }
 }

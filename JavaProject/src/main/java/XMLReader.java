@@ -106,6 +106,10 @@ public class XMLReader {
                                 // call function and give it a NodeList which returns a List of String
                                 species.setFamilies(getTextOfChildren(children.item(j).getChildNodes()));
                                 break;
+                            case "States":
+                                // call function and give it a NodeList which returns a List of String
+                                species.setStates(getTextOfChildren(children.item(j).getChildNodes()));
+                                break;
                         }
                     }
                 }
@@ -115,8 +119,6 @@ public class XMLReader {
         } catch(SAXException | IOException | ParserConfigurationException exception) {
             exception.printStackTrace();
         }
-
-
     }
 
     // create a list to store non whitespace nodes
