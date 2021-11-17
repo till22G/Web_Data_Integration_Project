@@ -71,7 +71,10 @@ def getMappingDict():
            'SubElement': 'Endemic_To_l',
            'SubSubElement': 'Endemic_To'
        },
-       'conservationStatusLabel': 'Conservation_Status'
+       'conservationStatusLabel':  {
+           'SubElement': 'Listing_Statuses',
+           'SubSubElement': 'Listing_Status'
+       }
     }
     
     return mapping_dict
@@ -293,16 +296,14 @@ def getCurrentTime():
 
 
 
-def appendXML(root, r_dict):
+def appendXML(root, r_dict, save_each_entry=False):
     
     mapping_dict = getMappingDict()
-    path_XML = getPathXML()
 
     # for each new resource, create new species
     new_element = SubElement(root, 'Species')
 
     new_subelement = SubElement(new_element, 'Provenance').text = 'wikidata'
-    
                 
                 
     # loop through dictionary
@@ -329,13 +330,12 @@ def appendXML(root, r_dict):
                     new_subelement = SubElement(new_element, mapping_dict[key]).text = r_dict[key]
 
 
-                
-    # writing XML file out
-    tree = ET.ElementTree(root)
-    tree.write(path_XML, encoding='UTF-8' ,xml_declaration=True, short_empty_elements=False)
+    if save_each_entry == True:       
+        # writing XML file out
+        tree = ET.ElementTree(root)
+        tree.write(getPathXML(), encoding='UTF-8' ,xml_declaration=True, short_empty_elements=False)
 
     return root
-
 
 
 
@@ -448,8 +448,9 @@ def createXML():
     for r_dict in list_of_dicts:
         
         # append xml file
-        appendXML(root, r_dict)
-
-
-
+        root = appendXML(root, r_dict)
+        
+    
+    tree = ET.ElementTree(root)
+    tree.write(path_XML, encoding='UTF-8' ,xml_declaration=True, short_empty_elements=False)
 
