@@ -47,8 +47,8 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> {
     public Species createModelFromElement(Node node, String provenanceInfo) {
         String id = getValueFromChildElement(node, "ID");
         String provenance = getValueFromChildElement(node, "Provenance");
+        String scientificName = getValueFromChildElement(node, "Scientific_Name");
 
-        List<String> scientificNames = getList(node, "Scientific_Names");
         List<String> commonNames = getList(node, "Common_Names");
         List<String> categories = getList(node, "Categories");
         List<String> orders = getList(node, "Orders");
@@ -63,7 +63,7 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> {
         List<String> listingStatuses = getList(node, "Listing_Statuses");
 
 
-        return new Species(id, provenance, scientificNames, commonNames, categories, orders,
+        return new Species(id, provenance, scientificName, commonNames, categories, orders,
                 families, states, labels, whereListed, differentFrom, endemicTo, regions, regionNames, listingStatuses);
     }
 

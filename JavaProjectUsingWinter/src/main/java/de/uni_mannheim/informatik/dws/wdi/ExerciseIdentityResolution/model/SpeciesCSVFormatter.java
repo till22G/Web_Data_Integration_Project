@@ -34,7 +34,7 @@ public class SpeciesCSVFormatter extends CSVDataSetFormatter<Species, Attribute>
 	public String[] format(Species record, DataSet<Species, Attribute> dataset, List<Attribute> orderedHeader) {
 		return new String[] {
 				record.getIdentifier(),
-				record.getScientificNames().toString(),
+				record.getScientificName().toString(),
 				record.getCommonNames().toString(),
 				record.getCategories().toString(),
 				record.getOrders().toString(),
