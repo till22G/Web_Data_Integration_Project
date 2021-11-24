@@ -1,21 +1,13 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Species;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.SpeciesXMLReader;
-import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
-import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
-import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard;
-import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
-import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import org.slf4j.Logger;
 
@@ -60,7 +52,8 @@ public class IR_using_linear_combination
 		
 //		// add comparators
 //		matchingRule.addComparator(new MovieDateComparator2Years(), 0.5);
-//		matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.5);
+		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName), 0.5);
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName), 0.5);
 //
 //		// create a blocker (blocking strategy)
 //		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new MovieBlockingKeyByTitleGenerator());
