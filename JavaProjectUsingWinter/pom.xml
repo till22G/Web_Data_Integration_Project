@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.uni_mannheim.informatik.dws.wdi</groupId>
-	<artifactId>ExerciseIdentityResolution_Solution</artifactId>
+	<artifactId>WDI_Project_Species</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>ExerciseIdentityResolution_Solution</name>
+	<name>WDI_Project_Species</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
