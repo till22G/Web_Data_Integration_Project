@@ -3,6 +3,9 @@
 
 # # Retrieval of species data for Wikidata
 
+# In[ ]:
+
+
 import time
 from datetime import datetime, timedelta
 import pandas as pd
@@ -13,6 +16,8 @@ from SPARQLWrapper import SPARQLWrapper, JSON, XML
 
 # ## Preparation
 # ### Namings
+
+# In[ ]:
 
 
 def getPathIDs():
@@ -28,6 +33,8 @@ def getPathDF():
     return path_df
 
 
+# In[ ]:
+
 
 def getMappingDict():
     
@@ -36,10 +43,8 @@ def getMappingDict():
        #'family',
        #'class',
        #'order',
-       'taxonName': {
-           'SubElement': 'Scientific_Names',
-           'SubSubElement': 'Scientific_Name'
-       },
+       'taxonName': 'Scientific_Name', 
+        
        'taxonCommonName': {
            'SubElement': 'Common_Names',
            'SubSubElement': 'Common_Name'
@@ -82,6 +87,8 @@ def getMappingDict():
 
 # ### Queries
 
+# In[ ]:
+
 
 def getSpeciesQuery():
     species_query = """
@@ -94,6 +101,9 @@ def getSpeciesQuery():
     """
 
     return species_query
+
+
+# In[ ]:
 
 
 def getAttributeQuery():
@@ -133,7 +143,8 @@ def getAttributeQuery():
 
       # Taxon name
       OPTIONAL {{?resource wdt:P225 ?taxonName.
-                  FILTER (langMatches( lang(?taxonName), "en" ) )}}
+                  #FILTER (langMatches( lang(?taxonName), "en" ) )
+                  }}
       # Taxon common name
       OPTIONAL {{?resource wdt:P1843 ?taxonCommonName.
                   FILTER (langMatches( lang(?taxonCommonName), "en" ) )}}
@@ -152,9 +163,35 @@ def getAttributeQuery():
     return attribute_query
 
 
+# In[ ]:
+
+
+def getTaxonNameQuery():
+    taxonName_query = """
+
+    SELECT DISTINCT
+      ?resource
+      ?taxonName
+
+    WHERE 
+    {{
+
+      VALUES ?resource {{{}}}
+
+      # Taxon name
+      ?resource wdt:P225 ?taxonName.
+      
+    }}
+
+    """
+    
+    return taxonName_query
 
 
 # ### Function Definitions 
+
+# In[ ]:
+
 
 def runQuery(query, format):
 
@@ -171,6 +208,9 @@ def runQuery(query, format):
         
         #raise Exception(' - SPARQL Query unsuccessful')
         return 'Error - too many requests'
+
+
+# In[ ]:
 
 
 def collectAndSaveIdentifiers():
@@ -193,11 +233,14 @@ def collectAndSaveIdentifiers():
     return identifier_list
 
 
-def createDataframe():
+# In[ ]:
+
+
+def createDataframe(path_df = getPathDF()):
     # test whether result collection dataframe already defined, 
     # else retrieve columns from query and create dataframe 
     
-    path_df = getPathDF()
+    #path_df = getPathDF()
     
     try: 
         df_results = pd.read_csv(path_df)
@@ -213,6 +256,8 @@ def createDataframe():
 
     return df_results
 
+
+# In[ ]:
 
 
 # convert strings of lists to list of stings in df
@@ -231,6 +276,8 @@ def convertStrToList(s):
             
     return result
 
+
+# In[ ]:
 
 
 def convertResultsToDict(results):
@@ -276,7 +323,10 @@ def convertResultsToDict(results):
     
 
 
-def appendDataframe(r_dict, df_results):
+# In[ ]:
+
+
+def appendDataframe(r_dict, df_results, writeOut = True):
     
     path_df = getPathDF()
     
@@ -285,15 +335,20 @@ def appendDataframe(r_dict, df_results):
     df_results = pd.concat([df_results, df_new_entry])
 
     # save dataframe
-    df_results.to_csv(path_df, index=False)
+    if writeOut: 
+        df_results.to_csv(path_df, index=False)
 
     return df_results
 
+
+# In[ ]:
 
 
 def getCurrentTime():
     return datetime.now()
 
+
+# In[ ]:
 
 
 def appendXML(root, r_dict, save_each_entry=False):
@@ -338,12 +393,18 @@ def appendXML(root, r_dict, save_each_entry=False):
     return root
 
 
+# In[ ]:
+
+
+
 
 
 # ## Retrieval & Processing
 # 
 # ### Retrieval of  list of species
 # 
+
+# In[ ]:
 
 
 def getIdentifierList():
@@ -365,10 +426,15 @@ def getIdentifierList():
     return identifier_list
 
 
+# In[ ]:
+
+
+
 
 
 # ### Retrieval of attributes for each species & processing to Dataframe and XML
 
+# In[ ]:
 
 
 def retrieveAttributesForResources():
@@ -392,7 +458,6 @@ def retrieveAttributesForResources():
                 print(' - Error at: ', getCurrentTime().strftime("%D - %H:%M:%S"))
                 time.sleep(60)
                 results = runQuery(attribute_query.format(identifier), JSON)
-                
 
             # convert and merge results in dict
             r_dict = convertResultsToDict(results)
@@ -402,11 +467,16 @@ def retrieveAttributesForResources():
 
             # try to avoid http error: too many requests
             time.sleep(1)
-       
+            
+            
+        else:
+            print('\n*****\n - All identifiers retrieved! - \n*****\n')
+            break
 
     return df_results
 
 
+# In[ ]:
 
 
 def retrievalRestarter(end_time):
@@ -417,15 +487,16 @@ def retrievalRestarter(end_time):
     
         # retrieve results
         retrieveAttributesForResources()
+        
 
 
+# In[ ]:
 
 
-
-def createXML():
+def createXML(path_XML = getPathXML(), path_Df=getPathDF()):
     
-    path_XML = getPathXML()
-    df_results = createDataframe()
+    
+    df_results = createDataframe(path_Df)
    
     # convert strings of lists to list of stings
     for column in df_results.columns:
@@ -453,4 +524,128 @@ def createXML():
     
     tree = ET.ElementTree(root)
     tree.write(path_XML, encoding='UTF-8' ,xml_declaration=True, short_empty_elements=False)
+        
+
+
+# In[ ]:
+
+
+
+
+
+# ## Retrieval of Scientific Names
+
+# In[ ]:
+
+
+def retrieveTaxonNamesForResources():
+    
+    
+    path_df_scientificNames = '../Data/wikidata/wd_scientificNames.csv'
+    
+    try: 
+        df_results = pd.read_csv(path_df_scientificNames)
+
+    except:
+        df_results = pd.DataFrame(columns = ['resource', 'taxonName'])
+
+    
+    identifier_list = list(pd.read_csv(getPathDF()).resource)
+    
+    offset = 0
+    chunksize = 100
+    
+    while offset < len(identifier_list):
+        identifier_string = ''
+        for resource in identifier_list[offset : offset+chunksize]:
+            resource = 'wd:Q' + resource.split('/q')[-1]
+            identifier_string += resource + ' '
+        
+        offset += chunksize
+
+        #retrieval of attributes per species
+        results = runQuery(getTaxonNameQuery().format(identifier_string), JSON)
+
+        while type(results) == str:
+            print(' - Error at: ', getCurrentTime().strftime("%D - %H:%M:%S"))
+            time.sleep(60)
+            results = runQuery(getTaxonNameQuery().format(identifier_string), JSON)
+
+        # convert and merge results in dict
+        rows = convertResultsToDictTaxonName(results)
+
+        # append new entries
+        df_new_entry = pd.DataFrame(rows, columns = ['resource', 'taxonName'])
+        df_results = pd.concat([df_results, df_new_entry], ignore_index=True)
+        
+        df_results.to_csv(path_df_scientificNames, index=False)
+
+        # try to avoid http error: too many requests
+        time.sleep(5)
+        
+
+    return df_results
+
+
+# In[ ]:
+
+
+def convertResultsToDictTaxonName(results):
+
+    rows = []
+
+    # loop through different result sets for this resource
+    for result_set in results['results']['bindings']:
+        # create new results dict to collect and combine attributes
+        r_dict = {}
+
+        # loop through all attributes for this result set
+        for attribute in result_set:
+            #print(attribute, result_set[attribute]['value'])
+
+            # assign new value (in lower case)
+            new_value = result_set[attribute]['value'].lower()
+
+            # if attribute not yet seen, add to dict
+            if attribute not in r_dict.keys():
+                # assign string to attribute 
+                r_dict[attribute] = new_value
+
+            # if attribute already in dict
+            else:
+                old_value = r_dict[attribute]
+
+                # if value is single string, create list of old and new value and assign back
+                if type(old_value) == str and old_value != new_value:
+                    l = []
+                    l.append(old_value)
+                    l.append(new_value)
+                    r_dict[attribute] = l
+
+                # if value is list, append new_value
+                elif type(old_value) == list and new_value not in old_value:
+                    old_value.append(new_value)
+
+        rows.append(r_dict)
+
+    return rows
+
+
+# In[ ]:
+
+
+#df_results = retrieveTaxonNamesForResources()
+#df_results
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
