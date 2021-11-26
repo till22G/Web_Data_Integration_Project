@@ -17,8 +17,18 @@ public class SpeciesBlockingKeyByCategoryGenerator extends
 
 
     @Override
-    public void generateBlockingKeys(Species record, Processable<Correspondence<Attribute, Matchable>> correspondences,
+    public void generateBlockingKeys(Species species, Processable<Correspondence<Attribute, Matchable>> correspondences,
                                      DataIterator<Pair<String, Species>> resultCollector) {
+    	
+    	String[] tokens  = species.getCategory();
+
+		String blockingKeyValue = "";
+
+		for(int i = 0; i <= 2 && i < tokens.length; i++) {
+			blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
+		}
+
+		resultCollector.next(new Pair<>(blockingKeyValue, record));
 
     }
 
