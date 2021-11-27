@@ -19,15 +19,27 @@ public class SpeciesBlockingKeyByCategoryGenerator extends
     @Override
     public void generateBlockingKeys(Species species, Processable<Correspondence<Attribute, Matchable>> correspondences,
                                      DataIterator<Pair<String, Species>> resultCollector) {
-    	
-    	String[] tokens  = species.getCategories().toArray(new String[0]);
 
+		// create the blockingKey value
 		String blockingKeyValue = "";
 
-		for(int i = 0; i <= 2 && i < tokens.length; i++) {
-			blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
-		}
+		// get the category for the first part of the blocking key
+    	String category  = species.getCategories().get(0).toUpperCase();
+		// extract first three letters from string (this uniquely identifies the category)
+		String categoryToken = category.substring(0, Math.min(2,category.length())).toUpperCase();
 
+		// add category token to blockingKey value
+		blockingKeyValue = blockingKeyValue + categoryToken;
+
+		// get the scientific name for blocking
+		String scientificName = species.getScientificName();
+		// extract first three letters from string
+		String scientificNameToken = scientificName.substring(0, Math.min(2,scientificName.length())).toUpperCase();
+
+		// add scientificName token to blockingKey
+		blockingKeyValue = blockingKeyValue + scientificNameToken;
+
+		// collect the result pair of blockingKey and species
 		resultCollector.next(new Pair<>(blockingKeyValue, species));
 
     }
