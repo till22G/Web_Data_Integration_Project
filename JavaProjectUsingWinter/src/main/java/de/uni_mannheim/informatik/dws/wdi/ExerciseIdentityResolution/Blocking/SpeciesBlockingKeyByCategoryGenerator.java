@@ -20,7 +20,7 @@ public class SpeciesBlockingKeyByCategoryGenerator extends
     public void generateBlockingKeys(Species species, Processable<Correspondence<Attribute, Matchable>> correspondences,
                                      DataIterator<Pair<String, Species>> resultCollector) {
     	
-    	String[] tokens  = species.getCategory();
+    	String[] tokens  = species.getCategories().toArray(new String[0]);
 
 		String blockingKeyValue = "";
 
@@ -28,7 +28,7 @@ public class SpeciesBlockingKeyByCategoryGenerator extends
 			blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
 		}
 
-		resultCollector.next(new Pair<>(blockingKeyValue, record));
+		resultCollector.next(new Pair<>(blockingKeyValue, species));
 
     }
 
