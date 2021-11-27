@@ -63,6 +63,7 @@ public class SpeciesBlockingKeyCascadedGenerator extends
                 case "ORTHOPTERA": orderToken = "ORT";
             }
 
+            blockingKeyValue = blockingKeyValue + orderToken;
         }
 
         // add category token to blockingKey value
