@@ -60,10 +60,7 @@ def getMappingDict():
            'SubElement': 'Families',
            'SubSubElement': 'Family'
        },
-       'classLabel': {
-           'SubElement': 'Categories',
-           'SubSubElement': 'Category'
-       },
+       'classLabel': 'Category',
        'orderLabel': {
            'SubElement': 'Orders',
            'SubSubElement': 'Order'
