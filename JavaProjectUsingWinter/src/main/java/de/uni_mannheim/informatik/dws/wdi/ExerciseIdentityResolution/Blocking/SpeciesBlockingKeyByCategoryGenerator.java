@@ -23,8 +23,16 @@ public class SpeciesBlockingKeyByCategoryGenerator extends
 		// create the blockingKey value
 		String blockingKeyValue = "";
 
+		// declare category
+		String category;
+
 		// get the category for the first part of the blocking key
-    	String category  = species.getCategories().get(0).toUpperCase();
+		if (species.getCategories().get(0) != null) {
+			category = species.getCategories().get(0).toUpperCase();
+		} else {
+			category = "OTHER";
+		}
+
 		// extract first three letters from string (this uniquely identifies the category)
 		String categoryToken = category.substring(0, Math.min(2,category.length())).toUpperCase();
 

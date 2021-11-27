@@ -23,8 +23,16 @@ public class SpeciesBlockingKeyByScientificNameGenerator extends
         // create the blockingKey value
         String blockingKeyValue = "";
 
+        // declare scientificName
+        String scientificName;
+
         // get the scientific name for blocking
-        String scientificName = species.getScientificName();
+        if (species.getScientificName() != null) {
+            scientificName = species.getScientificName().toUpperCase();
+        } else {
+            scientificName = "OTHER";
+        }
+
         // extract first three letters from string
         String scientificNameToken = scientificName.substring(0, Math.min(2,scientificName.length())).toUpperCase();
 

@@ -9,8 +9,9 @@ import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+import sun.awt.geom.AreaOp;
 
-public class SpeciesBlockingKeyByCategoryAndScientificNameGenerator extends
+public class SpeciesBlockingKeyCascadedGenerator extends
         RecordBlockingKeyGenerator<Species, Attribute> {
 
     private static final long serialVersionUID = 1L;
@@ -34,18 +35,41 @@ public class SpeciesBlockingKeyByCategoryAndScientificNameGenerator extends
         // extract first three letters from string (this uniquely identifies the category)
         String categoryToken = category.substring(0, Math.min(2,category.length())).toUpperCase();
 
+        // check category tp see if it is insect
+        if (category.equals("INSECT")) {
+
+            // declare orders
+            String orders;
+
+            // get the Order from species for second part of the blocking key
+            if (species.getOrders().get(0) != null) {
+                orders = species.getOrders().get(0).toUpperCase();
+            } else {
+                orders = "";
+            }
+
+            // add another part to the key if it belongs to one of the biggest categories in Insects
+            String orderToken = "";
+
+            switch (orders){
+                case "COLEOPTERA": orderToken = "COL";
+                case "HYMENOPTERA": orderToken = "HYM";
+                case "LEPIDOPTERA": orderToken = "LEP";
+                case "DIPTERA": orderToken = "DIP";
+                case "TRICHOPTERA": orderToken = "TRI";
+                case "ODONATA": orderToken = "ODO";
+                case "NEUROPTERA": orderToken = "NEU";
+                case "HEMIPTERA": orderToken = "HEM";
+                case "ORTHOPTERA": orderToken = "ORT";
+            }
+            
+        }
+
         // add category token to blockingKey value
         blockingKeyValue = blockingKeyValue + categoryToken;
 
-
-        // declare scientificName
-        String scientificName;
         // get the scientific name for blocking
-        if (species.getScientificName() != null) {
-            scientificName = species.getScientificName().toUpperCase();
-        } else {
-            scientificName = "OTHER";
-        }
+        String scientificName = species.getScientificName();
         // extract first three letters from string
         String scientificNameToken = scientificName.substring(0, Math.min(2,scientificName.length())).toUpperCase();
 
