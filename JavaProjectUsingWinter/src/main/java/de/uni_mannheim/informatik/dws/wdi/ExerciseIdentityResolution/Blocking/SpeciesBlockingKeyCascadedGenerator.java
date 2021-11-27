@@ -62,7 +62,7 @@ public class SpeciesBlockingKeyCascadedGenerator extends
                 case "HEMIPTERA": orderToken = "HEM";
                 case "ORTHOPTERA": orderToken = "ORT";
             }
-            
+
         }
 
         // add category token to blockingKey value
