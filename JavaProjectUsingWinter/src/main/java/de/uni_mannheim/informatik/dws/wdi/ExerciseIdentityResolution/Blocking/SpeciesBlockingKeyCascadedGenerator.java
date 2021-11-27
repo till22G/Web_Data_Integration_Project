@@ -27,7 +27,7 @@ public class SpeciesBlockingKeyCascadedGenerator extends
         // declare category
         String category;
         // get the category for the first part of the blocking key
-        if (species.getCategories().get(0) != null) {
+        if (species.getCategories() != null) {
             category = species.getCategories().get(0).toUpperCase();
         } else {
             category = "OTHER";
@@ -42,7 +42,7 @@ public class SpeciesBlockingKeyCascadedGenerator extends
             String orders;
 
             // get the Order from species for second part of the blocking key
-            if (species.getOrders().get(0) != null) {
+            if (species.getOrders() != null) {
                 orders = species.getOrders().get(0).toUpperCase();
             } else {
                 orders = "";
@@ -53,14 +53,23 @@ public class SpeciesBlockingKeyCascadedGenerator extends
 
             switch (orders){
                 case "COLEOPTERA": orderToken = "COL";
+                    break;
                 case "HYMENOPTERA": orderToken = "HYM";
+                    break;
                 case "LEPIDOPTERA": orderToken = "LEP";
+                    break;
                 case "DIPTERA": orderToken = "DIP";
+                    break;
                 case "TRICHOPTERA": orderToken = "TRI";
+                    break;
                 case "ODONATA": orderToken = "ODO";
+                    break;
                 case "NEUROPTERA": orderToken = "NEU";
+                    break;
                 case "HEMIPTERA": orderToken = "HEM";
+                    break;
                 case "ORTHOPTERA": orderToken = "ORT";
+                    break;
             }
 
             blockingKeyValue = blockingKeyValue + orderToken;
