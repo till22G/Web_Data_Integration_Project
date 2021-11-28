@@ -48,7 +48,7 @@ public class IR_using_linear_combination_wd_bio
     	// loading data
 		logger.info("*\tLoading datasets\t*");
 		HashedDataSet<Species, Attribute> dataWikidata = new HashedDataSet<>();
-		new SpeciesXMLReader().loadFromXML(new File("data/input/wd_species_nestedCategory.xml"), "/Animals_And_Plants/Species", dataWikidata);
+		new SpeciesXMLReader().loadFromXML(new File("data/input/wd_species.xml"), "/Animals_And_Plants/Species", dataWikidata);
 		HashedDataSet<Species, Attribute> dataBiodiversity = new HashedDataSet<>();
 		new SpeciesXMLReader().loadFromXML(new File("data/input/biodiversity.xml"), "/Animals_And_Plants/Species", dataBiodiversity);
 	

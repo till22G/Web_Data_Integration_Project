@@ -33,7 +33,6 @@ public class SpeciesBlockingKeyCascadedGenerator extends
             category = "OTHER";
         }
 
-        System.out.println(category);
         // extract first three letters from string (this uniquely identifies the category)
         String categoryToken = category.substring(0, Math.min(3,category.length())).toUpperCase();
 
@@ -95,8 +94,6 @@ public class SpeciesBlockingKeyCascadedGenerator extends
 
         // add scientificName token to blockingKey
         blockingKeyValue = blockingKeyValue + scientificNameToken;
-
-        System.out.println(blockingKeyValue);
 
         // collect the result pair of blockingKey and species
         resultCollector.next(new Pair<>(blockingKeyValue, species));
