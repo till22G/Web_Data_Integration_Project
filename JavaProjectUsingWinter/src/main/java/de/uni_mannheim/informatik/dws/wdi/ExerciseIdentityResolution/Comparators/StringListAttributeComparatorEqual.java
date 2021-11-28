@@ -43,6 +43,10 @@ public class StringListAttributeComparatorEqual<T extends Matchable>implements C
 		List<String> s1 = attributeExtractor.apply(record1);
 		List<String> s2 = attributeExtractor.apply(record2);
 
+		if (s1==null || s2==null){
+			return 0.0;
+		}
+
 		double max_sim = 0;
 		for(String element : s1){
 			for (String other : s2) {

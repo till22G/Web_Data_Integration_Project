@@ -42,6 +42,10 @@ public class StringListAttributeAsWholeComparatorJaccard<T extends Matchable> im
         List<String> list1 = attributeExtractor.apply(record1);
         List<String> list2 = attributeExtractor.apply(record2);
 
+        if (list1==null || list2==null){
+            return 0.0;
+        }
+
         String s1 = String.join(" ", list1);
         String s2 = String.join(" ", list2);
 

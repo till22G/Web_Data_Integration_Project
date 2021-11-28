@@ -45,6 +45,10 @@ public class StringListAttributeAsWholeComparatorEqual<T extends Matchable>imple
 		List<String> longer;
 		List<String> shorter;
 
+		if (s1==null || s2==null){
+			return 0.0;
+		}
+
 		if ( s1.size() > s2.size()) {
 			shorter = s2;
 			longer = s1;
