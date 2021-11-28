@@ -32,19 +32,19 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> {
     }
 
     public String normalize(String s){
-        if (s == null) {
-          return null;
-        }
-        s=s.replaceAll("\""," ");
-        s=s.replaceAll("\'"," ");
-        s=s.replaceAll("´"," ");
-        s=s.replaceAll("`"," ");
-        s=s.replaceAll("-"," ");
-        s=s.replaceAll("("," ");
-        s=s.replaceAll(")"," ");
-        s=s.replaceAll("="," ");
-        return s.toLowerCase();
-      }
+		if (s == null) {
+			return null;
+		}
+		s=s.replaceAll("\""," ");
+		s=s.replaceAll("\'"," ");
+		s=s.replaceAll("´"," ");
+		s=s.replaceAll("`"," ");
+		s=s.replaceAll("-"," ");
+		//s=s.replaceAll("("," ");
+		//s=s.replaceAll(")"," ");
+		s=s.replaceAll("="," ");
+		return s.toLowerCase();
+    }
 
     private List<String> getList(Node node, String childName) {
         List<String> list = getListFromChildElement(node, childName);
