@@ -92,7 +92,7 @@ public class SpeciesBlockingKeyCascadedGenerator extends
 
         // add scientificName token to blockingKey
         blockingKeyValue = blockingKeyValue + scientificNameToken;
-
+        
         // collect the result pair of blockingKey and species
         resultCollector.next(new Pair<>(blockingKeyValue, species));
 
