@@ -32,7 +32,7 @@ public class SpeciesBlockingKeyByCategoryAndScientificNameGenerator extends
             category = "OTHER";
         }
         // extract first three letters from string (this uniquely identifies the category)
-        String categoryToken = category.substring(0, Math.min(2,category.length())).toUpperCase();
+        String categoryToken = category.substring(0, Math.min(3,category.length())).toUpperCase();
 
         // add category token to blockingKey value
         blockingKeyValue = blockingKeyValue + categoryToken;
@@ -47,7 +47,7 @@ public class SpeciesBlockingKeyByCategoryAndScientificNameGenerator extends
             scientificName = "OTHER";
         }
         // extract first three letters from string
-        String scientificNameToken = scientificName.substring(0, Math.min(2,scientificName.length())).toUpperCase();
+        String scientificNameToken = scientificName.substring(0, Math.min(3,scientificName.length())).toUpperCase();
 
         // add scientificName token to blockingKey
         blockingKeyValue = blockingKeyValue + scientificNameToken;

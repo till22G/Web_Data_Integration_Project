@@ -34,7 +34,7 @@ public class SpeciesBlockingKeyByScientificNameGenerator extends
         }
 
         // extract first three letters from string
-        String scientificNameToken = scientificName.substring(0, Math.min(2,scientificName.length())).toUpperCase();
+        String scientificNameToken = scientificName.substring(0, Math.min(3,scientificName.length())).toUpperCase();
 
         // add scientificName token to blockingKey
         blockingKeyValue = blockingKeyValue + scientificNameToken;
