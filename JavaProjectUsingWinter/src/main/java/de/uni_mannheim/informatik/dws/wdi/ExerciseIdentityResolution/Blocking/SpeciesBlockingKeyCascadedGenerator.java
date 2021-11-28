@@ -9,7 +9,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-import sun.awt.geom.AreaOp;
+
 
 public class SpeciesBlockingKeyCascadedGenerator extends
         RecordBlockingKeyGenerator<Species, Attribute> {
@@ -78,8 +78,15 @@ public class SpeciesBlockingKeyCascadedGenerator extends
         // add category token to blockingKey value
         blockingKeyValue = blockingKeyValue + categoryToken;
 
+        // declare scientificName
+        String scientificName;
+
         // get the scientific name for blocking
-        String scientificName = species.getScientificName();
+        if(species.getScientificName() != null) {
+            scientificName = species.getScientificName();
+        } else {
+            scientificName = "OTHER";
+        }
         // extract first three letters from string
         String scientificNameToken = scientificName.substring(0, Math.min(2,scientificName.length())).toUpperCase();
 
