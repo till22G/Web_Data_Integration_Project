@@ -48,7 +48,7 @@ public class IR_using_linear_combination_wd_bio
     	// loading data
 		logger.info("*\tLoading datasets\t*");
 		HashedDataSet<Species, Attribute> dataWikidata = new HashedDataSet<>();
-		new SpeciesXMLReader().loadFromXML(new File("data/input/wd_species_subset_nestedCategory.xml"), "/Animals_And_Plants/Species", dataWikidata);
+		new SpeciesXMLReader().loadFromXML(new File("data/input/wd_species_nestedCategory.xml"), "/Animals_And_Plants/Species", dataWikidata);
 		HashedDataSet<Species, Attribute> dataBiodiversity = new HashedDataSet<>();
 		new SpeciesXMLReader().loadFromXML(new File("data/input/biodiversity.xml"), "/Animals_And_Plants/Species", dataBiodiversity);
 	
@@ -92,9 +92,9 @@ public class IR_using_linear_combination_wd_bio
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new MovieBlockingKeyByTitleGenerator());
 		
 		// our blocker
-		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByScientificNameGenerator());
+		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByScientificNameGenerator());
 		// errors in 
-		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryGenerator());
+		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryGenerator());
 		//
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryAndScientificNameGenerator());
 		//
