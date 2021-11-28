@@ -27,8 +27,8 @@ public class SpeciesBlockingKeyCascadedGenerator extends
         // declare category
         String category;
         // get the category for the first part of the blocking key
-        if (species.getCategories() != null) {
-            category = species.getCategories().get(0).toUpperCase();
+        if (species.getCategory() != null) {
+            category = species.getCategory().toUpperCase();
         } else {
             category = "OTHER";
         }
