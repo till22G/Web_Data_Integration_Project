@@ -24,7 +24,8 @@ public class SpeciesCSVFormatter extends CSVDataSetFormatter<Species, Attribute>
 	 */
 	@Override
 	public String[] getHeader(List<Attribute> orderedHeader) {
-		return new String[] { "id", "title", "studio", "genre", "budget", "gross", "director", "date" };
+		return new String[] { "ID", "Scientific Name", "Commmon Names", "Category",
+				"Orders", "Families", "States", "Labels", "Where Listed", "Different From", "Endemic To", "Regions", "Region Names", "Listing Statuses"};
 	}
 
 	/* (non-Javadoc)
@@ -36,7 +37,7 @@ public class SpeciesCSVFormatter extends CSVDataSetFormatter<Species, Attribute>
 				record.getIdentifier(),
 				record.getScientificName().toString(),
 				record.getCommonNames().toString(),
-				record.getCategories().toString(),
+				record.getCategory().toString(),
 				record.getOrders().toString(),
 				record.getFamilies().toString(),
 				record.getStates().toString(),

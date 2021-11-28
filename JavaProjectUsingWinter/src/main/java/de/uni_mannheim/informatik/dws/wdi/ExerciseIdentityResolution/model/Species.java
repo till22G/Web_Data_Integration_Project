@@ -21,7 +21,7 @@ public class Species implements Matchable {
     protected String provenance;
     private  String scientificName;
     private  List<String> commonNames;
-    private List<String> categories;
+    private String category;
     private List<String> orders;
     private  List<String> families;
     private  List<String> states;
@@ -37,7 +37,7 @@ public class Species implements Matchable {
                    String provenance,
                    String scientificName,
                    List<String> commonNames,
-                   List<String> categories,
+                   String category,
                    List<String> orders,
                    List<String> families,
                    List<String> states,
@@ -52,7 +52,7 @@ public class Species implements Matchable {
         this.provenance = provenance;
         this.scientificName = scientificName;
         this.commonNames = commonNames;
-        this.categories = categories;
+        this.category = category;
         this.orders = orders;
         this.families = families;
         this.states = states;
@@ -107,12 +107,12 @@ public class Species implements Matchable {
         this.commonNames = commonNames;
     }
 
-    public List<String> getCategories() {
-        return categories;
+    public String getCategory() {
+        return category;
     }
 
-    public void setCategories(List<String> categories) {
-        this.categories = categories;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public List<String> getOrders() {

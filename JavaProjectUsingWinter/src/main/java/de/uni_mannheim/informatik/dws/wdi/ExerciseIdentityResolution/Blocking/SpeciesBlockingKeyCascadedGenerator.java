@@ -27,13 +27,18 @@ public class SpeciesBlockingKeyCascadedGenerator extends
         // declare category
         String category;
         // get the category for the first part of the blocking key
-        if (species.getCategories() != null) {
-            category = species.getCategories().get(0).toUpperCase();
+        if (species.getCategory() != null) {
+            category = species.getCategory().toUpperCase();
         } else {
             category = "OTHER";
         }
+
         // extract first three letters from string (this uniquely identifies the category)
-        String categoryToken = category.substring(0, Math.min(2,category.length())).toUpperCase();
+        String categoryToken = category.substring(0, Math.min(3,category.length())).toUpperCase();
+
+        // add category token to blockingKey value
+        blockingKeyValue = blockingKeyValue + categoryToken;
+
 
         // check category tp see if it is insect
         if (category.equals("INSECT")) {
@@ -75,9 +80,6 @@ public class SpeciesBlockingKeyCascadedGenerator extends
             blockingKeyValue = blockingKeyValue + orderToken;
         }
 
-        // add category token to blockingKey value
-        blockingKeyValue = blockingKeyValue + categoryToken;
-
         // declare scientificName
         String scientificName;
 
@@ -88,11 +90,11 @@ public class SpeciesBlockingKeyCascadedGenerator extends
             scientificName = "OTHER";
         }
         // extract first three letters from string
-        String scientificNameToken = scientificName.substring(0, Math.min(2,scientificName.length())).toUpperCase();
+        String scientificNameToken = scientificName.substring(0, Math.min(3,scientificName.length())).toUpperCase();
 
         // add scientificName token to blockingKey
         blockingKeyValue = blockingKeyValue + scientificNameToken;
-        
+
         // collect the result pair of blockingKey and species
         resultCollector.next(new Pair<>(blockingKeyValue, species));
 

@@ -34,7 +34,7 @@ public class SpeciesXMLFormatter extends XMLFormatter<Species> {
 		species.appendChild(createTextElement("ID", record.getIdentifier(), doc));
 		species.appendChild(createTextElement("Scientific_Name", record.getScientificName(), doc));
 		species.appendChild(createListElement("Common_Names", "Common_Name", record.getCommonNames(), doc));
-		species.appendChild(createListElement("Categories", "Category", record.getCategories(), doc));
+		species.appendChild(createTextElement("Category", record.getCategory(), doc));
 		species.appendChild(createListElement("Orders", "Order", record.getOrders(), doc));
 		species.appendChild(createListElement("Families", "Family", record.getFamilies(), doc));
 		species.appendChild(createListElement("States", "State", record.getStates(), doc));
