@@ -77,6 +77,7 @@ public class IR_using_linear_combination_bio_es
 		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies), 0.125);
 		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates), 0.125);
 		//matchingRule.addComparator(matchingRule, 0)
+		
 
 
 		
