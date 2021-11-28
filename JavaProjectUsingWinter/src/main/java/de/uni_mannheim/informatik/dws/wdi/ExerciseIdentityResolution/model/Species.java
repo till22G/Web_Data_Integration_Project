@@ -21,8 +21,6 @@ public class Species implements Matchable {
     protected String provenance;
     private  String scientificName;
     private  List<String> commonNames;
-
-
     private String category;
     private List<String> orders;
     private  List<String> families;
