@@ -31,11 +31,30 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> {
 
     }
 
+    public String normalize(String s){
+        if (s == null) {
+          return null;
+        }
+        s=s.replaceAll("\""," ");
+        s=s.replaceAll("\'"," ");
+        s=s.replaceAll("´"," ");
+        s=s.replaceAll("`"," ");
+        s=s.replaceAll("-"," ");
+        s=s.replaceAll("("," ");
+        s=s.replaceAll(")"," ");
+        s=s.replaceAll("="," ");
+        return s.toLowerCase();
+      }
+
     private List<String> getList(Node node, String childName) {
         List<String> list = getListFromChildElement(node, childName);
         if (list == null ) {
             return null;
         }
+        
+        // apply normalizing function to each element in list
+        list = list.stream().map(element -> normalize(element)).collect(Collectors.toList());
+        
         List<String> cleanList = list.stream().filter(element -> element.length() > 0).collect(Collectors.toList());
         if (cleanList.isEmpty()){
             return null;
@@ -47,7 +66,8 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> {
     public Species createModelFromElement(Node node, String provenanceInfo) {
         String id = getValueFromChildElement(node, "ID");
         String provenance = getValueFromChildElement(node, "Provenance");
-        String scientificName = getValueFromChildElement(node, "Scientific_Name");
+        // apply normalizing function to scientific name
+        String scientificName = normalize(getValueFromChildElement(node, "Scientific_Name"));
 
         List<String> commonNames = getList(node, "Common_Names");
         List<String> categories = getList(node, "Categories");

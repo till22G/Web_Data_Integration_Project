@@ -26,7 +26,7 @@ import org.slf4j.Logger;
 
 import java.io.File;
 
-public class IR_using_linear_combination 
+public class IR_using_linear_combination_wd_bio
 {
 	/*
 	 * Logging Options:
