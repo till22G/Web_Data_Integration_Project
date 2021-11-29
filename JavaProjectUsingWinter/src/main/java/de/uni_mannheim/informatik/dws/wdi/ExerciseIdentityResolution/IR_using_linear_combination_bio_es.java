@@ -61,7 +61,7 @@ public class IR_using_linear_combination_bio_es
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_biodiversity_endangeredSpecies.csv"));
+				"data/goldstandard/gs_biodiversity_endangeredSpecies_full.csv"));
 		
 		// create a matching rule
 		LinearCombinationMatchingRule<Species, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
@@ -91,11 +91,11 @@ public class IR_using_linear_combination_bio_es
 		// our blocker
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByScientificNameGenerator());
 		// errors in 
-		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryGenerator());
+		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryGenerator());
 		//
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryAndScientificNameGenerator());
 		//
-		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyCascadedGenerator());
+		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyCascadedGenerator());
 		
 		
 		

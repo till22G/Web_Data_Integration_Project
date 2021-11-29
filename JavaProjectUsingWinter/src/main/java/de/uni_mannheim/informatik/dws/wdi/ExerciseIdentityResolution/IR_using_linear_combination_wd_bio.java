@@ -71,7 +71,7 @@ public class IR_using_linear_combination_wd_bio
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_biodiversity_wikidata.csv"));
+				"data/goldstandard/gs_biodiversity_wikidata_full.csv"));
 		
 		// create a matching rule
 		LinearCombinationMatchingRule<Species, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
