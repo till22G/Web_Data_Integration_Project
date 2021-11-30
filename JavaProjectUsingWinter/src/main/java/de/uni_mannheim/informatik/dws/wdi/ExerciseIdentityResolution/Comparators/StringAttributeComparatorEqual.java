@@ -43,6 +43,10 @@ public class StringAttributeComparatorEqual<T extends Matchable>implements Compa
 		
     	String s1 = attributeExtractor.apply(record1);
 		String s2 = attributeExtractor.apply(record2);
+
+		if (s1==null || s2==null){
+			return 0.0;
+		}
     	
     	double similarity = sim.calculate(s1, s2);
     	

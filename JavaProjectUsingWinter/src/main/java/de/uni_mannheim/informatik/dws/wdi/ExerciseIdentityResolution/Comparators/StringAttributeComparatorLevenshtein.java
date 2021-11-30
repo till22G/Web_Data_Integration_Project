@@ -41,7 +41,11 @@ public class StringAttributeComparatorLevenshtein<T extends Matchable>implements
 		
 		String s1 = attributeExtractor.apply(record1);
 		String s2 = attributeExtractor.apply(record2);
-		
+
+		if (s1==null || s2==null){
+			return 0.0;
+		}
+
 		double similarity = sim.calculate(s1, s2);
 		
 		if(this.comparisonLog != null){

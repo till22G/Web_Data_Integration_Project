@@ -42,6 +42,10 @@ public class StringListAttributeAsWholeComparatorLevenshtein<T extends Matchable
 		List<String> s1 = attributeExtractor.apply(record1);
 		List<String> s2 = attributeExtractor.apply(record2);
 
+		if (s1==null || s2==null){
+			return 0.0;
+		}
+
 		List<String> longer;
 		List<String> shorter;
 

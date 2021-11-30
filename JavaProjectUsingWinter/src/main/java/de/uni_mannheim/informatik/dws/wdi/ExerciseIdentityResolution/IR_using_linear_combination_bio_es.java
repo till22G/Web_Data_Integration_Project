@@ -6,6 +6,9 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Sp
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyCascadedGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeAsWholeComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeAsWholeComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Species;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.SpeciesXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -26,7 +29,7 @@ import org.slf4j.Logger;
 
 import java.io.File;
 
-public class IR_using_linear_combination_wd_bio
+public class IR_using_linear_combination_bio_es
 {
 	/*
 	 * Logging Options:
@@ -47,40 +50,34 @@ public class IR_using_linear_combination_wd_bio
     {
     	// loading data
 		logger.info("*\tLoading datasets\t*");
-		HashedDataSet<Species, Attribute> dataWikidata = new HashedDataSet<>();
-		new SpeciesXMLReader().loadFromXML(new File("data/input/wd_species.xml"), "/Animals_And_Plants/Species", dataWikidata);
 		HashedDataSet<Species, Attribute> dataBiodiversity = new HashedDataSet<>();
 		new SpeciesXMLReader().loadFromXML(new File("data/input/biodiversity.xml"), "/Animals_And_Plants/Species", dataBiodiversity);
-	
+		HashedDataSet<Species, Attribute> dataEndangeredSpecies = new HashedDataSet<>();
+		new SpeciesXMLReader().loadFromXML(new File("data/input/endangered_species.xml"), "/Animals_And_Plants/Species", dataEndangeredSpecies);
+		
 
-		// test of normalizer
-		/*HashedDataSet<Species, Attribute> dataFinalSchema = new HashedDataSet<>();
-		new SpeciesXMLReader().loadFromXML(new File("data/input/Final_schema_XML.xml"), "/Animals_And_Plants/Species", dataFinalSchema);
-		
-		
-		/*for(Species species : dataFinalSchema.get()) {
-			System.out.println(species.getIdentifier());
-			System.out.println(species.getScientificName());
-			System.out.println(species.getCommonNames());
-			System.out.println(species.getCategories());
-		}*/
-		
-		
 		
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_biodiversity_wikidata_full.csv"));
+				"data/goldstandard/gs_biodiversity_endangeredSpecies_full.csv"));
 		
 		// create a matching rule
 		LinearCombinationMatchingRule<Species, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.7);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
+				0.5);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_bio_es.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName), 0.5);
-		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName), 0.5);
+		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName), 0.25);
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName), 0.25);
+		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames), 0.5);
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames), 0.125);
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getOrders), 0.125);
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies), 0.125);
+		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates), 0.125);
+		//matchingRule.addComparator(matchingRule, 0)
+		
 
 
 		
@@ -92,13 +89,13 @@ public class IR_using_linear_combination_wd_bio
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new MovieBlockingKeyByTitleGenerator());
 		
 		// our blocker
-		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByScientificNameGenerator());
+		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByScientificNameGenerator());
 		// errors in 
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryGenerator());
 		//
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryAndScientificNameGenerator());
 		//
-		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyCascadedGenerator());
+		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyCascadedGenerator());
 		
 		
 		
@@ -109,7 +106,7 @@ public class IR_using_linear_combination_wd_bio
 		//SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking_bio_es.csv", 100);
 
 		
 		
@@ -121,7 +118,7 @@ public class IR_using_linear_combination_wd_bio
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Species, Attribute>> correspondences = engine.runIdentityResolution(
-				dataWikidata, dataBiodiversity, null, matchingRule, blocker);
+				dataEndangeredSpecies, dataBiodiversity, null, matchingRule, blocker);
 
 		// Create a top-1 global matching
 		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
@@ -132,7 +129,7 @@ public class IR_using_linear_combination_wd_bio
 ////		 correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/wikidata_biodiversity_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/biodiversity_endangeredSpecies_correspondences.csv"), correspondences);
 
 		
 		
