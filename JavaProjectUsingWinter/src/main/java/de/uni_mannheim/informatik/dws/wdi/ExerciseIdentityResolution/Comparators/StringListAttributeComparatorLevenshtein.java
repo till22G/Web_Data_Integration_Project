@@ -50,7 +50,7 @@ public class StringListAttributeComparatorLevenshtein<T extends Matchable>implem
 		for(String element : s1){
 			for (String other : s2) {
 				double similarity = sim.calculate(element, other);
-				Math.max(similarity, max_sim);
+				max_sim = Math.max(similarity, max_sim);
 
 				if(this.comparisonLog != null){
 					this.comparisonLog.setComparatorName(getClass().getName());

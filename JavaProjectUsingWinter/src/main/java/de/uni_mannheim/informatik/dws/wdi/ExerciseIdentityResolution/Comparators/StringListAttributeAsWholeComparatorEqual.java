@@ -62,20 +62,23 @@ public class StringListAttributeAsWholeComparatorEqual<T extends Matchable>imple
 			double max_sim = 0;
 			for (String other : shorter) {
 				double similarity = sim.calculate(element, other);
-				Math.max(similarity, max_sim);
-
-				if(this.comparisonLog != null){
-					this.comparisonLog.setComparatorName(getClass().getName());
-
-					this.comparisonLog.setRecord1Value(element);
-					this.comparisonLog.setRecord2Value(other);
-
-					this.comparisonLog.setSimilarity(Double.toString(similarity));
-				}
+				max_sim = Math.max(similarity, max_sim);
 			}
 			sum_similarities += max_sim;
 		}
-		return sum_similarities / longer.size();
+
+		double similarity = sum_similarities / longer.size();
+
+		if(this.comparisonLog != null){
+			this.comparisonLog.setComparatorName(getClass().getName());
+
+			this.comparisonLog.setRecord1Value(longer.toString());
+			this.comparisonLog.setRecord2Value(shorter.toString());
+
+			this.comparisonLog.setSimilarity(Double.toString(similarity));
+		}
+
+		return similarity;
 	}
 
 
