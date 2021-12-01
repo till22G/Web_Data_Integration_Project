@@ -62,7 +62,7 @@ public class IR_using_linear_combination_Miriam
 
 		// add comparators
 		//matchingRule.addComparator(new StringAttributeComparatorEqual<>(Species::getScientificName), 1);
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName), 1);
+		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"), 1);
 		//matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName), 1);
 		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames), 0.5);
 		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames), 1);

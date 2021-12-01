@@ -69,13 +69,13 @@ public class IR_using_linear_combination_bio_es
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_bio_es.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName), 0.25);
-		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName), 0.25);
-		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames), 0.5);
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames), 0.125);
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getOrders), 0.125);
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies), 0.125);
-		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates), 0.125);
+		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"), 0.25);
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"), 0.25);
+		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames, "commonNames"), 0.5);
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames, "commonNames"), 0.125);
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getOrders, "orders"), 0.125);
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies, "families"), 0.125);
+		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates, "states"), 0.125);
 		//matchingRule.addComparator(matchingRule, 0)
 		
 

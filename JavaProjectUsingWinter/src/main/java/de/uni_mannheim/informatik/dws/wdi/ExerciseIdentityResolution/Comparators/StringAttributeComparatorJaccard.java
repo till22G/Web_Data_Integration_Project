@@ -11,9 +11,6 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Species;
-import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparator;
-import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
@@ -21,53 +18,33 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccard
 
 import java.util.function.Function;
 
-public class StringAttributeComparatorJaccard<T extends Matchable> implements Comparator<T, Attribute> {
+public class StringAttributeComparatorJaccard<T extends Matchable> extends AbstractAttributeComparator<T, String> {
 
-	private static final long serialVersionUID = 1L;
-	private final Function<T, String> attributeExtractor;
-	private TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
-	
-	private ComparatorLogger comparisonLog;
+    private static final long serialVersionUID = 1L;
 
-	public StringAttributeComparatorJaccard(Function<T, String> attributeExtractor){
-		this.attributeExtractor = attributeExtractor;
-	}
+    private final TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
 
-	@Override
-	public double compare(
-			T record1,
-			T record2,
-			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-		
-		String s1 = attributeExtractor.apply(record1);
-		String s2 = attributeExtractor.apply(record2);
+    public StringAttributeComparatorJaccard(Function<T, String> attributeExtractor, String attributeName) {
+        super(attributeExtractor, attributeName);
+    }
 
-		if (s1==null || s2==null){
-			return 0.0;
-		}
+    @Override
+    public double compare(
+            T record1,
+            T record2,
+            Correspondence<Attribute, Matchable> schemaCorrespondences) {
 
-    	double similarity = sim.calculate(s1, s2);
-    	
-		if(this.comparisonLog != null){
-			this.comparisonLog.setComparatorName(getClass().getName());
-		
-			this.comparisonLog.setRecord1Value(s1);
-			this.comparisonLog.setRecord2Value(s2);
-    	
-			this.comparisonLog.setSimilarity(Double.toString(similarity));
-		}
-		
-		return similarity;
-	}
+        String s1 = attributeExtractor.apply(record1);
+        String s2 = attributeExtractor.apply(record2);
 
-	@Override
-	public ComparatorLogger getComparisonLog() {
-		return this.comparisonLog;
-	}
+        if (s1 == null || s2 == null) {
+            return 0.0;
+        }
 
-	@Override
-	public void setComparisonLog(ComparatorLogger comparatorLog) {
-		this.comparisonLog = comparatorLog;
-	}
+        double similarity = sim.calculate(s1, s2);
 
+        log(s1, s2, similarity);
+
+        return similarity;
+    }
 }

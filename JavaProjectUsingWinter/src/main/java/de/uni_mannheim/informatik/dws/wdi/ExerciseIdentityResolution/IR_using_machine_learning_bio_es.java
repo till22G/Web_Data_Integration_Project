@@ -86,12 +86,12 @@ public class IR_using_machine_learning_bio_es {
 //		matchingRule.addComparator(new MovieDirectorComparatorLowerCaseJaccard());
 //		matchingRule.addComparator(new MovieTitleComparatorLevenshtein());
 //		matchingRule.addComparator(new MovieTitleComparatorJaccard());
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName));
-		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName));
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames));
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getOrders));
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies));
-		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates));
+		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"));
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames, "commonNames"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getOrders, "orders"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies, "families"));
+		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates, "states"));
 
 		// train the matching rule's model
 		logger.info("*\tLearning matching rule\t*");

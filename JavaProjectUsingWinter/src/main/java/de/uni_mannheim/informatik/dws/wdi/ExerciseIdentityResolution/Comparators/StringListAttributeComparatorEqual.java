@@ -12,7 +12,6 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators;
 
 
-import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -22,60 +21,39 @@ import de.uni_mannheim.informatik.dws.winter.similarity.EqualsSimilarity;
 import java.util.List;
 import java.util.function.Function;
 
-public class StringListAttributeComparatorEqual<T extends Matchable>implements Comparator<T, Attribute>{
+public class StringListAttributeComparatorEqual<T extends Matchable> extends AbstractAttributeComparator<T, List<String>> {
 
-	private static final long serialVersionUID = 1L;
-	private final Function<T, List<String>> attributeExtractor;
-	private EqualsSimilarity<String> sim = new EqualsSimilarity<String>();
+    private static final long serialVersionUID = 1L;
+    private EqualsSimilarity<String> sim = new EqualsSimilarity<String>();
 
-	private ComparatorLogger comparisonLog;
+    public StringListAttributeComparatorEqual(Function<T, List<String>> attributeExtractor, String attributeName) {
+        super(attributeExtractor, attributeName);
+    }
 
-	public StringListAttributeComparatorEqual(Function<T, List<String>> attributeExtractor){
-		this.attributeExtractor = attributeExtractor;
-	}
+    @Override
+    public double compare(
+            T record1,
+            T record2,
+            Correspondence<Attribute, Matchable> schemaCorrespondences) {
 
-	@Override
-	public double compare(
-			T record1,
-			T record2,
-			Correspondence<Attribute, Matchable> schemaCorrespondences) {
+        List<String> s1 = attributeExtractor.apply(record1);
+        List<String> s2 = attributeExtractor.apply(record2);
 
-		List<String> s1 = attributeExtractor.apply(record1);
-		List<String> s2 = attributeExtractor.apply(record2);
+        if (s1 == null || s2 == null) {
+            return 0.0;
+        }
 
-		if (s1==null || s2==null){
-			return 0.0;
-		}
+        double max_sim = 0;
+        for (String element : s1) {
+            for (String other : s2) {
+                double similarity = sim.calculate(element, other);
+                max_sim = Math.max(similarity, max_sim);
+            }
+        }
 
-		double max_sim = 0;
-		for(String element : s1){
-			for (String other : s2) {
-				double similarity = sim.calculate(element, other);
-				max_sim = Math.max(similarity, max_sim);
+        log(s1.toString(), s2.toString(), max_sim);
 
-				if(this.comparisonLog != null){
-					this.comparisonLog.setComparatorName(getClass().getName());
-
-					this.comparisonLog.setRecord1Value(element);
-					this.comparisonLog.setRecord2Value(other);
-
-					this.comparisonLog.setSimilarity(Double.toString(similarity));
-				}
-			}
-		}
-
-		return max_sim;
-	}
-
-
-	@Override
-	public ComparatorLogger getComparisonLog() {
-		return this.comparisonLog;
-	}
-
-	@Override
-	public void setComparisonLog(ComparatorLogger comparatorLog) {
-		this.comparisonLog = comparatorLog;
-	}
+        return max_sim;
+    }
 
 }

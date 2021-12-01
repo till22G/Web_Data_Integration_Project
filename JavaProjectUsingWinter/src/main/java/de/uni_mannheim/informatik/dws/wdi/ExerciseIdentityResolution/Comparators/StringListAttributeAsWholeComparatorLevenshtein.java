@@ -11,8 +11,6 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators;
 
-import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparator;
-import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
@@ -21,17 +19,15 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimila
 import java.util.List;
 import java.util.function.Function;
 
-public class StringListAttributeAsWholeComparatorLevenshtein<T extends Matchable> implements Comparator<T, Attribute> {
+public class StringListAttributeAsWholeComparatorLevenshtein<T extends Matchable> extends AbstractAttributeComparator<T, List<String>> {
 
     private static final long serialVersionUID = 1L;
     private LevenshteinSimilarity sim = new LevenshteinSimilarity();
 
-    private ComparatorLogger comparisonLog;
-    private Function<T, List<String>> attributeExtractor;
-
-    public StringListAttributeAsWholeComparatorLevenshtein(Function<T, List<String>> attributeExtractor) {
-        this.attributeExtractor = attributeExtractor;
+    public StringListAttributeAsWholeComparatorLevenshtein(Function<T, List<String>> attributeExtractor, String attributeName) {
+        super(attributeExtractor, attributeName);
     }
+
 
     @Override
     public double compare(
@@ -70,26 +66,9 @@ public class StringListAttributeAsWholeComparatorLevenshtein<T extends Matchable
 
         double similarity = sum_similarities / longer.size();
 
-        if (this.comparisonLog != null) {
-            this.comparisonLog.setComparatorName(getClass().getName());
-
-            this.comparisonLog.setRecord1Value(longer.toString());
-            this.comparisonLog.setRecord2Value(shorter.toString());
-
-            this.comparisonLog.setSimilarity(Double.toString(similarity));
-        }
+        log(longer.toString(), shorter.toString(), similarity);
 
         return similarity;
-    }
-
-    @Override
-    public ComparatorLogger getComparisonLog() {
-        return this.comparisonLog;
-    }
-
-    @Override
-    public void setComparisonLog(ComparatorLogger comparatorLog) {
-        this.comparisonLog = comparatorLog;
     }
 
 }

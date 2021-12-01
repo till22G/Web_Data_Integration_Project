@@ -11,8 +11,6 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators;
 
-import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparator;
-import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
@@ -21,17 +19,15 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccard
 import java.util.List;
 import java.util.function.Function;
 
-public class StringListAttributeAsWholeComparatorJaccard<T extends Matchable> implements Comparator<T, Attribute> {
+public class StringListAttributeAsWholeComparatorJaccard<T extends Matchable> extends AbstractAttributeComparator<T, List<String>> {
 
     private static final long serialVersionUID = 1L;
-    private final Function<T, List<String>> attributeExtractor;
     private TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
 
-    private ComparatorLogger comparisonLog;
-
-    public StringListAttributeAsWholeComparatorJaccard(Function<T, List<String>> attributeExtractor) {
-        this.attributeExtractor = attributeExtractor;
+    public StringListAttributeAsWholeComparatorJaccard(Function<T, List<String>> attributeExtractor, String attributeName) {
+        super(attributeExtractor, attributeName);
     }
+
 
     @Override
     public double compare(
@@ -42,7 +38,7 @@ public class StringListAttributeAsWholeComparatorJaccard<T extends Matchable> im
         List<String> list1 = attributeExtractor.apply(record1);
         List<String> list2 = attributeExtractor.apply(record2);
 
-        if (list1==null || list2==null){
+        if (list1 == null || list2 == null) {
             return 0.0;
         }
 
@@ -51,26 +47,10 @@ public class StringListAttributeAsWholeComparatorJaccard<T extends Matchable> im
 
         double similarity = sim.calculate(s1, s2);
 
-        if(this.comparisonLog != null){
-            this.comparisonLog.setComparatorName(getClass().getName());
-
-            this.comparisonLog.setRecord1Value(s1);
-            this.comparisonLog.setRecord2Value(s2);
-
-            this.comparisonLog.setSimilarity(Double.toString(similarity));
-        }
+        log(s1, s2, similarity);
 
         return similarity;
     }
 
-    @Override
-    public ComparatorLogger getComparisonLog() {
-        return this.comparisonLog;
-    }
-
-    @Override
-    public void setComparisonLog(ComparatorLogger comparatorLog) {
-        this.comparisonLog = comparatorLog;
-    }
 
 }

@@ -52,8 +52,8 @@ public class IR_using_linear_combination
 		
 //		// add comparators
 //		matchingRule.addComparator(new MovieDateComparator2Years(), 0.5);
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName), 0.5);
-		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName), 0.5);
+		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"), 0.5);
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"), 0.5);
 //
 //		// create a blocker (blocking strategy)
 //		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new MovieBlockingKeyByTitleGenerator());
