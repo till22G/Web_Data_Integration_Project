@@ -61,9 +61,10 @@ public class IR_using_machine_learning {
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 
 		// add comparators
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName));
-		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName));
-		matchingRule.addComparator(new StringAttributeComparatorEqual<>(Species::getScientificName));
+
+		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"));
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"));
+
 
 //		// add comparators
 //		matchingRule.addComparator(new MovieTitleComparatorEqual());

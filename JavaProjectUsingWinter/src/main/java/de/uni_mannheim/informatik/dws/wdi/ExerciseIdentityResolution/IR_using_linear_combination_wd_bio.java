@@ -79,8 +79,8 @@ public class IR_using_linear_combination_wd_bio
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName), 0.5);
-		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName), 0.5);
+		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"), 0.5);
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"), 0.5);
 
 
 		
