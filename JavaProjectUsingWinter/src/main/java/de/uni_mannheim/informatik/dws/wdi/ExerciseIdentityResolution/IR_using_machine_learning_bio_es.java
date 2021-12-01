@@ -82,12 +82,16 @@ public class IR_using_machine_learning_bio_es {
 //		options[0] = "-Q";
 		
 		//Tree model
-		String modelType = "J48";
-		options[0] = "-U";
+//		String modelType = "J48";
+//		options[0] = "-U";
 
 		//DecisionTable
 //		String modelType = "DecisionTable";
 //		options[0] = "-R";
+		
+		//Random Forest
+		String modelType = "RandomForest";
+		options[0] = "-print";
 		
 		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_bio_es.csv", 1000, gsTraining);
