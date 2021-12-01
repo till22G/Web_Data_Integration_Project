@@ -9,6 +9,8 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeAsWholeComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeAsWholeComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeComparatorEqual;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Species;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.SpeciesXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -65,16 +67,16 @@ public class IR_using_linear_combination_bio_es
 		
 		// create a matching rule
 		LinearCombinationMatchingRule<Species, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.5);
+				0.01);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_bio_es.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName), 0.25);
-		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName), 0.25);
+		//matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName), 0.25);
+		//matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName), 0.25);
 		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames), 0.5);
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames), 0.125);
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getOrders), 0.125);
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies), 0.125);
+		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getCommonNames), 0.125);
+		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getOrders), 0.125);
+		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getFamilies), 0.125);
 		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates), 0.125);
 		//matchingRule.addComparator(matchingRule, 0)
 		
@@ -84,17 +86,13 @@ public class IR_using_linear_combination_bio_es
 		
 		
 		// create a blocker (blocking strategy)
-		
-		// Sample
-		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new MovieBlockingKeyByTitleGenerator());
-		
-		// our blocker
+		//Block by Scientific Names
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByScientificNameGenerator());
-		// errors in 
+		//Block by Categories
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryGenerator());
-		//
+		//Block by Categories and certain families
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryAndScientificNameGenerator());
-		//
+		//Block by Categories and certain Families and Scientific Name
 		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyCascadedGenerator());
 		
 		
@@ -139,7 +137,7 @@ public class IR_using_linear_combination_bio_es
 		Performance perfTest = evaluator.evaluateMatching(correspondences, gsTest);
 
 		// print the evaluation result
-		logger.info("Academy Awards <-> Actors");
+		logger.info("Biodiversity <-> Endangered Species");
 		logger.info(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		logger.info(String.format(

@@ -6,6 +6,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Speci
 import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyByScientificNameGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyCascadedGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator10Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDirectorComparatorJaccard;
@@ -19,6 +20,8 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeAsWholeComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeAsWholeComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeComparatorEqual;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.SpeciesXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
@@ -49,7 +52,7 @@ public class IR_using_machine_learning_bio_es {
 	 *
 	 */
 
-	private static final Logger logger = WinterLogManager.activateLogger("default");
+	private static final Logger logger = WinterLogManager.activateLogger("info");
 	
     public static void main( String[] args ) throws Exception
     {
@@ -68,30 +71,39 @@ public class IR_using_machine_learning_bio_es {
 //		matchingRule.exportTrainingData(dataBiodiversity, dataEndangeredSpecies, gsTraining, new File("output/features.csv"));
 
 		// create a matching rule
-//		String options[] = new String[] { "-S" };
-//		String modelType = "SimpleLogistic"; // use a logistic regression
-		String tree = "J48"; // new instance of tree
 		String options[] = new String[1];
+				
+		//Logistic Regression
+//		options[0] = "-S";
+//		String modelType = "SimpleLogistic";
+		
+		//LogitBoost
+//		String modelType = "LogitBoost";
+//		options[0] = "-Q";
+		
+		//Tree model
+		String modelType = "J48";
 		options[0] = "-U";
-		//String modelType = "RandomForest";
-		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.7, tree, options);
+
+		//DecisionTable
+//		String modelType = "DecisionTable";
+//		options[0] = "-R";
+		
+		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_bio_es.csv", 1000, gsTraining);
 		
-//		// add comparators
-//		matchingRule.addComparator(new MovieTitleComparatorEqual());
-//		matchingRule.addComparator(new MovieDateComparator2Years());
-//		matchingRule.addComparator(new MovieDateComparator10Years());
-//		matchingRule.addComparator(new MovieDirectorComparatorJaccard());
-//		matchingRule.addComparator(new MovieDirectorComparatorLevenshtein());
-//		matchingRule.addComparator(new MovieDirectorComparatorLowerCaseJaccard());
-//		matchingRule.addComparator(new MovieTitleComparatorLevenshtein());
-//		matchingRule.addComparator(new MovieTitleComparatorJaccard());
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName));
-		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName));
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames));
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getOrders));
-		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies));
+		// add comparators
+		//matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName));
+		//matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName));
+		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getCommonNames));
+		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getOrders));
+		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getOrders));
+		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getFamilies));
+		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getFamilies));
 		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates));
+
+
+		
 
 		// train the matching rule's model
 		logger.info("*\tLearning matching rule\t*");
@@ -100,8 +112,14 @@ public class IR_using_machine_learning_bio_es {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 
 		// create a blocker (blocking strategy)
+		//Block by Scientific Names
 		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByScientificNameGenerator());
-		//SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByYearGenerator(), 30);
+		//Block by Categories
+		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryGenerator());
+		//Block by Categories and certain families
+		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryAndScientificNameGenerator());
+		//Block by Categories and certain Families and Scientific Name
+		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyCascadedGenerator());
 
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking_bio_es.csv", 100);
 
@@ -128,7 +146,7 @@ public class IR_using_machine_learning_bio_es {
 		Performance perfTest = evaluator.evaluateMatching(correspondences, gsTest);
 
 		// print the evaluation result
-		logger.info("Academy Awards <-> Actors");
+		logger.info("Biodiversity <-> Endangered Species");
 		logger.info(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		logger.info(String.format(
