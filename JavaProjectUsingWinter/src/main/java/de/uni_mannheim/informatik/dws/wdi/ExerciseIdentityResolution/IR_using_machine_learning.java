@@ -55,20 +55,30 @@ public class IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_biodiversity_wikidata_train.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "Logistic"; // use a logistic regression
-		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
+		String options[] = new String[] { "" };
+		String modelType = "AdaBoostM1"; // use a logistic regression
+		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType,options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 
 		// add comparators
 
 		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"));
 		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"));
+		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getCategory, "Categories"));
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getCategory, "Categories"));
+
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames, "commonName"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames, "commonName"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getOrders, "Orders"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getOrders, "Orders"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies, "Families"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getFamilies, "Families"));
+
 
 
 //		// add comparators
 //		matchingRule.addComparator(new MovieTitleComparatorEqual());
-//		matchingRule.addComparator(new MovieDateComparator2Years());
+//		matchingRule.addComparator(new MovieDateComparator2Years());Y
 //		matchingRule.addComparator(new MovieDateComparator10Years());
 //		matchingRule.addComparator(new MovieDirectorComparatorJaccard());
 //		matchingRule.addComparator(new MovieDirectorComparatorLevenshtein());
