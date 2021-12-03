@@ -1,5 +1,6 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.solutions;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyByCategoryGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyByScientificNameGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyCascadedGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
@@ -58,19 +59,21 @@ public class IR_using_linear_combination_Miriam
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Species, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.1);
+				0.4);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_bio_es.csv", 1000, gsTest);
 
 		// add comparators
-		matchingRule.addComparator(new StringAttributeComparatorEqual<>(Species::getScientificName, "scientificName"), 1);
+		matchingRule.addComparator(new StringAttributeComparatorEqual<>(Species::getScientificName, "scientificName"), 0.4);
 		//matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"), 1);
 		//matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName), 1);
-		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames), 0.5);
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames, "commonNames"), 0.2);
 		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames), 1);
 		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames), 1);
 		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies), 0.125);
 		//matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getCommonNames), 1);
 		//matchingRule.addComparator(matchingRule, 0)
+		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getRegionNames, "regionNames"), 0.2);
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getCategory, "category"), 0.2);
 
 
 
