@@ -40,7 +40,7 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> imp
 	protected void initialiseDataset(DataSet<Species, Attribute> dataset) {
 		super.initialiseDataset(dataset);
 
-		// the schema is defined in the Movie class and not interpreted from the file, so we have to set the attributes manually
+		// the schema is defined in the Species class and not interpreted from the file, so we have to set the attributes manually
 		dataset.addAttribute(Species.SCIENTIFICNAME);
 		dataset.addAttribute(Species.COMMONNAMES);
 		dataset.addAttribute(Species.CATEGORY);
@@ -118,7 +118,6 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> imp
 
 		for (Species m : cluster.getRecords()) {
 			ids.add(m.getIdentifier());
-
 		}
 
 		Collections.sort(ids);

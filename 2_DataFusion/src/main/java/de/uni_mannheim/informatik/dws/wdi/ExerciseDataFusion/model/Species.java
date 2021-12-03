@@ -44,6 +44,12 @@ public class Species extends AbstractRecord<Attribute> implements Serializable, 
     private  List<String> regionNames;
     private  List<String> listingStatuses;
 
+	public Species(String id,
+				   String provenance){
+		this.id = id;
+		this.provenance = provenance;
+	}
+
     public Species(String id,
                    String provenance,
                    String scientificName,
