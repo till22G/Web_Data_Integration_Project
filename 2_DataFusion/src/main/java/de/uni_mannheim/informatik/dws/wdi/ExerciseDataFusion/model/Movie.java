@@ -19,6 +19,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.AttributeProvenancable;
 import org.apache.commons.lang3.StringUtils;
 
 import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
@@ -30,7 +31,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class Movie extends AbstractRecord<Attribute> implements Serializable {
+public class Movie extends AbstractRecord<Attribute> implements Serializable, AttributeProvenancable<Attribute> {
 
 	/*
 	 * example entry <movie> <id>academy_awards_2</id> <title>True Grit</title>

@@ -9,13 +9,13 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and limitations under the License.
  */
-package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
-
-import java.util.List;
+package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model;
 
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVDataSetFormatter;
+
+import java.util.List;
 
 public class SpeciesCSVFormatter extends CSVDataSetFormatter<Species, Attribute> {
 

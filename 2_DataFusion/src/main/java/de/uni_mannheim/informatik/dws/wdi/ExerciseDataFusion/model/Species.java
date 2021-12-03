@@ -19,12 +19,14 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.AttributeProvenancable;
 import org.apache.commons.lang3.StringUtils;
 
 import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+import org.w3c.dom.Attr;
 
-public class Species extends AbstractRecord<Attribute> implements Serializable  {
+public class Species extends AbstractRecord<Attribute> implements Serializable, AttributeProvenancable<Attribute> {
 
     protected String id;
     protected String provenance;
@@ -297,5 +299,10 @@ public class Species extends AbstractRecord<Attribute> implements Serializable  
 
     public void setListingStatuses(List<String> listingStatuses) {
         this.listingStatuses = listingStatuses;
+    }
+
+    @Override
+    public void setAttributeProvenance(Attribute attribute, Collection<String> provenance) {
+//        this.provenance.put(attribute, provenance);
     }
 }

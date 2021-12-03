@@ -9,12 +9,11 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and limitations under the License.
  */
-package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
+package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model;
 
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
 import java.util.List;
 
@@ -51,7 +50,7 @@ public class SpeciesXMLFormatter extends XMLFormatter<Species> {
 	}
 
 	protected Element createTextElementWithProvenance(String name,
-			String value, String provenance, Document doc) {
+													  String value, String provenance, Document doc) {
 		Element elem = createTextElement(name, value, doc);
 		elem.setAttribute("provenance", provenance);
 		return elem;
@@ -61,10 +60,9 @@ public class SpeciesXMLFormatter extends XMLFormatter<Species> {
 		Element actorRoot = doc.createElement(listName);
 
 		for (String element : elements) {
-			actorRoot.appendChild( createTextElement(elementName, element, doc));
+			actorRoot.appendChild(createTextElement(elementName, element, doc));
 		}
 
 		return actorRoot;
 	}
-
 }
