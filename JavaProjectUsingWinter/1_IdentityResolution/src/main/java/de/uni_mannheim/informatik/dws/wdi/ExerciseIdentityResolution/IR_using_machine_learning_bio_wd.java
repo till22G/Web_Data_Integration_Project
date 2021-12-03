@@ -5,6 +5,7 @@ import java.io.File;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Species;
 import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyByCategoryAndScientificNameGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyByScientificNameGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyCascadedGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator10Years;
@@ -53,10 +54,13 @@ public class IR_using_machine_learning_bio_wd {
 	 *
 	 */
 
-	private static final Logger logger = WinterLogManager.activateLogger("info");
+	private static final Logger logger = WinterLogManager.activateLogger("infoFile");
 	
     public static void main( String[] args ) throws Exception
     {
+    	
+    	System.out.println("************************* \n\n\n Run BIO WD excl scientific name \n\n\n *************************");
+    	
 		// loading data
 		logger.info("*\tLoading datasets\t*");
 		HashedDataSet<Species, Attribute> dataBiodiversity = new HashedDataSet<>();
@@ -72,7 +76,7 @@ public class IR_using_machine_learning_bio_wd {
 //		matchingRule.exportTrainingData(dataBiodiversity, dataWikidata, gsTraining, new File("output/features.csv"));
 
 		// create a matching rule
-		String options[] = new String[2];
+		String options[] = new String[1];
 				
 		//Logistic Regression
 //		options[0] = "-S";
@@ -84,7 +88,7 @@ public class IR_using_machine_learning_bio_wd {
 		
 		//Tree model
 //		String modelType = "J48";
-//		options[0] = "-U";
+//		options[0] = ""; //U unpruned , R reduced error pruning // only 2 leaves as soon as not stated using pruned tree
 
 		//DecisionTable
 //		String modelType = "DecisionTable";
@@ -92,19 +96,19 @@ public class IR_using_machine_learning_bio_wd {
 		
 		//Random Forest
 		String modelType = "RandomForest";
-		options[0] = "-attribute-importance";
-		options[1] = "-print";
+		options[0] = "-attribute-importance";  //mean impurity decrease method
+//		options[1] = "-print"; 
 
 		
-		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
+		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.4, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_bio_wd.csv", 1000, gsTraining);
 		
 		// add comparators
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"));
+//		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"));
 		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"));
 		matchingRule.addComparator(new StringAttributeComparatorEqual<>(Species::getCategory, "category"));
 		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getCommonNames, "commonNames"));
-		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getOrders, "orders"));
+//		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getOrders, "orders"));
 		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getOrders, "orders"));
 		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getFamilies, "families"));
 		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getFamilies, "families"));
@@ -124,9 +128,9 @@ public class IR_using_machine_learning_bio_wd {
 		//Block by Categories
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryGenerator());
 		//Block by Categories and certain families
-		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryAndScientificNameGenerator());
+		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryAndScientificNameGenerator());
 		//Block by Categories and certain Families and Scientific Name
-		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyCascadedGenerator());
+		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyCascadedGenerator());
 
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking_bio_wd.csv", 100);
 

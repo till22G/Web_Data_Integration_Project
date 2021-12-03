@@ -15,6 +15,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeAsWholeComparatorJaccard;
@@ -52,10 +53,13 @@ public class IR_using_machine_learning_bio_es {
 	 *
 	 */
 
-	private static final Logger logger = WinterLogManager.activateLogger("info");
+	private static final Logger logger = WinterLogManager.activateLogger("infoFile");
 	
     public static void main( String[] args ) throws Exception
     {
+    	
+    	System.out.println("************************* \n\n\n Run BIO ES incl scientific name \n\n\n *************************");
+    	
 		// loading data
 		logger.info("*\tLoading datasets\t*");
 		HashedDataSet<Species, Attribute> dataBiodiversity = new HashedDataSet<>();
@@ -91,20 +95,17 @@ public class IR_using_machine_learning_bio_es {
 		
 		//Random Forest
 		String modelType = "RandomForest";
-		options[0] = "-print";
+		options[0] = "-attribute-importance"; //mean impurity decrease method
+//		options[1] = "-print"; 
 		
 		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_bio_es.csv", 1000, gsTraining);
 		
 		// add comparators
-		//matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName));
-		//matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName));
+//		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"));
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"));
 		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getCommonNames, "commonNames"));
-		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getOrders, "orders"));
-		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getOrders, "orders"));
-		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getFamilies, "families"));
-		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getFamilies, "families"));
-		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates, "states"));
+		matchingRule.addComparator(new StringAttributeComparatorEqual<>(Species::getCategory, "category"));
 
 
 		
