@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.uni_mannheim.informatik.dws.wdi</groupId>
-	<artifactId>WDI_Project_Species</artifactId>
+	<artifactId>WDI_Project_Species_IR</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>WDI_Project_Species</name>
+	<name>WDI_Project_Species_IR</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
