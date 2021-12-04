@@ -1,0 +1,16 @@
+ID;Provenance;Scientific_Name;Common_Name;Label;Where_Listed;Different_From;Endemic_To;Region;Region_Name;Listing_Status;Category;Order;Family;State
+ES1476;FWS-EndangeredSpecies;Acipenser transmontanus;White sturgeon;;U.S.A. (ID, MT)|Canada (B.C.)|Kootenai R. system;;;1;Pacific;Endangered;Fish;;;
+ES1325;FWS-EndangeredSpecies;Trichechus manatus;West Indian Manatee;;Wherever found;;;4;Southeast;Threatened;Mammal;;;
+BIO29503;BiodiversityUSNationalParks;Numenius borealis;Eskimo Curlew;;;;;5;Northeast;Endangered;Bird;Charadriiformes;Scolopacidae;ME
+BIO39412;BiodiversityUSNationalParks;Sclerocactus wrightiae;Wright's Fishhook Cactus;;;;;6;Mountain Prairie;Endangered;Vascular Plant;Caryophyllales;Cactaceae;UT
+ES1457;FWS-EndangeredSpecies;Lepidochelys kempii;Kemp's ridley sea turtle;;Wherever found;;;2;Southwest;Endangered;Reptile;;;
+BIO12700;BiodiversityUSNationalParks;Cyprinodon diabolis;Devils Hole Pupfish;;;;;8;Pacific Southwest;Endangered;Fish;Cyprinodontiformes;Cyprinodontidae;CA|NV
+BIO24175;BiodiversityUSNationalParks;Leptonycteris nivalis;Mexican Long-Nosed Bat|Big Long-Nosed Bat;;;;;2;Southwest;Endangered;Mammal;Chiroptera;Phyllostomidae;AZ|TX|NM
+BIO02004;BiodiversityUSNationalParks;Anaxyrus canorus;Yosemite Toad;;;;;8;Pacific Southwest;Threatened;Amphibian;Anura;Bufonidae;CA
+BIO16826;BiodiversityUSNationalParks;Etheostoma percnurum;Duskytail Darter;;;;;4;Southeast;Endangered;Fish;Perciformes;Percidae;NC|TN
+BIO37045;BiodiversityUSNationalParks;Rana draytonii;California Red-Legged Frog;;;;;8;Pacific Southwest;Threatened;Amphibian;Anura;Ranidae;CA|NV
+ES1544;FWS-EndangeredSpecies;Myotis grisescens;Gray bat;;Wherever found;;;3;Midwest;Endangered;Mammal;;;
+BIO24625;BiodiversityUSNationalParks;Lilium occidentale;Western Lily;;;;;8;Pacific Southwest;Endangered;Vascular Plant;Liliales;Liliaceae;CA
+BIO01978;BiodiversityUSNationalParks;Anas wyvilliana;Koloa, Hawaiian Duck;;;;;1;Pacific;Endangered;Bird;Anseriformes;Anatidae;HI
+BIO07055;BiodiversityUSNationalParks;Campephilus principalis;Ivory-Billed Woodpecker;;;;;4;Southeast;Endangered;Bird;Piciformes;Picidae;SC|FL
+BIO04352;BiodiversityUSNationalParks;Astragalus phoenix;Ash Meadows Milkvetch|Ash Meadows Milk-Vetch;;;;;8;Pacific Southwest;Threatened;Vascular Plant;Fabales;Fabaceae;CA|NV
