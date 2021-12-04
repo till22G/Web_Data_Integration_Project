@@ -133,6 +133,7 @@ public class DataFusion_Main
 		double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
 
 		logger.info(String.format("Accuracy: %.2f", accuracy));
+
     }
     
     

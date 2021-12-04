@@ -59,8 +59,10 @@ public class SpeciesXMLFormatter extends XMLFormatter<Species> {
 	protected Element createListElement(String listName, String elementName, List<String> elements, Document doc) {
 		Element actorRoot = doc.createElement(listName);
 
-		for (String element : elements) {
-			actorRoot.appendChild(createTextElement(elementName, element, doc));
+		if (elements != null) {
+			for (String element : elements) {
+				actorRoot.appendChild(createTextElement(elementName, element, doc));
+			}
 		}
 
 		return actorRoot;
