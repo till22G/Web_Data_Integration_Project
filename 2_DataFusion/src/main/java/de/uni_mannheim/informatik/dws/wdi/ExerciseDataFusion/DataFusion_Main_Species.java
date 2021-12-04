@@ -15,6 +15,7 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Union;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
@@ -109,6 +110,15 @@ public class DataFusion_Main_Species {
         strategy.addAttributeFuser(Species.COMMONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getCommonNames, Species::setCommonNames, Species.COMMONNAMES), new ListEvaluationRule(Species::getCommonNames));
         strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new ShortestString<>(),Species::getCategory, Species::setCategory, Species.CATEGORY) , new StringEvaluationRule(Species::getCategory));
         strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Union<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRule(Species::getFamilies));
+        strategy.addAttributeFuser(Species.STATES, new GenericAttributeFuser<>(new Voting<>(), Species::getStates, Species::setStates, Species.STATES), new ListEvaluationRule(Species::getStates));
+        strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Voting<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRule(Species::getRegions));
+        strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Voting<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListEvaluationRule(Species::getRegionNames));
+        //strategy for listing status
+        strategy.addAttributeFuser(Species.WHERELISTED, new GenericAttributeFuser<>(new Voting<>(), Species::getWhereListed, Species::setWhereListed, Species.WHERELISTED), new ListEvaluationRule(Species::getRegions));
+        strategy.addAttributeFuser(Species.DIFFERENTFROM, new GenericAttributeFuser<>(new Voting<>(), Species::getDifferentFrom, Species::setDifferentFrom, Species.DIFFERENTFROM), new ListEvaluationRule(Species::getDifferentFrom));
+        strategy.addAttributeFuser(Species.ENDEMICTO, new GenericAttributeFuser<>(new Voting<>(), Species::getEndemicTo, Species::setEndemicTo, Species.ENDEMICTO), new ListEvaluationRule(Species::getEndemicTo));
+
+
 
         // create the fusion engine
         DataFusionEngine<Species, Attribute> engine = new DataFusionEngine<>(strategy);
