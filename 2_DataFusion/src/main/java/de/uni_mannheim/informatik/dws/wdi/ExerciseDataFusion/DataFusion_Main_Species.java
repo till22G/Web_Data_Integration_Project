@@ -116,9 +116,9 @@ public class DataFusion_Main_Species {
         strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Union<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRule(Species::getRegions));
         strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListEvaluationRule(Species::getRegionNames));
         strategy.addAttributeFuser(Species.LISTINGSTATUSES, new GenericAttributeFuser<>(new Union<>(), Species::getListingStatuses, Species::setListingStatuses, Species.LISTINGSTATUSES), new ListEvaluationRule(Species::getListingStatuses));
-        //xstrategy.addAttributeFuser(Species.WHERELISTED, new GenericAttributeFuser<>(new Union<>(), Species::getWhereListed, Species::setWhereListed, Species.WHERELISTED), new ListEvaluationRule(Species::getWhereListed));
-        //strategy.addAttributeFuser(Species.DIFFERENTFROM, new GenericAttributeFuser<>(new Union<>(), Species::getDifferentFrom, Species::setDifferentFrom, Species.DIFFERENTFROM), new ListEvaluationRule(Species::getDifferentFrom));
-        //strategy.addAttributeFuser(Species.ENDEMICTO, new GenericAttributeFuser<>(new Union<>(), Species::getEndemicTo, Species::setEndemicTo, Species.ENDEMICTO), new ListEvaluationRule(Species::getEndemicTo));
+        strategy.addAttributeFuser(Species.WHERELISTED, new GenericAttributeFuser<>(new Union<>(), Species::getWhereListed, Species::setWhereListed, Species.WHERELISTED), new ListEvaluationRule(Species::getWhereListed));
+        strategy.addAttributeFuser(Species.DIFFERENTFROM, new GenericAttributeFuser<>(new Union<>(), Species::getDifferentFrom, Species::setDifferentFrom, Species.DIFFERENTFROM), new ListEvaluationRule(Species::getDifferentFrom));
+        strategy.addAttributeFuser(Species.ENDEMICTO, new GenericAttributeFuser<>(new Union<>(), Species::getEndemicTo, Species::setEndemicTo, Species.ENDEMICTO), new ListEvaluationRule(Species::getEndemicTo));
 
         // create the fusion engine
         DataFusionEngine<Species, Attribute> engine = new DataFusionEngine<>(strategy);
