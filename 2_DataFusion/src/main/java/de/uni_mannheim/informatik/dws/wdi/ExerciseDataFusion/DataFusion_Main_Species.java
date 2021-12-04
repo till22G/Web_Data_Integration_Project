@@ -103,7 +103,7 @@ public class DataFusion_Main_Species {
 
         // define the fusion strategy
         DataFusionStrategy<Species, Attribute> strategy = new DataFusionStrategy<>(new SpeciesXMLReader());
-        // write debug results to file ?????????????????????????????
+        // write debug results to file
         //strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 
         // add attribute fusers
