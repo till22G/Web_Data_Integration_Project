@@ -15,6 +15,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringListAttributeAsWholeComparatorJaccard;
@@ -74,8 +75,8 @@ public class IR_using_machine_learning_bio_es {
 		String options[] = new String[1];
 				
 		//Logistic Regression
-//		options[0] = "-S";
-//		String modelType = "SimpleLogistic";
+		options[0] = "-S";
+		String modelType = "SimpleLogistic";
 		
 		//LogitBoost
 //		String modelType = "LogitBoost";
@@ -90,21 +91,25 @@ public class IR_using_machine_learning_bio_es {
 //		options[0] = "-R";
 		
 		//Random Forest
-		String modelType = "RandomForest";
-		options[0] = "-print";
+//		String modelType = "RandomForest";
+//		options[0] = "-attribute-importance";
+//		options[0] = "-print";
 		
-		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
+		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.93, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_bio_es.csv", 1000, gsTraining);
 		
 		// add comparators
-		//matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName));
-		//matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName));
+		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"));
+		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"));
+		
+		matchingRule.addComparator(new StringAttributeComparatorEqual<>(Species::getCategory, "Category"));
+		
 		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getCommonNames, "commonNames"));
-		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getOrders, "orders"));
-		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getOrders, "orders"));
-		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getFamilies, "families"));
-		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getFamilies, "families"));
-		matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates, "states"));
+//		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getCommonNames, "commonNames"));
+//		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames, "commonNames"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames, "commonNames"));
+		
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getRegionNames, "regionNames"));
 
 
 		
@@ -134,6 +139,9 @@ public class IR_using_machine_learning_bio_es {
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Species, Attribute>> correspondences = engine.runIdentityResolution(
 				dataBiodiversity, dataEndangeredSpecies, null, matchingRule, blocker);
+		
+		// Create a top-1 global matching
+		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/biodiversity_endangeredSpecies_correspondences.csv"), correspondences);

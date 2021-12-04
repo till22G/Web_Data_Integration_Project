@@ -72,7 +72,7 @@ public class IR_using_machine_learning_bio_wd {
 //		matchingRule.exportTrainingData(dataBiodiversity, dataWikidata, gsTraining, new File("output/features.csv"));
 
 		// create a matching rule
-		String options[] = new String[2];
+		String options[] = new String[1];
 				
 		//Logistic Regression
 //		options[0] = "-S";
@@ -93,23 +93,27 @@ public class IR_using_machine_learning_bio_wd {
 		//Random Forest
 		String modelType = "RandomForest";
 		options[0] = "-attribute-importance";
-		options[1] = "-print";
+//		options[1] = "-print";
 
 		
-		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
+		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.91, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_bio_wd.csv", 1000, gsTraining);
 		
 		// add comparators
 		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"));
 		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"));
-//		matchingRule.addComparator(new StringAttributeComparatorEqual<>(Species::getCategory));
-		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getCommonNames, "commonNames"));
-		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getOrders, "orders"));
-		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getOrders, "orders"));
-		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getFamilies, "families"));
-		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getFamilies, "families"));
 		
-
+//		matchingRule.addComparator(new StringAttributeComparatorEqual<>(Species::getCategory, "category"));
+		
+		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getCommonNames, "commonNames"));
+//		matchingRule.addComparator(new StringListAttributeComparatorJaccard<>(Species::getCommonNames, "commonNames"));
+//		matchingRule.addComparator(new StringListAttributeAsWholeComparatorLevenshtein<>(Species::getCommonNames, "commonNames"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getCommonNames, "commonNames"));
+		
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getOrders, "orders"));
+		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getOrders, "orders"));
+		matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies, "families"));
+		matchingRule.addComparator(new StringListAttributeComparatorLevenshtein<>(Species::getFamilies, "families"));
 		
 
 		// train the matching rule's model
@@ -137,6 +141,9 @@ public class IR_using_machine_learning_bio_wd {
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Species, Attribute>> correspondences = engine.runIdentityResolution(
 				dataBiodiversity, dataWikidata, null, matchingRule, blocker);
+		
+		// Create a top-1 global matching
+		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/wikidata_biodiversity_correspondences.csv"), correspondences);
