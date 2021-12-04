@@ -16,6 +16,8 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Union;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
@@ -57,9 +59,9 @@ public class DataFusion_Main_Species {
 
         // Maintain Provenance
         // Scores (e.g. from rating)
-        ds1.setScore(1.0);
-        ds2.setScore(2.0);
-        ds3.setScore(3.0);
+        ds1.setScore(3.0);
+        ds2.setScore(1.0);
+        ds3.setScore(2.0);
 
         // Date (e.g. last update)
         DateTimeFormatter formatter = new DateTimeFormatterBuilder()
@@ -98,7 +100,10 @@ public class DataFusion_Main_Species {
         strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 
         // add attribute fusers
+        strategy.addAttributeFuser(Species.SCIENTIFICNAME, new GenericAttributeFuser<>(new FavourSources<>(), Species::getScientificName, Species::setScientificName, Species.SCIENTIFICNAME), new StringEvaluationRule(Species::getScientificName));
         strategy.addAttributeFuser(Species.COMMONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getCommonNames, Species::setCommonNames, Species.COMMONNAMES), new ListEvaluationRule(Species::getCommonNames));
+        strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new ShortestString<>(),Species::getCategory, Species::setCategory, Species.CATEGORY) , new StringEvaluationRule(Species::getCategory));
+        strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Union<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRule(Species::getFamilies));
 
         // create the fusion engine
         DataFusionEngine<Species, Attribute> engine = new DataFusionEngine<>(strategy);
