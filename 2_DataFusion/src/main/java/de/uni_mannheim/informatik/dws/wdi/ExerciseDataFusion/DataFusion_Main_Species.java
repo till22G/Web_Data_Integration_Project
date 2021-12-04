@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
-import java.util.List;
 import java.util.Locale;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.*;
@@ -18,7 +17,6 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Union;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
@@ -26,8 +24,6 @@ import de.uni_mannheim.informatik.dws.winter.model.RecordGroupFactory;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import org.slf4j.Logger;
-
-import javax.swing.*;
 
 public class DataFusion_Main_Species {
     /*
@@ -107,15 +103,15 @@ public class DataFusion_Main_Species {
         //strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 
         // add attribute fusers
-        strategy.addAttributeFuser(Species.SCIENTIFICNAME, new GenericAttributeFuser<>(new FavourSources<>(), Species::getScientificName, Species::setScientificName, Species.SCIENTIFICNAME), new StringEvaluationRule(Species::getScientificName));
-        strategy.addAttributeFuser(Species.COMMONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getCommonNames, Species::setCommonNames, Species.COMMONNAMES), new ListEvaluationRule(Species::getCommonNames));
-        strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new Voting<>(),Species::getCategory, Species::setCategory, Species.CATEGORY) , new StringEvaluationRule(Species::getCategory));
-        strategy.addAttributeFuser(Species.ORDERS, new GenericAttributeFuser<>(new Union<>(), Species::getOrders, Species::setOrders, Species.ORDERS), new ListEvaluationRule(Species::getOrders));
-        strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Union<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRule(Species::getFamilies));
-        strategy.addAttributeFuser(Species.STATES, new GenericAttributeFuser<>(new Union<>(), Species::getStates, Species::setStates, Species.STATES), new ListEvaluationRule(Species::getStates));
-        strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Union<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRule(Species::getRegions));
-        strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListEvaluationRule(Species::getRegionNames));
-        strategy.addAttributeFuser(Species.LISTINGSTATUSES, new GenericAttributeFuser<>(new Union<>(), Species::getListingStatuses, Species::setListingStatuses, Species.LISTINGSTATUSES), new ListEvaluationRule(Species::getListingStatuses));
+        strategy.addAttributeFuser(Species.SCIENTIFICNAME, new GenericAttributeFuser<>(new FavourSources<>(), Species::getScientificName, Species::setScientificName, Species.SCIENTIFICNAME), new StringEvaluationRuleJaccard(Species::getScientificName));
+        strategy.addAttributeFuser(Species.COMMONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getCommonNames, Species::setCommonNames, Species.COMMONNAMES), new ListEvaluationRuleEqual(Species::getCommonNames));
+        strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new Voting<>(),Species::getCategory, Species::setCategory, Species.CATEGORY) , new StringEvaluationRuleJaccard(Species::getCategory));
+        strategy.addAttributeFuser(Species.ORDERS, new GenericAttributeFuser<>(new Union<>(), Species::getOrders, Species::setOrders, Species.ORDERS), new ListEvaluationRuleEqual(Species::getOrders));
+        strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Union<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRuleEqual(Species::getFamilies));
+        strategy.addAttributeFuser(Species.STATES, new GenericAttributeFuser<>(new Union<>(), Species::getStates, Species::setStates, Species.STATES), new ListEvaluationRuleEqual(Species::getStates));
+        strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Union<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRuleEqual(Species::getRegions));
+        strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListEvaluationRuleEqual(Species::getRegionNames));
+        strategy.addAttributeFuser(Species.LISTINGSTATUSES, new GenericAttributeFuser<>(new Union<>(), Species::getListingStatuses, Species::setListingStatuses, Species.LISTINGSTATUSES), new ListEvaluationRuleEqual(Species::getListingStatuses));
         //xstrategy.addAttributeFuser(Species.WHERELISTED, new GenericAttributeFuser<>(new Union<>(), Species::getWhereListed, Species::setWhereListed, Species.WHERELISTED), new ListEvaluationRule(Species::getWhereListed));
         //strategy.addAttributeFuser(Species.DIFFERENTFROM, new GenericAttributeFuser<>(new Union<>(), Species::getDifferentFrom, Species::setDifferentFrom, Species.DIFFERENTFROM), new ListEvaluationRule(Species::getDifferentFrom));
         //strategy.addAttributeFuser(Species.ENDEMICTO, new GenericAttributeFuser<>(new Union<>(), Species::getEndemicTo, Species::setEndemicTo, Species.ENDEMICTO), new ListEvaluationRule(Species::getEndemicTo));
