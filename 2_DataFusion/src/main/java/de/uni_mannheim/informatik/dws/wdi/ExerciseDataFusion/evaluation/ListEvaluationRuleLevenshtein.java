@@ -7,7 +7,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinEditDistance;
 
 import java.util.HashSet;
 import java.util.List;
@@ -18,7 +18,7 @@ public class ListEvaluationRuleLevenshtein extends EvaluationRule<Species, Attri
 
 	private final Function<Species, List<String>> valueGetter;
 
-	SimilarityMeasure<String> sim = new LevenshteinSimilarity();
+	SimilarityMeasure<String> sim = new LevenshteinEditDistance();
 	public ListEvaluationRuleLevenshtein(Function<Species, List<String>> valueGetter) {
 		this.valueGetter = valueGetter;
 	}
@@ -34,14 +34,14 @@ public class ListEvaluationRuleLevenshtein extends EvaluationRule<Species, Attri
 			Set<String> set1 = new HashSet<>(valueGetter.apply(record1));
 			Set<String> set2 = new HashSet<>(valueGetter.apply(record2));
 
-			double max_sim = 0.0;
+			double complete_sim = 0.0;
 			for(String elem : set1){
 				for(String other : set2){
 					double similarity = sim.calculate(elem, other);
-					max_sim = Math.max(max_sim, similarity);
+					complete_sim = complete_sim + similarity;
 				}
 			}
-			return max_sim >= 0.9;
+			return complete_sim <= 1;
 		}
 
 	}

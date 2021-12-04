@@ -19,6 +19,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinEditDistance;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
 import java.util.function.Function;
@@ -26,7 +27,7 @@ import java.util.function.Function;
 
 public class StringEvaluationRuleLevenshtein extends EvaluationRule<Species, Attribute> {
 
-	SimilarityMeasure<String> sim = new LevenshteinSimilarity();
+	SimilarityMeasure<String> sim = new LevenshteinEditDistance();
 	private final Function<Species, String> valueGetter;
 
 	public StringEvaluationRuleLevenshtein(Function<Species, String> valueGetter) {
@@ -40,10 +41,8 @@ public class StringEvaluationRuleLevenshtein extends EvaluationRule<Species, Att
 		else if(valueGetter.apply(record1)==null ^ valueGetter.apply(record2)==null)
 			return false;
 		else{
-			return sim.calculate(valueGetter.apply(record1), valueGetter.apply(record2)) >= 0.9;
+			return sim.calculate(valueGetter.apply(record1), valueGetter.apply(record2)) <= 1;
 		}
-
-
 	}
 
 	/* (non-Javadoc)

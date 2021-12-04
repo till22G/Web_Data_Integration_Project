@@ -3,8 +3,6 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.solutions;
 import java.io.File;
 
 import org.slf4j.Logger;
-
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
@@ -66,17 +64,17 @@ public class IR_using_linear_combination
 		matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.7);
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		//StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
+		//blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<Movie, Attribute> engine = new MatchingEngine<>();
 
 		logger.info("*\tRunning identity resolution\t*");
 		// Execute the matching
-		Processable<Correspondence<Movie, Attribute>> correspondences = engine.runIdentityResolution(
-				dataAcademyAwards, dataActors, null, matchingRule,
-				blocker);
+		//Processable<Correspondence<Movie, Attribute>> correspondences = engine.runIdentityResolution(
+		//		dataAcademyAwards, dataActors, null, matchingRule,
+		//		blocker);
 
 		
 

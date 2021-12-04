@@ -8,7 +8,6 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Sp
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Species;
 import org.slf4j.Logger;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.SpeciesXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
