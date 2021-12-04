@@ -113,8 +113,9 @@ public class DataFusion_Main_Species {
         strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListEvaluationRuleEqual(Species::getRegionNames));
         strategy.addAttributeFuser(Species.LISTINGSTATUSES, new GenericAttributeFuser<>(new Union<>(), Species::getListingStatuses, Species::setListingStatuses, Species.LISTINGSTATUSES), new ListEvaluationRuleEqual(Species::getListingStatuses));
         //xstrategy.addAttributeFuser(Species.WHERELISTED, new GenericAttributeFuser<>(new Union<>(), Species::getWhereListed, Species::setWhereListed, Species.WHERELISTED), new ListEvaluationRule(Species::getWhereListed));
-        //strategy.addAttributeFuser(Species.DIFFERENTFROM, new GenericAttributeFuser<>(new Union<>(), Species::getDifferentFrom, Species::setDifferentFrom, Species.DIFFERENTFROM), new ListEvaluationRule(Species::getDifferentFrom));
-        //strategy.addAttributeFuser(Species.ENDEMICTO, new GenericAttributeFuser<>(new Union<>(), Species::getEndemicTo, Species::setEndemicTo, Species.ENDEMICTO), new ListEvaluationRule(Species::getEndemicTo));
+        strategy.addAttributeFuser(Species.WHERELISTED, new GenericAttributeFuser<>(new Union<>(), Species::getWhereListed, Species::setWhereListed, Species.WHERELISTED), new ListEvaluationRuleEqual(Species::getWhereListed));
+        strategy.addAttributeFuser(Species.DIFFERENTFROM, new GenericAttributeFuser<>(new Union<>(), Species::getDifferentFrom, Species::setDifferentFrom, Species.DIFFERENTFROM), new ListEvaluationRuleEqual(Species::getDifferentFrom));
+        strategy.addAttributeFuser(Species.ENDEMICTO, new GenericAttributeFuser<>(new Union<>(), Species::getEndemicTo, Species::setEndemicTo, Species.ENDEMICTO), new ListEvaluationRuleEqual(Species::getEndemicTo));
 
         // create the fusion engine
         DataFusionEngine<Species, Attribute> engine = new DataFusionEngine<>(strategy);
