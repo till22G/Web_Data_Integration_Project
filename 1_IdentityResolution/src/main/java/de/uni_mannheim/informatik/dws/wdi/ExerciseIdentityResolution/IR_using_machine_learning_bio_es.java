@@ -4,17 +4,8 @@ import java.io.File;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Species;
 import org.slf4j.Logger;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyByScientificNameGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyCascadedGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator10Years;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDirectorComparatorJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDirectorComparatorLevenshtein;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDirectorComparatorLowerCaseJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorEqual;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorLevenshtein;
@@ -26,6 +17,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.SpeciesXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.algorithms.MaximumBipartiteMatchingAlgorithm;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
@@ -75,8 +67,8 @@ public class IR_using_machine_learning_bio_es {
 		String options[] = new String[1];
 				
 		//Logistic Regression
-		options[0] = "-S";
-		String modelType = "SimpleLogistic";
+//		options[0] = "-S";
+//		String modelType = "SimpleLogistic";
 		
 		//LogitBoost
 //		String modelType = "LogitBoost";
@@ -91,8 +83,8 @@ public class IR_using_machine_learning_bio_es {
 //		options[0] = "-R";
 		
 		//Random Forest
-//		String modelType = "RandomForest";
-//		options[0] = "-attribute-importance";
+		String modelType = "RandomForest";
+		options[0] = "-attribute-importance";
 //		options[0] = "-print";
 		
 		WekaMatchingRule<Species, Attribute> matchingRule = new WekaMatchingRule<>(0.93, modelType, options);
@@ -142,6 +134,11 @@ public class IR_using_machine_learning_bio_es {
 		
 		// Create a top-1 global matching
 		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
+		
+		// Alternative: Create a maximum-weight, bipartite matching
+//		MaximumBipartiteMatchingAlgorithm<Species,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
+//		maxWeight.run();
+//		correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/biodiversity_endangeredSpecies_correspondences.csv"), correspondences);

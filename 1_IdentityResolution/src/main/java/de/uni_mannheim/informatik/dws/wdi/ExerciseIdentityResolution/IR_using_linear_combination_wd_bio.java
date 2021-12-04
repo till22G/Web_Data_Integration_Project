@@ -4,6 +4,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Sp
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyByCategoryGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyByScientificNameGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.SpeciesBlockingKeyCascadedGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.StringAttributeComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Species;
@@ -51,19 +52,6 @@ public class IR_using_linear_combination_wd_bio
 		new SpeciesXMLReader().loadFromXML(new File("data/input/wd_species.xml"), "/Animals_And_Plants/Species", dataWikidata);
 		HashedDataSet<Species, Attribute> dataBiodiversity = new HashedDataSet<>();
 		new SpeciesXMLReader().loadFromXML(new File("data/input/biodiversity.xml"), "/Animals_And_Plants/Species", dataBiodiversity);
-	
-
-		// test of normalizer
-		/*HashedDataSet<Species, Attribute> dataFinalSchema = new HashedDataSet<>();
-		new SpeciesXMLReader().loadFromXML(new File("data/input/Final_schema_XML.xml"), "/Animals_And_Plants/Species", dataFinalSchema);
-		
-		
-		/*for(Species species : dataFinalSchema.get()) {
-			System.out.println(species.getIdentifier());
-			System.out.println(species.getScientificName());
-			System.out.println(species.getCommonNames());
-			System.out.println(species.getCategories());
-		}*/
 		
 		
 		
@@ -74,32 +62,24 @@ public class IR_using_linear_combination_wd_bio
 				"data/goldstandard/gs_biodiversity_wikidata_full.csv"));
 		
 		// create a matching rule
-		LinearCombinationMatchingRule<Species, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.7);
+		LinearCombinationMatchingRule<Species, Attribute> matchingRule = new LinearCombinationMatchingRule<>(1);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"), 0.5);
-		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"), 0.5);
-
-
-		
-		
+		matchingRule.addComparator(new StringAttributeComparatorEqual<>(Species::getScientificName, "scientificName"), 1);
+//		matchingRule.addComparator(new StringAttributeComparatorJaccard<>(Species::getScientificName, "scientificName"), 0.5);
+//		matchingRule.addComparator(new StringAttributeComparatorLevenshtein<>(Species::getScientificName, "scientificName"), 0.5);
 		
 		// create a blocker (blocking strategy)
-		
-		// Sample
-		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new MovieBlockingKeyByTitleGenerator());
-		
-		// our blocker
-		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByScientificNameGenerator());
-		// errors in 
+		//Block by Scientific Names
+		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByScientificNameGenerator());
+		//Block by Categories
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryGenerator());
-		//
+		//Block by Categories and certain families
 		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByCategoryAndScientificNameGenerator());
-		//
-		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyCascadedGenerator());
-		
+		//Block by Categories and certain Families and Scientific Name
+		//StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyCascadedGenerator());
+				
 		
 		
 		
@@ -126,10 +106,10 @@ public class IR_using_linear_combination_wd_bio
 		// Create a top-1 global matching
 		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 //
-////		 Alternative: Create a maximum-weight, bipartite matching
-////		 MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
-////		 maxWeight.run();
-////		 correspondences = maxWeight.getResult();
+//		Alternative: Create a maximum-weight, bipartite matching
+//	 	MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
+//		maxWeight.run();
+//		correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/wikidata_biodiversity_correspondences.csv"), correspondences);
