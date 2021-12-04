@@ -14,22 +14,30 @@ import java.util.function.Function;
 
 public class ListEvaluationRule extends EvaluationRule<Species, Attribute> {
 
-    private final Function<Species, List<String>> valueGetter;
+	private final Function<Species, List<String>> valueGetter;
 
-    public ListEvaluationRule(Function<Species, List<String>> valueGetter) {
-        this.valueGetter = valueGetter;
-    }
+	public ListEvaluationRule(Function<Species, List<String>> valueGetter) {
+		this.valueGetter = valueGetter;
+	}
 
-    @Override
-    public boolean isEqual(Species record1, Species record2, Attribute schemaElement) {
-        Set<String> set1 = new HashSet<>(valueGetter.apply(record1));
-        Set<String> set2 = new HashSet<>(valueGetter.apply(record2));
+	@Override
+	public boolean isEqual(Species record1, Species record2, Attribute schemaElement) {
 
-        return set1.containsAll(set2) && set2.containsAll(set1);
-    }
+		if (valueGetter.apply(record1) == null && valueGetter.apply(record2) == null) {
+			return true;
+		} else if (valueGetter.apply(record1) == null ^ valueGetter.apply(record2) == null) {
+			return false;
+		} else {
+			Set<String> set1 = new HashSet<>(valueGetter.apply(record1));
+			Set<String> set2 = new HashSet<>(valueGetter.apply(record2));
 
-    @Override
-    public boolean isEqual(Species record1, Species record2, Correspondence<Attribute, Matchable> schemaCorrespondence) {
-        return isEqual(record1, record2, (Attribute) null);
-    }
+			return set1.containsAll(set2) && set2.containsAll(set1);
+		}
+
+	}
+
+	@Override
+	public boolean isEqual(Species record1, Species record2, Correspondence<Attribute, Matchable> schemaCorrespondence) {
+		return isEqual(record1, record2, (Attribute) null);
+	}
 }

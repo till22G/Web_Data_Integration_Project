@@ -111,7 +111,7 @@ public class DataFusion_Main_Species {
         strategy.addAttributeFuser(Species.COMMONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getCommonNames, Species::setCommonNames, Species.COMMONNAMES), new ListEvaluationRule(Species::getCommonNames));
         strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new Voting<>(),Species::getCategory, Species::setCategory, Species.CATEGORY) , new StringEvaluationRule(Species::getCategory));
         strategy.addAttributeFuser(Species.ORDERS, new GenericAttributeFuser<>(new Union<>(), Species::getOrders, Species::setOrders, Species.ORDERS), new ListEvaluationRule(Species::getOrders));
-        //strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Union<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRule(Species::getFamilies));
+        strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Union<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRule(Species::getFamilies));
         strategy.addAttributeFuser(Species.STATES, new GenericAttributeFuser<>(new Union<>(), Species::getStates, Species::setStates, Species.STATES), new ListEvaluationRule(Species::getStates));
         strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Union<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRule(Species::getRegions));
         strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListEvaluationRule(Species::getRegionNames));

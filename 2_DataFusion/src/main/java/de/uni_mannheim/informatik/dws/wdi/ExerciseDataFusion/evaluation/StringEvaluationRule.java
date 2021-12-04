@@ -20,7 +20,9 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Function;
 
 
@@ -36,7 +38,15 @@ public class StringEvaluationRule extends EvaluationRule<Species, Attribute> {
 	@Override
 	public boolean isEqual(Species record1, Species record2, Attribute schemaElement) {
 		//all the tokens should be there, but the order does not matter
-		return sim.calculate(valueGetter.apply(record1), valueGetter.apply(record2)) == 1.0;
+		if(valueGetter.apply(record1)==null && valueGetter.apply(record2)==null)
+			return true;
+		else if(valueGetter.apply(record1)==null ^ valueGetter.apply(record2)==null)
+			return false;
+		else{
+			return sim.calculate(valueGetter.apply(record1), valueGetter.apply(record2)) == 1.0;
+		}
+
+
 	}
 
 	/* (non-Javadoc)
