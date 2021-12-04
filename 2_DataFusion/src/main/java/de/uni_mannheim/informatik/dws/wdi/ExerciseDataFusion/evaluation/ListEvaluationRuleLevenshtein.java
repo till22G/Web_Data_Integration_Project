@@ -6,17 +6,20 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Function;
 
-public class ListEvaluationRule extends EvaluationRule<Species, Attribute> {
+public class ListEvaluationRuleLevenshtein extends EvaluationRule<Species, Attribute> {
 
 	private final Function<Species, List<String>> valueGetter;
 
-	public ListEvaluationRule(Function<Species, List<String>> valueGetter) {
+	SimilarityMeasure<String> sim = new LevenshteinSimilarity();
+	public ListEvaluationRuleLevenshtein(Function<Species, List<String>> valueGetter) {
 		this.valueGetter = valueGetter;
 	}
 
@@ -31,7 +34,14 @@ public class ListEvaluationRule extends EvaluationRule<Species, Attribute> {
 			Set<String> set1 = new HashSet<>(valueGetter.apply(record1));
 			Set<String> set2 = new HashSet<>(valueGetter.apply(record2));
 
-			return set1.containsAll(set2) && set2.containsAll(set1);
+			double max_sim = 0.0;
+			for(String elem : set1){
+				for(String other : set2){
+					double similarity = sim.calculate(elem, other);
+					max_sim = Math.max(max_sim, similarity);
+				}
+			}
+			return max_sim >= 0.9;
 		}
 
 	}

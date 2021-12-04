@@ -11,39 +11,36 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
+import com.wcohen.ss.Levenstein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Species;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 import java.util.function.Function;
 
 
-public class StringEvaluationRule extends EvaluationRule<Species, Attribute> {
+public class StringEvaluationRuleLevenshtein extends EvaluationRule<Species, Attribute> {
 
-	SimilarityMeasure<String> sim = new TokenizingJaccardSimilarity();
+	SimilarityMeasure<String> sim = new LevenshteinSimilarity();
 	private final Function<Species, String> valueGetter;
 
-	public StringEvaluationRule(Function<Species, String> valueGetter) {
+	public StringEvaluationRuleLevenshtein(Function<Species, String> valueGetter) {
 		this.valueGetter = valueGetter;
 	}
 
 	@Override
 	public boolean isEqual(Species record1, Species record2, Attribute schemaElement) {
-		//all the tokens should be there, but the order does not matter
 		if(valueGetter.apply(record1)==null && valueGetter.apply(record2)==null)
 			return true;
 		else if(valueGetter.apply(record1)==null ^ valueGetter.apply(record2)==null)
 			return false;
 		else{
-			return sim.calculate(valueGetter.apply(record1), valueGetter.apply(record2)) == 1.0;
+			return sim.calculate(valueGetter.apply(record1), valueGetter.apply(record2)) >= 0.9;
 		}
 
 
