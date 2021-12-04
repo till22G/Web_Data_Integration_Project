@@ -79,13 +79,8 @@ public class IR_using_linear_combination_bio_es
 //		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getOrders, "orders"), 0.125);
 		//matchingRule.addComparator(new StringListAttributeAsWholeComparatorJaccard<>(Species::getFamilies, "families"), 0.125);
 		//matchingRule.addComparator(new StringListAttributeComparatorEqual<>(Species::getStates, "states"), 0.125);
-		//matchingRule.addComparator(matchingRule, 0)
-		
 
 
-		
-		
-		
 		// create a blocker (blocking strategy)
 		//Block by Scientific Names
 		StandardRecordBlocker<Species, Attribute> blocker = new StandardRecordBlocker<Species, Attribute>(new SpeciesBlockingKeyByScientificNameGenerator());
