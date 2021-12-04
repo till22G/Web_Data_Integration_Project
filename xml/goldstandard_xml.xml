@@ -1,55 +1,55 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Animals_And_Plants>
 <Species>
-  <ID>es1476</ID>
-  <Provenance>fws-endangeredspecies</Provenance>
-  <Scientific_Name>acipenser transmontanus</Scientific_Name>
+  <ID>ES1476</ID>
+  <Provenance>FWS-EndangeredSpecies</Provenance>
+  <Scientific_Name>Acipenser transmontanus</Scientific_Name>
   <Common_Names>
-    <Common_Name>white sturgeon</Common_Name>
+    <Common_Name>White sturgeon</Common_Name>
   </Common_Names>
   <Where_Listeds>
-    <Where_Listed>u.s.a. (id, mt)</Where_Listed>
-    <Where_Listed>canada (b.c.)</Where_Listed>
-    <Where_Listed>kootenai r. system</Where_Listed>
+    <Where_Listed>U.S.A. (ID, MT)</Where_Listed>
+    <Where_Listed>Canada (B.C.)</Where_Listed>
+    <Where_Listed>Kootenai R. system</Where_Listed>
   </Where_Listeds>
   <Regions>
     <Region>1</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>pacific</Region_Name>
+    <Region_Name>Pacific</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>fish</Category>
+<Category>Fish</Category>
 </Species>
 <Species>
-  <ID>es1325</ID>
-  <Provenance>fws-endangeredspecies</Provenance>
-  <Scientific_Name>trichechus manatus</Scientific_Name>
+  <ID>ES1325</ID>
+  <Provenance>FWS-EndangeredSpecies</Provenance>
+  <Scientific_Name>Trichechus manatus</Scientific_Name>
   <Common_Names>
-    <Common_Name>west indian manatee</Common_Name>
+    <Common_Name>West Indian Manatee</Common_Name>
   </Common_Names>
   <Where_Listeds>
-    <Where_Listed>wherever found</Where_Listed>
+    <Where_Listed>Wherever found</Where_Listed>
   </Where_Listeds>
   <Regions>
     <Region>4</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>southeast</Region_Name>
+    <Region_Name>Southeast</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>threatened</Listing_Status>
+    <Listing_Status>Threatened</Listing_Status>
   </Listing_Statuses>
-<Category>mammal</Category>
+<Category>Mammal</Category>
 </Species>
 <Species>
-  <ID>bio29503</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>numenius borealis</Scientific_Name>
+  <ID>BIO29503</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Numenius borealis</Scientific_Name>
   <Common_Names>
-    <Common_Name>eskimo curlew</Common_Name>
+    <Common_Name>Eskimo Curlew</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -58,19 +58,19 @@
     <Region>5</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>northeast</Region_Name>
+    <Region_Name>Northeast</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>bird</Category>
+<Category>Bird</Category>
 </Species>
 <Species>
-  <ID>bio39412</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>sclerocactus wrightiae</Scientific_Name>
+  <ID>BIO39412</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Sclerocactus wrightiae</Scientific_Name>
   <Common_Names>
-    <Common_Name>wright's fishhook cactus</Common_Name>
+    <Common_Name>Wright's Fishhook Cactus</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -79,40 +79,40 @@
     <Region>6</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>mountain prairie</Region_Name>
+    <Region_Name>Mountain Prairie</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>vascular plant</Category>
+<Category>Vascular Plant</Category>
 </Species>
 <Species>
-  <ID>es1457</ID>
-  <Provenance>fws-endangeredspecies</Provenance>
-  <Scientific_Name>lepidochelys kempii</Scientific_Name>
+  <ID>ES1457</ID>
+  <Provenance>FWS-EndangeredSpecies</Provenance>
+  <Scientific_Name>Lepidochelys kempii</Scientific_Name>
   <Common_Names>
-    <Common_Name>kemp's ridley sea turtle</Common_Name>
+    <Common_Name>Kemp's ridley sea turtle</Common_Name>
   </Common_Names>
   <Where_Listeds>
-    <Where_Listed>wherever found</Where_Listed>
+    <Where_Listed>Wherever found</Where_Listed>
   </Where_Listeds>
   <Regions>
     <Region>2</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>southwest</Region_Name>
+    <Region_Name>Southwest</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>reptile</Category>
+<Category>Reptile</Category>
 </Species>
 <Species>
-  <ID>bio12700</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>cyprinodon diabolis</Scientific_Name>
+  <ID>BIO12700</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Cyprinodon diabolis</Scientific_Name>
   <Common_Names>
-    <Common_Name>devils hole pupfish</Common_Name>
+    <Common_Name>Devils Hole Pupfish</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -121,19 +121,19 @@
     <Region>8</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>pacific southwest</Region_Name>
+    <Region_Name>Pacific Southwest</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>fish</Category>
+<Category>Fish</Category>
 </Species>
 <Species>
-  <ID>bio24175</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>leptonycteris nivalis</Scientific_Name>
+  <ID>BIO24175</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Leptonycteris nivalis</Scientific_Name>
   <Common_Names>
-    <Common_Name>mexican long-nosed bat|big long-nosed bat</Common_Name>
+    <Common_Name>Mexican Long-Nosed Bat|Big Long-Nosed Bat</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -142,19 +142,19 @@
     <Region>2</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>southwest</Region_Name>
+    <Region_Name>Southwest</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>mammal</Category>
+<Category>Mammal</Category>
 </Species>
 <Species>
-  <ID>bio02004</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>anaxyrus canorus</Scientific_Name>
+  <ID>BIO02004</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Anaxyrus canorus</Scientific_Name>
   <Common_Names>
-    <Common_Name>yosemite toad</Common_Name>
+    <Common_Name>Yosemite Toad</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -163,19 +163,19 @@
     <Region>8</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>pacific southwest</Region_Name>
+    <Region_Name>Pacific Southwest</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>threatened</Listing_Status>
+    <Listing_Status>Threatened</Listing_Status>
   </Listing_Statuses>
-<Category>amphibian</Category>
+<Category>Amphibian</Category>
 </Species>
 <Species>
-  <ID>bio16826</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>etheostoma percnurum</Scientific_Name>
+  <ID>BIO16826</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Etheostoma percnurum</Scientific_Name>
   <Common_Names>
-    <Common_Name>duskytail darter</Common_Name>
+    <Common_Name>Duskytail Darter</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -184,19 +184,19 @@
     <Region>4</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>southeast</Region_Name>
+    <Region_Name>Southeast</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>fish</Category>
+<Category>Fish</Category>
 </Species>
 <Species>
-  <ID>bio37045</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>rana draytonii</Scientific_Name>
+  <ID>BIO37045</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Rana draytonii</Scientific_Name>
   <Common_Names>
-    <Common_Name>california red-legged frog</Common_Name>
+    <Common_Name>California Red-Legged Frog</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -205,40 +205,40 @@
     <Region>8</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>pacific southwest</Region_Name>
+    <Region_Name>Pacific Southwest</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>threatened</Listing_Status>
+    <Listing_Status>Threatened</Listing_Status>
   </Listing_Statuses>
-<Category>amphibian</Category>
+<Category>Amphibian</Category>
 </Species>
 <Species>
-  <ID>es1544</ID>
-  <Provenance>fws-endangeredspecies</Provenance>
-  <Scientific_Name>myotis grisescens</Scientific_Name>
+  <ID>ES1544</ID>
+  <Provenance>FWS-EndangeredSpecies</Provenance>
+  <Scientific_Name>Myotis grisescens</Scientific_Name>
   <Common_Names>
-    <Common_Name>gray bat</Common_Name>
+    <Common_Name>Gray bat</Common_Name>
   </Common_Names>
   <Where_Listeds>
-    <Where_Listed>wherever found</Where_Listed>
+    <Where_Listed>Wherever found</Where_Listed>
   </Where_Listeds>
   <Regions>
     <Region>3</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>midwest</Region_Name>
+    <Region_Name>Midwest</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>mammal</Category>
+<Category>Mammal</Category>
 </Species>
 <Species>
-  <ID>bio24625</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>lilium occidentale</Scientific_Name>
+  <ID>BIO24625</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Lilium occidentale</Scientific_Name>
   <Common_Names>
-    <Common_Name>western lily</Common_Name>
+    <Common_Name>Western Lily</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -247,19 +247,19 @@
     <Region>8</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>pacific southwest</Region_Name>
+    <Region_Name>Pacific Southwest</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>vascular plant</Category>
+<Category>Vascular Plant</Category>
 </Species>
 <Species>
-  <ID>bio01978</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>anas wyvilliana</Scientific_Name>
+  <ID>BIO01978</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Anas wyvilliana</Scientific_Name>
   <Common_Names>
-    <Common_Name>koloa, hawaiian duck</Common_Name>
+    <Common_Name>Koloa, Hawaiian Duck</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -268,19 +268,19 @@
     <Region>1</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>pacific</Region_Name>
+    <Region_Name>Pacific</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>bird</Category>
+<Category>Bird</Category>
 </Species>
 <Species>
-  <ID>bio07055</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>campephilus principalis</Scientific_Name>
+  <ID>BIO07055</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Campephilus principalis</Scientific_Name>
   <Common_Names>
-    <Common_Name>ivory-billed woodpecker</Common_Name>
+    <Common_Name>Ivory-Billed Woodpecker</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -289,19 +289,19 @@
     <Region>4</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>southeast</Region_Name>
+    <Region_Name>Southeast</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>endangered</Listing_Status>
+    <Listing_Status>Endangered</Listing_Status>
   </Listing_Statuses>
-<Category>bird</Category>
+<Category>Bird</Category>
 </Species>
 <Species>
-  <ID>bio04352</ID>
-  <Provenance>biodiversityusnationalparks</Provenance>
-  <Scientific_Name>astragalus phoenix</Scientific_Name>
+  <ID>BIO04352</ID>
+  <Provenance>BiodiversityUSNationalParks</Provenance>
+  <Scientific_Name>Astragalus phoenix</Scientific_Name>
   <Common_Names>
-    <Common_Name>ash meadows milkvetch|ash meadows milk-vetch</Common_Name>
+    <Common_Name>Ash Meadows Milkvetch|Ash Meadows Milk-Vetch</Common_Name>
   </Common_Names>
   <Where_Listeds>
     <Where_Listed>nan</Where_Listed>
@@ -310,11 +310,11 @@
     <Region>8</Region>
   </Regions>
   <Region_Names>
-    <Region_Name>pacific southwest</Region_Name>
+    <Region_Name>Pacific Southwest</Region_Name>
   </Region_Names>
   <Listing_Statuses>
-    <Listing_Status>threatened</Listing_Status>
+    <Listing_Status>Threatened</Listing_Status>
   </Listing_Statuses>
-<Category>vascular plant</Category>
+<Category>Vascular Plant</Category>
 </Species>
 </Animals_And_Plants>
