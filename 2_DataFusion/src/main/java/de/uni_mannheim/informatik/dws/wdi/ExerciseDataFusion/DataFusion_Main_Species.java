@@ -64,6 +64,7 @@ public class DataFusion_Main_Species {
         // Maintain Provenance
         // Scores (e.g. from rating)
 
+        // needs to be adjusted!!!!!!!!!
         ds1.setScore(1.0);
         ds2.setScore(1.0);
         ds3.setScore(1.0);
@@ -87,38 +88,37 @@ public class DataFusion_Main_Species {
 
         // write group size distribution
         correspondences.printGroupSizeDistribution();
-        /*
+
 
         // load the gold standard
         logger.info("*\tEvaluating results\t*");
         DataSet<Species, Attribute> gs = new FusibleHashedDataSet<>();
-        new SpeciesXMLReader().loadFromXML(new File("data/goldstandard/gold.xml"), "/Animals_And_Plants/Species", gs);
+        new SpeciesXMLReader().loadFromXML(new File("data/goldstandard/goldstandard_xml.xml"), "/Animals_And_Plants/Species", gs);
+        System.out.println(gs.get().size());
+
 
         for (Species m : gs.get()) {
             logger.info(String.format("gs: %s", m.getIdentifier()));
         }
-        */
-
 
         // define the fusion strategy
         DataFusionStrategy<Species, Attribute> strategy = new DataFusionStrategy<>(new SpeciesXMLReader());
-        // write debug results to file
+        // write debug results to file ?????????????????????????????
         //strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 
         // add attribute fusers
         strategy.addAttributeFuser(Species.SCIENTIFICNAME, new GenericAttributeFuser<>(new FavourSources<>(), Species::getScientificName, Species::setScientificName, Species.SCIENTIFICNAME), new StringEvaluationRule(Species::getScientificName));
         strategy.addAttributeFuser(Species.COMMONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getCommonNames, Species::setCommonNames, Species.COMMONNAMES), new ListEvaluationRule(Species::getCommonNames));
-        strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new ShortestString<>(),Species::getCategory, Species::setCategory, Species.CATEGORY) , new StringEvaluationRule(Species::getCategory));
-        strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Union<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRule(Species::getFamilies));
-        strategy.addAttributeFuser(Species.STATES, new GenericAttributeFuser<>(new Voting<>(), Species::getStates, Species::setStates, Species.STATES), new ListEvaluationRule(Species::getStates));
-        strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Voting<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRule(Species::getRegions));
-        strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Voting<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListEvaluationRule(Species::getRegionNames));
-        //strategy for listing status
-        strategy.addAttributeFuser(Species.WHERELISTED, new GenericAttributeFuser<>(new Voting<>(), Species::getWhereListed, Species::setWhereListed, Species.WHERELISTED), new ListEvaluationRule(Species::getRegions));
-        strategy.addAttributeFuser(Species.DIFFERENTFROM, new GenericAttributeFuser<>(new Voting<>(), Species::getDifferentFrom, Species::setDifferentFrom, Species.DIFFERENTFROM), new ListEvaluationRule(Species::getDifferentFrom));
-        strategy.addAttributeFuser(Species.ENDEMICTO, new GenericAttributeFuser<>(new Voting<>(), Species::getEndemicTo, Species::setEndemicTo, Species.ENDEMICTO), new ListEvaluationRule(Species::getEndemicTo));
-
-
+        strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new Voting<>(),Species::getCategory, Species::setCategory, Species.CATEGORY) , new StringEvaluationRule(Species::getCategory));
+        strategy.addAttributeFuser(Species.ORDERS, new GenericAttributeFuser<>(new Union<>(), Species::getOrders, Species::setOrders, Species.ORDERS), new ListEvaluationRule(Species::getOrders));
+        //strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Union<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRule(Species::getFamilies));
+        strategy.addAttributeFuser(Species.STATES, new GenericAttributeFuser<>(new Union<>(), Species::getStates, Species::setStates, Species.STATES), new ListEvaluationRule(Species::getStates));
+        strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Union<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRule(Species::getRegions));
+        strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListEvaluationRule(Species::getRegionNames));
+        strategy.addAttributeFuser(Species.LISTINGSTATUSES, new GenericAttributeFuser<>(new Union<>(), Species::getListingStatuses, Species::setListingStatuses, Species.LISTINGSTATUSES), new ListEvaluationRule(Species::getListingStatuses));
+        //xstrategy.addAttributeFuser(Species.WHERELISTED, new GenericAttributeFuser<>(new Union<>(), Species::getWhereListed, Species::setWhereListed, Species.WHERELISTED), new ListEvaluationRule(Species::getWhereListed));
+        //strategy.addAttributeFuser(Species.DIFFERENTFROM, new GenericAttributeFuser<>(new Union<>(), Species::getDifferentFrom, Species::setDifferentFrom, Species.DIFFERENTFROM), new ListEvaluationRule(Species::getDifferentFrom));
+        //strategy.addAttributeFuser(Species.ENDEMICTO, new GenericAttributeFuser<>(new Union<>(), Species::getEndemicTo, Species::setEndemicTo, Species.ENDEMICTO), new ListEvaluationRule(Species::getEndemicTo));
 
         // create the fusion engine
         DataFusionEngine<Species, Attribute> engine = new DataFusionEngine<>(strategy);
@@ -139,8 +139,8 @@ public class DataFusion_Main_Species {
         // evaluate
         DataFusionEvaluator<Species, Attribute> evaluator = new DataFusionEvaluator<>(strategy, new RecordGroupFactory<Species, Attribute>());
 
-        //double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
+        double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
 
-        //logger.info(String.format("*\tAccuracy: %.2f", accuracy));
+        logger.info(String.format("*\tAccuracy: %.2f", accuracy));
     }
 }
