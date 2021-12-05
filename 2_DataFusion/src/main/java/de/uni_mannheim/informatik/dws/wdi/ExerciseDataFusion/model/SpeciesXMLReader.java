@@ -99,7 +99,7 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> imp
 		List<String> families = getList(node, "Families");
 		List<String> states = getList(node, "States");
 		List<String> labels = getList(node, "Labels");
-		List<String> whereListed = getList(node, "Where_Listed_l");
+		List<String> whereListed = getList(node, "Where_Listeds");
 		List<String> differentFrom = getList(node, "Different_From_l");
 		List<String> endemicTo = getList(node, "Endemic_To_l");
 		List<String> regions = getList(node, "Regions");

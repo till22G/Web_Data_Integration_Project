@@ -192,7 +192,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -1006,7 +1008,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -1143,7 +1147,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -1384,7 +1390,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -1624,7 +1632,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -1818,7 +1828,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -2039,7 +2051,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -2377,7 +2391,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -2645,7 +2661,9 @@
       <State>va</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -2925,7 +2943,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -3078,7 +3098,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -3109,7 +3131,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -3140,7 +3164,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -4493,7 +4519,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -5151,7 +5179,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -5275,7 +5305,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -5307,7 +5339,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -5410,7 +5444,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -6246,7 +6282,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -6279,7 +6317,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -6434,43 +6474,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO05812+BIO05813+BIO05816+BIO05817+ES1233+http://www.wikidata.org/entity/q1267620</ID>
-    <Scientific_Name>brachyrampus marmoratus</Scientific_Name>
-    <Common_Names>
-      <Common_Name>marbled murrelet</Common_Name>
-      <Common_Name>long billed murrelet</Common_Name>
-    </Common_Names>
-    <Category>Bird</Category>
-    <Orders>
-      <Order>charadriiformes</Order>
-    </Orders>
-    <Families>
-      <Family>alcidae</Family>
-    </Families>
-    <States>
-      <State>ak</State>
-      <State>wa</State>
-      <State>ca</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>1</Region>
-      <Region>7</Region>
-      <Region>8</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific southwest</Region_Name>
-      <Region_Name>alaska</Region_Name>
-      <Region_Name>pacific</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO28137+http://www.wikidata.org/entity/q320415</ID>
     <Scientific_Name>mya truncata</Scientific_Name>
     <Common_Names>
@@ -6555,7 +6558,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -6585,7 +6590,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -7044,7 +7051,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -7075,7 +7084,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -7148,7 +7159,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -7272,7 +7285,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>peninsular ca pop.</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -7740,7 +7755,10 @@
       <State>me</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>northeast u.s. nesting population</Where_Listed>
+      <Where_Listed>western hemisphere except ne u.s.</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -7823,49 +7841,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO01150+http://www.wikidata.org/entity/q587433</ID>
-    <Scientific_Name>alectoria sarmentosa</Scientific_Name>
-    <Common_Names>
-      <Common_Name>witchs hair lichen</Common_Name>
-      <Common_Name>witch s hair lichen</Common_Name>
-      <Common_Name>alectoria sarmentosa</Common_Name>
-    </Common_Names>
-    <Category>Fungi</Category>
-    <Orders>
-      <Order>lecanorales</Order>
-    </Orders>
-    <Families>
-      <Family>parmeliaceae</Family>
-    </Families>
-    <States>
-      <State>or</State>
-      <State>nc</State>
-      <State>mt</State>
-      <State>tn</State>
-      <State>wa</State>
-      <State>ca</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>1</Region>
-      <Region>4</Region>
-      <Region>6</Region>
-      <Region>8</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific southwest</Region_Name>
-      <Region_Name>mountain prairie</Region_Name>
-      <Region_Name>pacific</Region_Name>
-      <Region_Name>southeast</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO11864+BIO11887+http://www.wikidata.org/entity/q1515347</ID>
     <Scientific_Name>crotalis viridis</Scientific_Name>
     <Common_Names>
@@ -7911,6 +7886,49 @@
       <Region_Name>southwest</Region_Name>
       <Region_Name>mountain prairie</Region_Name>
       <Region_Name>pacific</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
+    <ID>BIO01150+http://www.wikidata.org/entity/q587433</ID>
+    <Scientific_Name>alectoria sarmentosa</Scientific_Name>
+    <Common_Names>
+      <Common_Name>witchs hair lichen</Common_Name>
+      <Common_Name>witch s hair lichen</Common_Name>
+      <Common_Name>alectoria sarmentosa</Common_Name>
+    </Common_Names>
+    <Category>Fungi</Category>
+    <Orders>
+      <Order>lecanorales</Order>
+    </Orders>
+    <Families>
+      <Family>parmeliaceae</Family>
+    </Families>
+    <States>
+      <State>or</State>
+      <State>nc</State>
+      <State>mt</State>
+      <State>tn</State>
+      <State>wa</State>
+      <State>ca</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>1</Region>
+      <Region>4</Region>
+      <Region>6</Region>
+      <Region>8</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>pacific southwest</Region_Name>
+      <Region_Name>mountain prairie</Region_Name>
+      <Region_Name>pacific</Region_Name>
+      <Region_Name>southeast</Region_Name>
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>none</Listing_Status>
@@ -7966,7 +7984,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>california</Endemic_To>
@@ -8159,7 +8179,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -8992,7 +9014,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -9204,7 +9228,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -9367,7 +9393,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -9822,7 +9850,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -10231,7 +10261,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -10262,7 +10294,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -10293,7 +10327,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -10482,7 +10518,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -10834,7 +10872,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -11136,7 +11176,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>hawaii</Endemic_To>
@@ -11456,7 +11498,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -11507,6 +11551,44 @@
     </Listing_Statuses>
   </Species>
   <Species>
+    <ID>BIO17842+BIO17843+http://www.wikidata.org/entity/q1566509</ID>
+    <Scientific_Name>fissidens adiantoides</Scientific_Name>
+    <Common_Names>
+      <Common_Name>fissidens moss</Common_Name>
+      <Common_Name>maidenhair moss</Common_Name>
+      <Common_Name>none</Common_Name>
+    </Common_Names>
+    <Category>Nonvascular Plant</Category>
+    <Orders>
+      <Order>dicranales</Order>
+    </Orders>
+    <Families>
+      <Family>fissidentaceae</Family>
+    </Families>
+    <States>
+      <State>mt</State>
+      <State>ak</State>
+      <State>wa</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>1</Region>
+      <Region>6</Region>
+      <Region>7</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>alaska</Region_Name>
+      <Region_Name>mountain prairie</Region_Name>
+      <Region_Name>pacific</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
     <ID>BIO09554+http://www.wikidata.org/entity/q1274529</ID>
     <Scientific_Name>chordeiles acutipennis</Scientific_Name>
     <Common_Names>
@@ -11551,44 +11633,6 @@
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>species of concern</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
-    <ID>BIO17842+BIO17843+http://www.wikidata.org/entity/q1566509</ID>
-    <Scientific_Name>fissidens adiantoides</Scientific_Name>
-    <Common_Names>
-      <Common_Name>fissidens moss</Common_Name>
-      <Common_Name>maidenhair moss</Common_Name>
-      <Common_Name>none</Common_Name>
-    </Common_Names>
-    <Category>Nonvascular Plant</Category>
-    <Orders>
-      <Order>dicranales</Order>
-    </Orders>
-    <Families>
-      <Family>fissidentaceae</Family>
-    </Families>
-    <States>
-      <State>mt</State>
-      <State>ak</State>
-      <State>wa</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>1</Region>
-      <Region>6</Region>
-      <Region>7</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>alaska</Region_Name>
-      <Region_Name>mountain prairie</Region_Name>
-      <Region_Name>pacific</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
     </Listing_Statuses>
   </Species>
   <Species>
@@ -11681,7 +11725,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -11717,7 +11763,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -12413,6 +12461,38 @@
     </Listing_Statuses>
   </Species>
   <Species>
+    <ID>BIO36043+BIO36044+ES677</ID>
+    <Scientific_Name>pseudognaphalium sandwicensium var. molokaiense</Scientific_Name>
+    <Common_Names>
+      <Common_Name> ena ena</Common_Name>
+    </Common_Names>
+    <Category>Vascular Plant</Category>
+    <Orders>
+      <Order>asterales</Order>
+    </Orders>
+    <Families>
+      <Family>asteraceae</Family>
+    </Families>
+    <States>
+      <State>hi</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>1</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>pacific</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>endangered</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
     <ID>BIO36401+ES144</ID>
     <Scientific_Name>ptilimnium nodosum</Scientific_Name>
     <Common_Names>
@@ -12430,7 +12510,9 @@
       <State>ar</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -12440,36 +12522,6 @@
     <Region_Names>
       <Region_Name>northeast</Region_Name>
       <Region_Name>southeast</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>endangered</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
-    <ID>BIO36043+BIO36044+ES677</ID>
-    <Scientific_Name>pseudognaphalium sandwicensium var. molokaiense</Scientific_Name>
-    <Common_Names>
-      <Common_Name> ena ena</Common_Name>
-    </Common_Names>
-    <Category>Vascular Plant</Category>
-    <Orders>
-      <Order>asterales</Order>
-    </Orders>
-    <Families>
-      <Family>asteraceae</Family>
-    </Families>
-    <States>
-      <State>hi</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>1</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific</Region_Name>
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>endangered</Listing_Status>
@@ -12612,7 +12664,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -12956,7 +13010,9 @@
       <State>wa</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>united states of america</Endemic_To>
@@ -13055,7 +13111,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -13494,7 +13552,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -13555,7 +13615,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -13709,7 +13771,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -14769,7 +14833,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -14903,7 +14969,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -14939,7 +15007,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -15110,7 +15180,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -15207,7 +15279,9 @@
       <State>ak</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -15667,7 +15741,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>sierra nevada</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -15730,7 +15806,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -15866,7 +15944,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -16143,7 +16223,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -16501,7 +16583,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -16999,7 +17083,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -17128,7 +17214,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -17424,7 +17512,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -17615,7 +17705,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -17814,7 +17906,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -18111,7 +18205,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -18550,7 +18646,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -18748,7 +18846,9 @@
       <State>az</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -18847,7 +18947,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -19654,7 +19756,9 @@
       <State>az</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>florida</Endemic_To>
@@ -20821,7 +20925,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -20970,7 +21076,10 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>northwest atlantic ocean dps</Where_Listed>
+      <Where_Listed>north pacific ocean dps</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -21006,7 +21115,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>united states of america</Endemic_To>
@@ -21108,7 +21219,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>hawaii</Endemic_To>
@@ -23141,7 +23254,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -23172,7 +23287,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -23507,37 +23624,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO11164+http://www.wikidata.org/entity/q951987</ID>
-    <Scientific_Name>conus ebraeus</Scientific_Name>
-    <Common_Names>
-      <Common_Name>conus ebraeus</Common_Name>
-      <Common_Name>none</Common_Name>
-    </Common_Names>
-    <Category>Slug/Snail</Category>
-    <Orders>
-      <Order>neogastropoda</Order>
-    </Orders>
-    <Families>
-      <Family>conidae</Family>
-    </Families>
-    <States>
-      <State>hi</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>1</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO23347+BIO23348+http://www.wikidata.org/entity/q28236</ID>
     <Scientific_Name>larus argentatus</Scientific_Name>
     <Common_Names>
@@ -23598,6 +23684,37 @@
       <Region_Name>midwest</Region_Name>
       <Region_Name>pacific</Region_Name>
       <Region_Name>southeast</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
+    <ID>BIO11164+http://www.wikidata.org/entity/q951987</ID>
+    <Scientific_Name>conus ebraeus</Scientific_Name>
+    <Common_Names>
+      <Common_Name>conus ebraeus</Common_Name>
+      <Common_Name>none</Common_Name>
+    </Common_Names>
+    <Category>Slug/Snail</Category>
+    <Orders>
+      <Order>neogastropoda</Order>
+    </Orders>
+    <Families>
+      <Family>conidae</Family>
+    </Families>
+    <States>
+      <State>hi</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>1</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>pacific</Region_Name>
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>none</Listing_Status>
@@ -23786,7 +23903,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -24020,7 +24139,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -24050,7 +24171,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -24551,7 +24674,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -24771,7 +24896,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -25918,7 +26045,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -26554,7 +26683,9 @@
       <State>sd</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -26627,7 +26758,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>u.s.a. (id, mt), canada (b.c.), kootenai r. system</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -26721,7 +26854,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>al, fl, ga, ms, nc, sc</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -26761,7 +26896,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -26822,7 +26959,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -26855,7 +26994,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -27161,7 +27302,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -27358,7 +27501,9 @@
       <State>co</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -27882,7 +28027,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -27978,7 +28125,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -28365,7 +28514,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -28643,7 +28794,9 @@
       <State>co</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -28684,7 +28837,9 @@
       <State>sd</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -28908,7 +29063,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -28992,45 +29149,6 @@
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>species of concern</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
-    <ID>BIO15402+BIO15404+BIO15405+ES260</ID>
-    <Scientific_Name>enceliopsis nudicaulis var. corrugata</Scientific_Name>
-    <Common_Names>
-      <Common_Name>nakedstem</Common_Name>
-      <Common_Name>nakedstem sunray</Common_Name>
-      <Common_Name>ash meadows sunray</Common_Name>
-    </Common_Names>
-    <Category>Vascular Plant</Category>
-    <Orders>
-      <Order>asterales</Order>
-    </Orders>
-    <Families>
-      <Family>asteraceae</Family>
-    </Families>
-    <States>
-      <State>nv</State>
-      <State>az</State>
-      <State>ca</State>
-      <State>ut</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>2</Region>
-      <Region>6</Region>
-      <Region>8</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific southwest</Region_Name>
-      <Region_Name>southwest</Region_Name>
-      <Region_Name>mountain prairie</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>threatened</Listing_Status>
     </Listing_Statuses>
   </Species>
   <Species>
@@ -29267,7 +29385,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -29339,7 +29459,9 @@
       <State>va</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -29402,7 +29524,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -30028,7 +30152,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>hawaii</Endemic_To>
@@ -30163,7 +30289,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -30230,7 +30358,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -30863,7 +30993,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>united states of america</Endemic_To>
@@ -32062,7 +32194,9 @@
       <State>me</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -32296,7 +32430,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -32645,7 +32781,9 @@
       <State>co</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -32713,7 +32851,9 @@
       <State>va</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>nan</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -33755,7 +33895,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -34234,7 +34376,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -34608,7 +34752,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -34938,7 +35084,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -35030,7 +35178,9 @@
       <State>mn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -35613,7 +35763,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -35683,7 +35835,9 @@
       <State>me</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -35779,7 +35933,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>west of mobile and tombigbee rivers</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>united states of america</Endemic_To>
@@ -36226,7 +36382,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -36473,7 +36631,9 @@
       <State>co</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -37622,7 +37782,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -37694,7 +37856,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>ssn dps</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -37763,7 +37927,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l>
       <Different_From>the massasauga provincial park</Different_From>
     </Different_From_l>
@@ -38077,7 +38243,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -38124,7 +38292,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -38347,7 +38517,9 @@
       <State>va</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -38410,7 +38582,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -38640,7 +38814,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -38705,7 +38881,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -39309,7 +39487,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -39343,7 +39523,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found; except where listed as experimental populations</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -39821,7 +40003,9 @@
       <State>va</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -39855,7 +40039,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -40488,7 +40674,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -40717,6 +40905,44 @@
     </Listing_Statuses>
   </Species>
   <Species>
+    <ID>BIO39046+BIO39047+http://www.wikidata.org/entity/q1767406</ID>
+    <Scientific_Name>scapanus townsendi</Scientific_Name>
+    <Common_Names>
+      <Common_Name>snow mole</Common_Name>
+      <Common_Name>townsend mole</Common_Name>
+      <Common_Name>townsend’s mole</Common_Name>
+      <Common_Name>townsends mole</Common_Name>
+      <Common_Name>none</Common_Name>
+      <Common_Name>townsend s mole</Common_Name>
+    </Common_Names>
+    <Category>Mammal</Category>
+    <Orders>
+      <Order>soricomorpha</Order>
+    </Orders>
+    <Families>
+      <Family>talpidae</Family>
+    </Families>
+    <States>
+      <State>wa</State>
+      <State>ca</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>1</Region>
+      <Region>8</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>pacific southwest</Region_Name>
+      <Region_Name>pacific</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
     <ID>BIO13747+http://www.wikidata.org/entity/q731278</ID>
     <Scientific_Name>dicranum scoparium</Scientific_Name>
     <Common_Names>
@@ -40767,44 +40993,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO39046+BIO39047+http://www.wikidata.org/entity/q1767406</ID>
-    <Scientific_Name>scapanus townsendi</Scientific_Name>
-    <Common_Names>
-      <Common_Name>snow mole</Common_Name>
-      <Common_Name>townsend mole</Common_Name>
-      <Common_Name>townsend’s mole</Common_Name>
-      <Common_Name>townsends mole</Common_Name>
-      <Common_Name>none</Common_Name>
-      <Common_Name>townsend s mole</Common_Name>
-    </Common_Names>
-    <Category>Mammal</Category>
-    <Orders>
-      <Order>soricomorpha</Order>
-    </Orders>
-    <Families>
-      <Family>talpidae</Family>
-    </Families>
-    <States>
-      <State>wa</State>
-      <State>ca</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>1</Region>
-      <Region>8</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific southwest</Region_Name>
-      <Region_Name>pacific</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO39339+ES882</ID>
     <Scientific_Name>scirpus ancistrochaetus</Scientific_Name>
     <Common_Names>
@@ -40823,7 +41011,9 @@
       <State>va</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>nan</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -41408,7 +41598,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -41774,7 +41966,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -42990,7 +43184,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>u.s.a. (fl)</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -43146,7 +43342,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -43712,7 +43910,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -44010,7 +44210,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -44189,7 +44391,9 @@
       <State>wa</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -44257,7 +44461,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -44468,7 +44674,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>pacific coast population dps u.s.a. (ca, or, wa), mexico (within 50 miles of pacific coast)</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -44776,7 +44984,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -44965,7 +45175,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>columbia river dps</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -46275,7 +46487,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -46345,7 +46559,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -46375,7 +46591,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -46518,39 +46736,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO24217+http://www.wikidata.org/entity/q1066498</ID>
-    <Scientific_Name>leptotila verreauxi</Scientific_Name>
-    <Common_Names>
-      <Common_Name>white tipped dove</Common_Name>
-    </Common_Names>
-    <Category>Bird</Category>
-    <Orders>
-      <Order>columbiformes</Order>
-    </Orders>
-    <Families>
-      <Family>columbidae</Family>
-    </Families>
-    <States>
-      <State>tx</State>
-      <State>fl</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>2</Region>
-      <Region>4</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>southwest</Region_Name>
-      <Region_Name>southeast</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO20366+BIO20367+http://www.wikidata.org/entity/q1318085</ID>
     <Scientific_Name>hericium coraloides</Scientific_Name>
     <Common_Names>
@@ -46583,6 +46768,39 @@
     <Region_Names>
       <Region_Name>northeast</Region_Name>
       <Region_Name>pacific</Region_Name>
+      <Region_Name>southeast</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
+    <ID>BIO24217+http://www.wikidata.org/entity/q1066498</ID>
+    <Scientific_Name>leptotila verreauxi</Scientific_Name>
+    <Common_Names>
+      <Common_Name>white tipped dove</Common_Name>
+    </Common_Names>
+    <Category>Bird</Category>
+    <Orders>
+      <Order>columbiformes</Order>
+    </Orders>
+    <Families>
+      <Family>columbidae</Family>
+    </Families>
+    <States>
+      <State>tx</State>
+      <State>fl</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>2</Region>
+      <Region>4</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>southwest</Region_Name>
       <Region_Name>southeast</Region_Name>
     </Region_Names>
     <Listing_Statuses>
@@ -46713,7 +46931,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>hawaiian islands</Endemic_To>
@@ -46858,7 +47078,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -47273,7 +47495,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -47342,7 +47566,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -47914,7 +48140,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -47952,7 +48180,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -48302,7 +48532,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -48808,7 +49040,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -49016,44 +49250,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO25678+http://www.wikidata.org/entity/q955345</ID>
-    <Scientific_Name>lutjanus jocu</Scientific_Name>
-    <Common_Names>
-      <Common_Name>dogteeth pargue</Common_Name>
-      <Common_Name>dog snapper</Common_Name>
-      <Common_Name>dogs tooth snapper</Common_Name>
-      <Common_Name>lutjanus jocu</Common_Name>
-      <Common_Name>dogtooth pargue</Common_Name>
-      <Common_Name>snuggletooth snapper</Common_Name>
-      <Common_Name>pargue</Common_Name>
-      <Common_Name>snapper</Common_Name>
-      <Common_Name>dogteeth snapper</Common_Name>
-    </Common_Names>
-    <Category>Fish</Category>
-    <Orders>
-      <Order>lutjaniformes</Order>
-    </Orders>
-    <Families>
-      <Family>lutjanidae</Family>
-    </Families>
-    <States>
-      <State>fl</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>4</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>southeast</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO42714+BIO42715+http://www.wikidata.org/entity/q386410</ID>
     <Scientific_Name>tamiasciurus douglasii</Scientific_Name>
     <Common_Names>
@@ -49088,6 +49284,44 @@
     <Region_Names>
       <Region_Name>pacific southwest</Region_Name>
       <Region_Name>pacific</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
+    <ID>BIO25678+http://www.wikidata.org/entity/q955345</ID>
+    <Scientific_Name>lutjanus jocu</Scientific_Name>
+    <Common_Names>
+      <Common_Name>dogteeth pargue</Common_Name>
+      <Common_Name>dog snapper</Common_Name>
+      <Common_Name>dogs tooth snapper</Common_Name>
+      <Common_Name>lutjanus jocu</Common_Name>
+      <Common_Name>dogtooth pargue</Common_Name>
+      <Common_Name>snuggletooth snapper</Common_Name>
+      <Common_Name>pargue</Common_Name>
+      <Common_Name>snapper</Common_Name>
+      <Common_Name>dogteeth snapper</Common_Name>
+    </Common_Names>
+    <Category>Fish</Category>
+    <Orders>
+      <Order>lutjaniformes</Order>
+    </Orders>
+    <Families>
+      <Family>lutjanidae</Family>
+    </Families>
+    <States>
+      <State>fl</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>4</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>southeast</Region_Name>
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>none</Listing_Status>
@@ -49266,7 +49500,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -49413,6 +49649,49 @@
     </Listing_Statuses>
   </Species>
   <Species>
+    <ID>BIO31977+BIO31978+http://www.wikidata.org/entity/q2068355</ID>
+    <Scientific_Name>peltigera polydactyla</Scientific_Name>
+    <Common_Names>
+      <Common_Name>peltigera polydactylon</Common_Name>
+      <Common_Name>many fruited pelt; &amp;nbsp; felt lichen</Common_Name>
+      <Common_Name>none</Common_Name>
+      <Common_Name>felt lichen</Common_Name>
+    </Common_Names>
+    <Category>Fungi</Category>
+    <Orders>
+      <Order>peltigerales</Order>
+    </Orders>
+    <Families>
+      <Family>peltigeraceae</Family>
+    </Families>
+    <States>
+      <State>nc</State>
+      <State>ak</State>
+      <State>tn</State>
+      <State>wa</State>
+      <State>va</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>1</Region>
+      <Region>4</Region>
+      <Region>5</Region>
+      <Region>7</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>alaska</Region_Name>
+      <Region_Name>northeast</Region_Name>
+      <Region_Name>pacific</Region_Name>
+      <Region_Name>southeast</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
     <ID>BIO32857+http://www.wikidata.org/entity/q1188364</ID>
     <Scientific_Name>phainopepla nitens</Scientific_Name>
     <Common_Names>
@@ -49462,49 +49741,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO31977+BIO31978+http://www.wikidata.org/entity/q2068355</ID>
-    <Scientific_Name>peltigera polydactyla</Scientific_Name>
-    <Common_Names>
-      <Common_Name>peltigera polydactylon</Common_Name>
-      <Common_Name>many fruited pelt; &amp;nbsp; felt lichen</Common_Name>
-      <Common_Name>none</Common_Name>
-      <Common_Name>felt lichen</Common_Name>
-    </Common_Names>
-    <Category>Fungi</Category>
-    <Orders>
-      <Order>peltigerales</Order>
-    </Orders>
-    <Families>
-      <Family>peltigeraceae</Family>
-    </Families>
-    <States>
-      <State>nc</State>
-      <State>ak</State>
-      <State>tn</State>
-      <State>wa</State>
-      <State>va</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>1</Region>
-      <Region>4</Region>
-      <Region>5</Region>
-      <Region>7</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>alaska</Region_Name>
-      <Region_Name>northeast</Region_Name>
-      <Region_Name>pacific</Region_Name>
-      <Region_Name>southeast</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO42717+ES1473+http://www.wikidata.org/entity/q326976</ID>
     <Scientific_Name>tamiasciurus hudsonicus</Scientific_Name>
     <Common_Names>
@@ -49541,7 +49777,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -50009,7 +50247,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -50041,7 +50281,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -50273,7 +50515,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -50340,7 +50584,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>lower fl keys</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -50478,7 +50724,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -51066,36 +51314,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO17634+http://www.wikidata.org/entity/q773651</ID>
-    <Scientific_Name>falco femoralis</Scientific_Name>
-    <Common_Names>
-      <Common_Name>aplomado falcon</Common_Name>
-    </Common_Names>
-    <Category>Bird</Category>
-    <Orders>
-      <Order>falconiformes</Order>
-    </Orders>
-    <Families>
-      <Family>falconidae</Family>
-    </Families>
-    <States>
-      <State>tx</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>2</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>southwest</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO21027+BIO21028+http://www.wikidata.org/entity/q1570399</ID>
     <Scientific_Name>humaria hemisphaerica</Scientific_Name>
     <Common_Names>
@@ -51125,6 +51343,36 @@
     <Region_Names>
       <Region_Name>northeast</Region_Name>
       <Region_Name>southeast</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
+    <ID>BIO17634+http://www.wikidata.org/entity/q773651</ID>
+    <Scientific_Name>falco femoralis</Scientific_Name>
+    <Common_Names>
+      <Common_Name>aplomado falcon</Common_Name>
+    </Common_Names>
+    <Category>Bird</Category>
+    <Orders>
+      <Order>falconiformes</Order>
+    </Orders>
+    <Families>
+      <Family>falconidae</Family>
+    </Families>
+    <States>
+      <State>tx</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>2</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>southwest</Region_Name>
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>none</Listing_Status>
@@ -51561,7 +51809,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -51605,7 +51855,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -52524,7 +52776,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -52800,7 +53054,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -52868,7 +53124,9 @@
       <State>va</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>united states of america</Endemic_To>
@@ -52902,7 +53160,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -53309,7 +53569,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -53507,7 +53769,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -53577,7 +53841,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -53614,7 +53880,14 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>central south pacific dps</Where_Listed>
+      <Where_Listed>central west pacific dps</Where_Listed>
+      <Where_Listed>east pacific dps</Where_Listed>
+      <Where_Listed>north atlantic dps</Where_Listed>
+      <Where_Listed>central north pacific dps</Where_Listed>
+      <Where_Listed>south atlantic dps</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -53727,7 +54000,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -53830,7 +54105,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -53978,7 +54255,9 @@
       <State>az</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -54375,7 +54654,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -54673,7 +54954,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -55427,7 +55710,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -55599,7 +55884,9 @@
       <State>mn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -55609,6 +55896,46 @@
     <Region_Names>
       <Region_Name>northeast</Region_Name>
       <Region_Name>midwest</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
+    <ID>BIO35202+BIO35203+http://www.wikidata.org/entity/q545209</ID>
+    <Scientific_Name>pompeius verna</Scientific_Name>
+    <Common_Names>
+      <Common_Name>little glassywing</Common_Name>
+      <Common_Name>none</Common_Name>
+      <Common_Name>little glassy wing</Common_Name>
+      <Common_Name>pompeius verna</Common_Name>
+    </Common_Names>
+    <Category>Insect</Category>
+    <Orders>
+      <Order>lepidoptera</Order>
+    </Orders>
+    <Families>
+      <Family>hesperiidae</Family>
+    </Families>
+    <States>
+      <State>nc</State>
+      <State>oh</State>
+      <State>tn</State>
+      <State>va</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>3</Region>
+      <Region>4</Region>
+      <Region>5</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>northeast</Region_Name>
+      <Region_Name>midwest</Region_Name>
+      <Region_Name>southeast</Region_Name>
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>none</Listing_Status>
@@ -55675,46 +56002,6 @@
     </Regions>
     <Region_Names>
       <Region_Name>pacific southwest</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
-    <ID>BIO35202+BIO35203+http://www.wikidata.org/entity/q545209</ID>
-    <Scientific_Name>pompeius verna</Scientific_Name>
-    <Common_Names>
-      <Common_Name>little glassywing</Common_Name>
-      <Common_Name>none</Common_Name>
-      <Common_Name>little glassy wing</Common_Name>
-      <Common_Name>pompeius verna</Common_Name>
-    </Common_Names>
-    <Category>Insect</Category>
-    <Orders>
-      <Order>lepidoptera</Order>
-    </Orders>
-    <Families>
-      <Family>hesperiidae</Family>
-    </Families>
-    <States>
-      <State>nc</State>
-      <State>oh</State>
-      <State>tn</State>
-      <State>va</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>3</Region>
-      <Region>4</Region>
-      <Region>5</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>northeast</Region_Name>
-      <Region_Name>midwest</Region_Name>
-      <Region_Name>southeast</Region_Name>
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>none</Listing_Status>
@@ -56037,7 +56324,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l>
       <Different_From>ivory billed woodcreeper</Different_From>
     </Different_From_l>
@@ -56342,7 +56631,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -56547,7 +56838,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -56616,7 +56909,9 @@
       <State>az</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -56661,7 +56956,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -57215,7 +57512,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -57422,7 +57721,9 @@
       <State>va</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -57852,7 +58153,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -58729,7 +59032,9 @@
       <State>az</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -58816,7 +59121,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -59239,7 +59546,9 @@
       <State>co</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -59441,7 +59750,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -59768,7 +60079,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -59896,7 +60209,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except ga, nc, sc, tn, va</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -59931,7 +60246,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -60143,7 +60460,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -61001,7 +61320,10 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>northern california dps</Where_Listed>
+      <Where_Listed>southern california dps</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -62404,7 +62726,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -62504,7 +62828,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l>
       <Different_From>ocelot</Different_From>
     </Different_From_l>
@@ -62910,7 +63236,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -63739,37 +64067,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO25252+BIO25253+BIO25254+http://www.wikidata.org/entity/q1634537</ID>
-    <Scientific_Name>longitarsus jacobaea</Scientific_Name>
-    <Common_Names>
-      <Common_Name>longitarsus jacobaeae</Common_Name>
-      <Common_Name>none</Common_Name>
-    </Common_Names>
-    <Category>Insect</Category>
-    <Orders>
-      <Order>coleoptera</Order>
-    </Orders>
-    <Families>
-      <Family>chrysomelidae</Family>
-    </Families>
-    <States>
-      <State>ca</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>8</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific southwest</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO20144+http://www.wikidata.org/entity/q1811342</ID>
     <Scientific_Name>helicopsyche mexicana</Scientific_Name>
     <Common_Names>
@@ -64012,7 +64309,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -65780,7 +66079,9 @@
       <State>az</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -66021,7 +66322,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -66052,7 +66355,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -66433,7 +66738,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -66874,7 +67181,9 @@
       <State>sc</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -67373,7 +67682,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -67988,7 +68299,9 @@
       <State>wy</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -68061,7 +68374,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -68207,7 +68522,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -68648,7 +68965,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -69046,7 +69365,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -69077,7 +69398,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -69110,7 +69433,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -69398,6 +69723,42 @@
     </Listing_Statuses>
   </Species>
   <Species>
+    <ID>BIO06865+BIO06876+http://www.wikidata.org/entity/q1027835</ID>
+    <Scientific_Name>calypogeia muelleriana</Scientific_Name>
+    <Common_Names>
+      <Common_Name>none</Common_Name>
+      <Common_Name>mªller s calypogeja</Common_Name>
+      <Common_Name>calypogeia muelleriana</Common_Name>
+    </Common_Names>
+    <Category>Nonvascular Plant</Category>
+    <Orders>
+      <Order>jungermanniales</Order>
+    </Orders>
+    <Families>
+      <Family>calypogeiaceae</Family>
+    </Families>
+    <States>
+      <State>nc</State>
+      <State>tn</State>
+      <State>wa</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>1</Region>
+      <Region>4</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>pacific</Region_Name>
+      <Region_Name>southeast</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
     <ID>BIO23006+http://www.wikidata.org/entity/q2086766</ID>
     <Scientific_Name>labrisomus bucciferus</Scientific_Name>
     <Common_Names>
@@ -69455,42 +69816,6 @@
       <Region>4</Region>
     </Regions>
     <Region_Names>
-      <Region_Name>southeast</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
-    <ID>BIO06865+BIO06876+http://www.wikidata.org/entity/q1027835</ID>
-    <Scientific_Name>calypogeia muelleriana</Scientific_Name>
-    <Common_Names>
-      <Common_Name>none</Common_Name>
-      <Common_Name>mªller s calypogeja</Common_Name>
-      <Common_Name>calypogeia muelleriana</Common_Name>
-    </Common_Names>
-    <Category>Nonvascular Plant</Category>
-    <Orders>
-      <Order>jungermanniales</Order>
-    </Orders>
-    <Families>
-      <Family>calypogeiaceae</Family>
-    </Families>
-    <States>
-      <State>nc</State>
-      <State>tn</State>
-      <State>wa</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>1</Region>
-      <Region>4</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific</Region_Name>
       <Region_Name>southeast</Region_Name>
     </Region_Names>
     <Listing_Statuses>
@@ -69729,7 +70054,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -69760,7 +70087,9 @@
       <State>nv</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -70531,7 +70860,9 @@
       <State>ak</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -71216,7 +71547,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -71879,7 +72212,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -72229,7 +72564,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -73152,7 +73489,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -73464,7 +73803,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -73496,7 +73837,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -73654,7 +73997,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -73835,7 +74180,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -76921,7 +77268,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -77307,7 +77656,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -77547,7 +77898,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -77692,7 +78045,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -77726,7 +78081,9 @@
       <State>id</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>utah lake</Endemic_To>
@@ -77868,7 +78225,10 @@
       <State>me</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>[great lakes watershed dps]   great lakes, watershed in states of il, in, mi, mn, ny, oh, pa, and wi and canada (ont.)</Where_Listed>
+      <Where_Listed>[atlantic coast and northern great plains populations]   wherever found, except those areas where listed as endangered.</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -78084,7 +78444,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>columbia basin dps</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -78150,7 +78512,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -78853,7 +79217,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -79026,7 +79392,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -79060,7 +79428,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>usa (hi)</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -79093,7 +79463,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -80594,7 +80966,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -80851,7 +81225,9 @@
       <State>co</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -80918,7 +81294,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -81079,7 +81457,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -81120,7 +81500,9 @@
       <State>me</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -81283,7 +81665,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -81527,7 +81911,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -81689,7 +82075,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -81802,7 +82190,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -82078,43 +82468,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO11296+BIO11310+BIO11316+ES455</ID>
-    <Scientific_Name>cordylanthus tenuis ssp. capillaris</Scientific_Name>
-    <Common_Names>
-      <Common_Name>desert bird s beak</Common_Name>
-      <Common_Name>pennell s bird s beak</Common_Name>
-      <Common_Name>wright s bird s beak</Common_Name>
-      <Common_Name>bristly bird s beak</Common_Name>
-    </Common_Names>
-    <Category>Vascular Plant</Category>
-    <Orders>
-      <Order>lamiales</Order>
-    </Orders>
-    <Families>
-      <Family>orobanchaceae</Family>
-    </Families>
-    <States>
-      <State>nv</State>
-      <State>az</State>
-      <State>ca</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>2</Region>
-      <Region>8</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific southwest</Region_Name>
-      <Region_Name>southwest</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>endangered</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO28417+http://www.wikidata.org/entity/q27855</ID>
     <Scientific_Name>mytilus edulis</Scientific_Name>
     <Common_Names>
@@ -82203,7 +82556,9 @@
       <State>az</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -82301,7 +82656,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>nevada</Endemic_To>
@@ -83098,7 +83455,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -83338,7 +83697,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -84293,7 +84654,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -84424,7 +84787,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>nan</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -85103,7 +85468,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -85367,7 +85734,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -85536,7 +85905,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -85603,7 +85974,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except when listed as endangered under 50 cfr 224.101</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -86563,7 +86936,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -87428,7 +87803,9 @@
       <State>id</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>u.s.a., conterminous (lower 48) states, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -87829,7 +88206,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -87923,7 +88302,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -88376,6 +88757,36 @@
     </Listing_Statuses>
   </Species>
   <Species>
+    <ID>BIO33377+BIO33399+http://www.wikidata.org/entity/q720497</ID>
+    <Scientific_Name>phyllocopus borealis</Scientific_Name>
+    <Common_Names>
+      <Common_Name>arctic warbler</Common_Name>
+    </Common_Names>
+    <Category>Bird</Category>
+    <Orders>
+      <Order>passeriformes</Order>
+    </Orders>
+    <Families>
+      <Family>phylloscopidae</Family>
+    </Families>
+    <States>
+      <State>ak</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>7</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>alaska</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
     <ID>BIO18320+http://www.wikidata.org/entity/q2124055</ID>
     <Scientific_Name>galeruca externa</Scientific_Name>
     <Common_Names>
@@ -88401,36 +88812,6 @@
     </Regions>
     <Region_Names>
       <Region_Name>pacific</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
-    <ID>BIO33377+BIO33399+http://www.wikidata.org/entity/q720497</ID>
-    <Scientific_Name>phyllocopus borealis</Scientific_Name>
-    <Common_Names>
-      <Common_Name>arctic warbler</Common_Name>
-    </Common_Names>
-    <Category>Bird</Category>
-    <Orders>
-      <Order>passeriformes</Order>
-    </Orders>
-    <Families>
-      <Family>phylloscopidae</Family>
-    </Families>
-    <States>
-      <State>ak</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>7</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>alaska</Region_Name>
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>none</Listing_Status>
@@ -89414,7 +89795,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -89948,7 +90331,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -90115,7 +90500,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -90219,7 +90606,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -90453,7 +90842,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -90819,7 +91210,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -90964,7 +91357,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -91425,7 +91820,9 @@
       <State>or</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -91821,7 +92218,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -92500,7 +92899,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -93035,7 +93436,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l>
       <Different_From>jaguar</Different_From>
     </Different_From_l>
@@ -93184,7 +93587,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -93658,7 +94063,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -93735,7 +94142,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -93746,40 +94155,6 @@
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>endangered</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
-    <ID>BIO21679+BIO21680+BIO21681+http://www.wikidata.org/entity/q752507</ID>
-    <Scientific_Name>hypholoma fasiculare</Scientific_Name>
-    <Common_Names>
-      <Common_Name>hypholoma fasciculare</Common_Name>
-      <Common_Name>none</Common_Name>
-    </Common_Names>
-    <Category>Fungi</Category>
-    <Orders>
-      <Order>agaricales</Order>
-    </Orders>
-    <Families>
-      <Family>strophariaceae</Family>
-    </Families>
-    <States>
-      <State>co</State>
-      <State>ca</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>6</Region>
-      <Region>8</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific southwest</Region_Name>
-      <Region_Name>mountain prairie</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
     </Listing_Statuses>
   </Species>
   <Species>
@@ -94076,7 +94451,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -94512,7 +94889,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>nan</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l>
       <Different_From>fox</Different_From>
     </Different_From_l>
@@ -94741,6 +95120,46 @@
     </Listing_Statuses>
   </Species>
   <Species>
+    <ID>BIO05812+http://www.wikidata.org/entity/q1267620</ID>
+    <Scientific_Name>brachyramphus marmoratus</Scientific_Name>
+    <Common_Names>
+      <Common_Name>marbled murrelet</Common_Name>
+      <Common_Name>long billed murrelet</Common_Name>
+    </Common_Names>
+    <Category>Bird</Category>
+    <Orders>
+      <Order>charadriiformes</Order>
+      <Order>saurischia</Order>
+      <Order>dinosaur</Order>
+      <Order>avetheropoda</Order>
+    </Orders>
+    <Families>
+      <Family>alcidae</Family>
+    </Families>
+    <States>
+      <State>ak</State>
+      <State>wa</State>
+      <State>ca</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>1</Region>
+      <Region>7</Region>
+      <Region>8</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>pacific southwest</Region_Name>
+      <Region_Name>alaska</Region_Name>
+      <Region_Name>pacific</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>threatened</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
     <ID>BIO39636+http://www.wikidata.org/entity/q1392169</ID>
     <Scientific_Name>sebastes rubrivinctus</Scientific_Name>
     <Common_Names>
@@ -94793,7 +95212,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -95638,45 +96059,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO14879+BIO14887+BIO14892+ES368</ID>
-    <Scientific_Name>echinocereus chisoensis var. chisoensis</Scientific_Name>
-    <Common_Names>
-      <Common_Name>pinkflower hedgehog cactus</Common_Name>
-      <Common_Name>chisos mountain hedgehog cactus</Common_Name>
-      <Common_Name>fendler s hedgehog cactus</Common_Name>
-      <Common_Name>engelmann s cactus</Common_Name>
-      <Common_Name>engelmann s hedgehog cactus</Common_Name>
-    </Common_Names>
-    <Category>Vascular Plant</Category>
-    <Orders>
-      <Order>caryophyllales</Order>
-    </Orders>
-    <Families>
-      <Family>cactaceae</Family>
-    </Families>
-    <States>
-      <State>tx</State>
-      <State>nv</State>
-      <State>az</State>
-      <State>ca</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>2</Region>
-      <Region>8</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>southwest</Region_Name>
-      <Region_Name>pacific southwest</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>threatened</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO44405+http://www.wikidata.org/entity/q1495949</ID>
     <Scientific_Name>tubaria furfuracea</Scientific_Name>
     <Common_Names>
@@ -95936,7 +96318,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -96116,7 +96500,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -96181,7 +96567,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -96249,7 +96637,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>big bend national park</Endemic_To>
@@ -96691,7 +97081,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -96819,7 +97211,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -97158,7 +97552,9 @@
       <State>mt</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -97331,7 +97727,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>missouri dps</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>united states of america</Endemic_To>
@@ -97830,45 +98228,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO31576+http://www.wikidata.org/entity/q1347992</ID>
-    <Scientific_Name>parnassius clodius</Scientific_Name>
-    <Common_Names>
-      <Common_Name>clodius parnassian</Common_Name>
-      <Common_Name>parnassius clodius</Common_Name>
-    </Common_Names>
-    <Category>Insect</Category>
-    <Orders>
-      <Order>lepidoptera</Order>
-    </Orders>
-    <Families>
-      <Family>papilionidae</Family>
-    </Families>
-    <States>
-      <State>wy</State>
-      <State>mt</State>
-      <State>wa</State>
-      <State>id</State>
-      <State>ca</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>1</Region>
-      <Region>6</Region>
-      <Region>8</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific southwest</Region_Name>
-      <Region_Name>mountain prairie</Region_Name>
-      <Region_Name>pacific</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO34932+BIO34933+http://www.wikidata.org/entity/q2094483</ID>
     <Scientific_Name>polygonia progne</Scientific_Name>
     <Common_Names>
@@ -97907,6 +98266,45 @@
       <Region_Name>northeast</Region_Name>
       <Region_Name>pacific</Region_Name>
       <Region_Name>southeast</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
+    <ID>BIO31576+http://www.wikidata.org/entity/q1347992</ID>
+    <Scientific_Name>parnassius clodius</Scientific_Name>
+    <Common_Names>
+      <Common_Name>clodius parnassian</Common_Name>
+      <Common_Name>parnassius clodius</Common_Name>
+    </Common_Names>
+    <Category>Insect</Category>
+    <Orders>
+      <Order>lepidoptera</Order>
+    </Orders>
+    <Families>
+      <Family>papilionidae</Family>
+    </Families>
+    <States>
+      <State>wy</State>
+      <State>mt</State>
+      <State>wa</State>
+      <State>id</State>
+      <State>ca</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>1</Region>
+      <Region>6</Region>
+      <Region>8</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>pacific southwest</Region_Name>
+      <Region_Name>mountain prairie</Region_Name>
+      <Region_Name>pacific</Region_Name>
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>none</Listing_Status>
@@ -98198,7 +98596,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -98647,7 +99047,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -98688,7 +99090,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -99128,7 +99532,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -99167,7 +99573,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -99245,7 +99653,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -99447,7 +99857,9 @@
       <State>wa</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -99551,7 +99963,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -100648,7 +101062,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -101322,7 +101738,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -101403,7 +101821,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found in contiguous u.s.</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -101765,7 +102185,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -102453,7 +102875,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -103506,7 +103930,9 @@
       <State>az</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -103574,7 +104000,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -103752,7 +104180,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -103962,7 +104392,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -104680,7 +105112,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -105367,7 +105801,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except az south and east of colorado r., and mexico</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l>
       <Endemic_To>united states of america</Endemic_To>
@@ -105406,7 +105842,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -106245,7 +106683,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -106275,7 +106715,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -106641,7 +107083,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -106777,7 +107221,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -107398,7 +107844,9 @@
       <State>fl</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -107493,7 +107941,9 @@
       <State>co</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -107525,7 +107975,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -108985,7 +109437,9 @@
       <State>wa</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>u.s.a., conterminous, lower 48 states</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -109401,7 +109855,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -109496,7 +109952,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -110543,7 +111001,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -110574,7 +111034,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -110752,7 +111214,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -110917,7 +111381,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -111153,7 +111619,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -111544,7 +112012,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -112696,7 +113166,9 @@
       <State>tx</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -112810,7 +113282,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -113890,7 +114364,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -114017,39 +114493,6 @@
     </Listing_Statuses>
   </Species>
   <Species>
-    <ID>BIO09047+http://www.wikidata.org/entity/q74068</ID>
-    <Scientific_Name>chamaecyparis pisifera</Scientific_Name>
-    <Common_Names>
-      <Common_Name>japanese falsecypress</Common_Name>
-      <Common_Name>chamaecyparis pisifera</Common_Name>
-      <Common_Name>sawara cypress</Common_Name>
-    </Common_Names>
-    <Category>Vascular Plant</Category>
-    <Orders>
-      <Order>cupressales</Order>
-      <Order>pinales</Order>
-    </Orders>
-    <Families>
-      <Family>cupressaceae</Family>
-    </Families>
-    <States>
-      <State>va</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>5</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>northeast</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
     <ID>BIO28307+BIO28308+http://www.wikidata.org/entity/q1833362</ID>
     <Scientific_Name>myotis ciliolabrum</Scientific_Name>
     <Common_Names>
@@ -114098,6 +114541,39 @@
       <Region_Name>southwest</Region_Name>
       <Region_Name>mountain prairie</Region_Name>
       <Region_Name>pacific</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
+    <ID>BIO09047+http://www.wikidata.org/entity/q74068</ID>
+    <Scientific_Name>chamaecyparis pisifera</Scientific_Name>
+    <Common_Names>
+      <Common_Name>japanese falsecypress</Common_Name>
+      <Common_Name>chamaecyparis pisifera</Common_Name>
+      <Common_Name>sawara cypress</Common_Name>
+    </Common_Names>
+    <Category>Vascular Plant</Category>
+    <Orders>
+      <Order>cupressales</Order>
+      <Order>pinales</Order>
+    </Orders>
+    <Families>
+      <Family>cupressaceae</Family>
+    </Families>
+    <States>
+      <State>va</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>5</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>northeast</Region_Name>
     </Region_Names>
     <Listing_Statuses>
       <Listing_Status>none</Listing_Status>
@@ -114288,7 +114764,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -114541,7 +115019,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -114728,7 +115208,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -114769,7 +115251,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -114804,7 +115288,9 @@
       <State>va</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -114918,7 +115404,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -115035,7 +115523,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>u.s.a. only, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -115436,7 +115926,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -115873,7 +116365,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -115908,7 +116402,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -117015,7 +117511,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>nan</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -117334,7 +117832,9 @@
       <State>co</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -119289,7 +119789,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>gulf of maine dps</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -119403,7 +119905,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -119620,7 +120124,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -119656,7 +120162,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -119925,7 +120433,9 @@
       <State>wa</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -120394,7 +120904,9 @@
       <State>ut</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -121153,7 +121665,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -121286,7 +121800,9 @@
       <State>tn</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -121471,6 +121987,48 @@
     </Listing_Statuses>
   </Species>
   <Species>
+    <ID>BIO01180+BIO01182+http://www.wikidata.org/entity/q1251715</ID>
+    <Scientific_Name>aleuria aurantica</Scientific_Name>
+    <Common_Names>
+      <Common_Name>aleuria aurantia</Common_Name>
+      <Common_Name>none</Common_Name>
+      <Common_Name>orange peel fungus</Common_Name>
+    </Common_Names>
+    <Category>Fungi</Category>
+    <Orders>
+      <Order>pezizales</Order>
+    </Orders>
+    <Families>
+      <Family>pyronemataceae</Family>
+    </Families>
+    <States>
+      <State>nc</State>
+      <State>tn</State>
+      <State>wa</State>
+      <State>va</State>
+      <State>ca</State>
+    </States>
+    <Labels/>
+    <Where_Listed_l/>
+    <Different_From_l/>
+    <Endemic_To_l/>
+    <Regions>
+      <Region>1</Region>
+      <Region>4</Region>
+      <Region>5</Region>
+      <Region>8</Region>
+    </Regions>
+    <Region_Names>
+      <Region_Name>pacific southwest</Region_Name>
+      <Region_Name>northeast</Region_Name>
+      <Region_Name>pacific</Region_Name>
+      <Region_Name>southeast</Region_Name>
+    </Region_Names>
+    <Listing_Statuses>
+      <Listing_Status>none</Listing_Status>
+    </Listing_Statuses>
+  </Species>
+  <Species>
     <ID>BIO43725+http://www.wikidata.org/entity/q928134</ID>
     <Scientific_Name>toxostoma rufum</Scientific_Name>
     <Common_Names>
@@ -121531,48 +122089,6 @@
       <Region_Name>mountain prairie</Region_Name>
       <Region_Name>northeast</Region_Name>
       <Region_Name>midwest</Region_Name>
-      <Region_Name>pacific</Region_Name>
-      <Region_Name>southeast</Region_Name>
-    </Region_Names>
-    <Listing_Statuses>
-      <Listing_Status>none</Listing_Status>
-    </Listing_Statuses>
-  </Species>
-  <Species>
-    <ID>BIO01180+BIO01182+http://www.wikidata.org/entity/q1251715</ID>
-    <Scientific_Name>aleuria aurantica</Scientific_Name>
-    <Common_Names>
-      <Common_Name>aleuria aurantia</Common_Name>
-      <Common_Name>none</Common_Name>
-      <Common_Name>orange peel fungus</Common_Name>
-    </Common_Names>
-    <Category>Fungi</Category>
-    <Orders>
-      <Order>pezizales</Order>
-    </Orders>
-    <Families>
-      <Family>pyronemataceae</Family>
-    </Families>
-    <States>
-      <State>nc</State>
-      <State>tn</State>
-      <State>wa</State>
-      <State>va</State>
-      <State>ca</State>
-    </States>
-    <Labels/>
-    <Where_Listed_l/>
-    <Different_From_l/>
-    <Endemic_To_l/>
-    <Regions>
-      <Region>1</Region>
-      <Region>4</Region>
-      <Region>5</Region>
-      <Region>8</Region>
-    </Regions>
-    <Region_Names>
-      <Region_Name>pacific southwest</Region_Name>
-      <Region_Name>northeast</Region_Name>
       <Region_Name>pacific</Region_Name>
       <Region_Name>southeast</Region_Name>
     </Region_Names>
@@ -122017,7 +122533,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>ak breeding pop.</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -122303,7 +122821,9 @@
       <State>az</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -122403,7 +122923,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -122434,7 +122956,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -122916,7 +123440,9 @@
       <State>hi</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -123322,7 +123848,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -123391,7 +123919,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -124056,7 +124586,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -124221,7 +124753,9 @@
       <State>ky</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -124431,7 +124965,9 @@
       <State>or</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -124464,7 +125000,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -124667,7 +125205,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -124845,7 +125385,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -125375,7 +125917,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>western u.s. dps</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -126772,7 +127316,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -127149,7 +127695,9 @@
       <State>nm</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found, except where listed as an experimental population</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>
@@ -127501,7 +128049,9 @@
       <State>ca</State>
     </States>
     <Labels/>
-    <Where_Listed_l/>
+    <Where_Listed_l>
+      <Where_Listed>wherever found</Where_Listed>
+    </Where_Listed_l>
     <Different_From_l/>
     <Endemic_To_l/>
     <Regions>

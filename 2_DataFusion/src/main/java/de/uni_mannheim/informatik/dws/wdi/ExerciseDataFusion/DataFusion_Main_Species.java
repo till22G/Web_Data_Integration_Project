@@ -79,8 +79,8 @@ public class DataFusion_Main_Species {
 
         // load correspondences
         CorrespondenceSet<Species, Attribute> correspondences = new CorrespondenceSet<>();
-        correspondences.loadCorrespondences(new File("data/correspondences/biodiversity_endangeredSpecies_correspondences.csv"), ds2, ds1);
-        correspondences.loadCorrespondences(new File("data/correspondences/wikidata_biodiversity_correspondences.csv"), ds2, ds3);
+        correspondences.loadCorrespondences(new File("data/correspondences/biodiversity_endangeredSpecies_correspondences_final.csv"), ds2, ds1);
+        correspondences.loadCorrespondences(new File("data/correspondences/wikidata_biodiversity_correspondences_final.csv"), ds2, ds3);
 
         // write group size distribution
         correspondences.printGroupSizeDistribution();
