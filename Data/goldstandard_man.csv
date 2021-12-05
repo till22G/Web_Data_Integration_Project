@@ -1,16 +1,53 @@
 ID;Provenance;Scientific_Name;Common_Name;Label;Where_Listed;Different_From;Endemic_To;Region;Region_Name;Listing_Status;Category;Order;Family;State
-ES1476;FWS-EndangeredSpecies;Acipenser transmontanus;White sturgeon;;U.S.A. (ID, MT)|Canada (B.C.)|Kootenai R. system;;;1;Pacific;Endangered;Fish;;;
-ES1325;FWS-EndangeredSpecies;Trichechus manatus;West Indian Manatee;;Wherever found;;;4;Southeast;Threatened;Mammal;;;
-BIO29503;BiodiversityUSNationalParks;Numenius borealis;Eskimo Curlew;;;;;5;Northeast;Endangered;Bird;Charadriiformes;Scolopacidae;ME
-BIO39412;BiodiversityUSNationalParks;Sclerocactus wrightiae;Wright's Fishhook Cactus;;;;;6;Mountain Prairie;Endangered;Vascular Plant;Caryophyllales;Cactaceae;UT
-ES1457;FWS-EndangeredSpecies;Lepidochelys kempii;Kemp's ridley sea turtle;;Wherever found;;;2;Southwest;Endangered;Reptile;;;
+ES1476;FWS-EndangeredSpecies;Acipenser transmontanus;White sturgeon|Pacific Sturgeon|Oregon Sturgeon|Columbia Sturgeon|Snake River Sturgeon|Sacramento Sturgeon;;;;;1;Pacific;Endangered;Fish;Acipenseriformes;Acipenseridae;
+ES1325;FWS-EndangeredSpecies;Trichechus manatus;West Indian Manatee|Sea Cow|North American Manatee;;;;;4;Southeast;Threatened;Mammal;Sirenia;Trichechidae;
+BIO29503;BiodiversityUSNationalParks;Numenius borealis;Eskimo Curlew|Northern Curlew;;;;;5;Northeast;Endangered;Bird;Charadriiformes;Scolopacidae;ME
+BIO39412;BiodiversityUSNationalParks;Sclerocactus wrightiae;Wright's Fishhook Cactus|Wright's little barrel cactus;;;;;6;Mountain Prairie;Endangered;Vascular Plant;Caryophyllales;Cactaceae;UT
+ES1457;FWS-EndangeredSpecies;Lepidochelys kempii;Kemp's ridley sea turtle|Atlantic ridley sea turtle|Bastard Turtle;;;;;2;Southwest;Endangered;Reptile;Testudines;Cheloniidae;
 BIO12700;BiodiversityUSNationalParks;Cyprinodon diabolis;Devils Hole Pupfish;;;;;8;Pacific Southwest;Endangered;Fish;Cyprinodontiformes;Cyprinodontidae;CA|NV
-BIO24175;BiodiversityUSNationalParks;Leptonycteris nivalis;Mexican Long-Nosed Bat|Big Long-Nosed Bat;;;;;2;Southwest;Endangered;Mammal;Chiroptera;Phyllostomidae;AZ|TX|NM
+BIO24175;BiodiversityUSNationalParks;Leptonycteris nivalis;Mexican Long-Nosed Bat|Big Long-Nosed Bat|Greater Long-Nosed bat;;;;;2;Southwest;Endangered;Mammal;Chiroptera;Phyllostomidae;AZ|TX|NM
 BIO02004;BiodiversityUSNationalParks;Anaxyrus canorus;Yosemite Toad;;;;;8;Pacific Southwest;Threatened;Amphibian;Anura;Bufonidae;CA
 BIO16826;BiodiversityUSNationalParks;Etheostoma percnurum;Duskytail Darter;;;;;4;Southeast;Endangered;Fish;Perciformes;Percidae;NC|TN
 BIO37045;BiodiversityUSNationalParks;Rana draytonii;California Red-Legged Frog;;;;;8;Pacific Southwest;Threatened;Amphibian;Anura;Ranidae;CA|NV
-ES1544;FWS-EndangeredSpecies;Myotis grisescens;Gray bat;;Wherever found;;;3;Midwest;Endangered;Mammal;;;
+ES1544;FWS-EndangeredSpecies;Myotis grisescens;Gray bat;;;;;3;Midwest;Endangered;Mammal;Chiroptera;Vespertilionidae;
 BIO24625;BiodiversityUSNationalParks;Lilium occidentale;Western Lily;;;;;8;Pacific Southwest;Endangered;Vascular Plant;Liliales;Liliaceae;CA
-BIO01978;BiodiversityUSNationalParks;Anas wyvilliana;Koloa, Hawaiian Duck;;;;;1;Pacific;Endangered;Bird;Anseriformes;Anatidae;HI
+BIO01978;BiodiversityUSNationalParks;Anas wyvilliana;Koloa|Hawaiian Duck;;;;;1;Pacific;Endangered;Bird;Anseriformes;Anatidae;HI
 BIO07055;BiodiversityUSNationalParks;Campephilus principalis;Ivory-Billed Woodpecker;;;;;4;Southeast;Endangered;Bird;Piciformes;Picidae;SC|FL
 BIO04352;BiodiversityUSNationalParks;Astragalus phoenix;Ash Meadows Milkvetch|Ash Meadows Milk-Vetch;;;;;8;Pacific Southwest;Threatened;Vascular Plant;Fabales;Fabaceae;CA|NV
+BIO18454;BiodiversityUSNationalParks;Gambusia gaigei;Big Bend Gambusia;;;;;2;Southwest;Endangered;Fish;Cyprinodontiformes;Poeciliidae;
+BIO12569;BiodiversityUSNationalParks;Cynomys parvidens;Utah Prairie Dog;;;;;6;Mountain-Prairie;Threatened;Mammal;Rodentia;Sciuridae;
+BIO16939;BiodiversityUSNationalParks;Eucyclogobius newberryi;Tidewater Goby;;;;;8;Pacific Southwest;Endangered;Fish;Perciformes;Gobiidae;
+BIO13135;BiodiversityUSNationalParks;Deltistes luxatus;Lost River Sucker;;;;;8;Pacific Southwest;Endangered;Fish;Cypriniformes;Catostomidae;
+BIO21090;BiodiversityUSNationalParks;Hybognathus amarus;Rio Grande Silvery Minnow;;;;;2;Southwest;Endangered;Fish;Cypriniformes;Cyprinidae;
+BIO23265;BiodiversityUSNationalParks;Lampsilis abrupta;Pink Mucket;;;;;3;Midwest;Endangered;Invertebrate;Unionoida;Unionidae;
+BIO45023;BiodiversityUSNationalParks;Vermivora bachmanii;Bachman's Wood Warbler|Bachman's Warbler;;;;;4;Southeast;Endangered;Bird;Passeriformes;Parulidae;
+BIO28124;BiodiversityUSNationalParks;Mustela nigripes;Black-Footed Ferret|Ferret|Black-Footed;;;;;6;Mountain-Prairie;Endangered;Mammal;Carnivora;Mustelidae;
+BIO19413;BiodiversityUSNationalParks;Grus americana;Whooping Crane;;;;;2;Southwest;Endangered;Bird;Gruiformes;Gruidae;
+BIO36335;BiodiversityUSNationalParks;Pterodroma sandwichensis;Hawaiian Petrel|Hawaiian Dark-Rumped Petrel|`Ua`U;;;;;1;Pacific;Endangered;Bird;Procellariiformes;Procellariidae;
+BIO02701;BiodiversityUSNationalParks;Aphelocoma coerulescens;Florida Scrub Jay|Scrub Jay|Florida Scrub-Jay;;;;;4;Southeast;Threatened;Bird;Passeriformes;Corvidae;
+BIO25447;BiodiversityUSNationalParks;Loxops coccineus;Hawai'i' 'Akepa;;;;;1;Pacific;Endangered;Bird;Passeriformes;Fringillidae;
+BIO33630;BiodiversityUSNationalParks;Picoides borealis;Red-Cockaded Woodpecker;;;;;4;Southeast;Endangered;Bird;Piciformes;Picidae;
+BIO31051;BiodiversityUSNationalParks;Palmeria dolei;Akohekohe|Crested Honeycreeper;;;;;1;Pacific;Endangered;Bird;Passeriformes;Fringillidae;
+BIO09194;BiodiversityUSNationalParks;Chasmistes liorus;June Sucker;;;;;6;Mountain-Prairie;Endangered;Fish;Cypriniformes;Catostomidae;
+BIO21763;BiodiversityUSNationalParks;Hypomesus transpacificus;Delta Smelt;;;;;8;Pacific Southwest;Threatened;Fish;Osmeriformes;Osmeridae;
+BIO03113;BiodiversityUSNationalParks;Arctomecon humilis;Dwarf Bear Poppy|Common Bearpoppy|Dwarf Bearpoppy;;;;;6;Mountain-Prairie;Endangered;Vascular Plant;Ranunculales;Papaveraceae;
+BIO37053;BiodiversityUSNationalParks;Rana pretiosa;Oregon Spotted Frog|Spotted Frog;;;;;1;Pacific;Threatened;Amphibian;Anura;Ranidae;
+BIO10741;BiodiversityUSNationalParks;Coccyzus americanus;Eastern Yellow-Billed Cuckoo|Yellow-Billed Cuckoo|Rain Crow|Storm Crow;;;;;2;Southwest;Threatened;Bird;Cuculiformes;Cuculidae;
+BIO19261;BiodiversityUSNationalParks;Gopherus polyphemus;Gopher Tortoise;;;;;4;Southeast;Under Review|Threatened;Reptile;Testudines;Testudinidae;
+BIO19259;BiodiversityUSNationalParks;Gopherus agassizii;Agassiz's Desert Tortoise|Mojave Desert Tortoise|Mohave Desert Tortoise|Desert Tortoise;;;;;8;Pacific Southwest;Endangered;Reptile;Testudines;Testudinidae;
+BIO29607;BiodiversityUSNationalParks;Obovaria retusa;Ring Pink|Ring Pink Mussel|Golf Stick Pearly Mussel;;;;;4;Southeast;Endangered;Invertebrate;Unionoida;Unionidae;
+BIO34395;BiodiversityUSNationalParks;Pleurobema plenum;Rough Pigtoe|Rough pigtoe pearly mussel;;;;;4;Southeast;Endangered;Invertebrate;Unionoida;Unionidae;
+BIO34392;BiodiversityUSNationalParks;Pleurobema clava;Clubshell|Club Naiad|Clubshell Pearly Mussel;;;;;5;Northeast;Endangered;Invertebrate;Unionoida;Unionidae;
+BIO29617;BiodiversityUSNationalParks;Oceanodroma castro;Band-Rumped Storm Petrel|`Ake`Ake|Band-Rumped Storm-Petrel|Akeake|Madeiran Storm Petrel|Harcourt's Storm Petrel;;;;;1;Pacific;Endangered;Bird;Procellariiformes;Hydrobatidae;
+BIO36090;BiodiversityUSNationalParks;Pseudonestor xanthophrys;Maui Parrotbill|kiwikiu;;;;;1;Pacific;Endangered;Bird;Passeriformes;Fringillidae;HI
+BIO08558;BiodiversityUSNationalParks;Centrocercus minimus;Gunnison Grouse|Gunnison Sage-Grouse|Lesser Sage-Grouse;;;;;6;Mountain-Prairie;Endangered;Bird;Galliformes;Phasianidae;
+BIO05812;BiodiversityUSNationalParks;Brachyramphus marmoratus;Marbled Murrelet|Long-Billed Murrelet;;;;;1;Pacific;Threatened;Bird;Charadriiformes;Alcidae;
+ES1509;FWS-EndangeredSpecies;Megalagrion nesiotes;Flying earwig Hawaiian damselfly;;;;;1;Pacific;Endangered;Insect;Odonata;Coenagrionidae;
+ES1185;FWS-EndangeredSpecies;Megalagrion pacificum;Pacific Hawaiian damselfly;;;;;1;Pacific;Endangered;Insect;Odonata;Coenagrionidae;
+ES1140;FWS-EndangeredSpecies;Megalagrion xanthomelas;Orangeblack Hawaiian damselfly;;;;;1;Pacific;Endangered;Insect;Odonata;Coenagrionidae;
+ES1179;FWS-EndangeredSpecies;Psittirostra psittacea;`O`u|honeycreeper;;;;;1;Pacific;Endangered;Bird;Passeriformes;Fringillidae;
+BIO09158;BiodiversityUSNationalParks;Charadrius melodus;Piping Plover|Eastern Piping Plover;;;;;0|1;Northeast|Midwest;Threatened;Bird;Charadriiformes;Charadriidae;
+BIO40443;BiodiversityUSNationalParks;Sistrurus catenatus;Massasauga|Desert Massasauga;;;;;3;Midwest;Proposed Threatened;Reptile;Squamata;Viperidae;
+BIO25449;BiodiversityUSNationalParks;Loxops ochraceus;Maui 'Akepa;;;;;1;Pacific;Endangered;Bird;Passeriformes;Fringillidae;
+BIO14927;BiodiversityUSNationalParks;Echinomastus mariposensis;Lloyd's Mariposa Cactus|Lloyd's Fishhook Cactus|Golfball Cactus|Silver Column Cactus|Mariposa Cactus;;;;;2;Southwest;Threatened;Vascular Plant;Caryophyllales;Cactaceae;
+BIO42131;BiodiversityUSNationalParks;Stygoparnus comalensis;Comal Springs dryopid beetle;;;;;2;Southwest;Endangered;Insect;Coleoptera;Dryopidae;
