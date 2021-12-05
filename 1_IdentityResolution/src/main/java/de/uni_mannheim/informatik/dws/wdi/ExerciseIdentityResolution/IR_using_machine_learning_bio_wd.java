@@ -108,7 +108,7 @@ public class IR_using_machine_learning_bio_wd {
 		
 
 		// train the matching rule's model
-		logger.info("*\tLearning matching rule\t*");
+		logger.info("*\tLearning matching rusle\t*");
 		RuleLearner<Species, Attribute> learner = new RuleLearner<>();
 		learner.learnMatchingRule(dataBiodiversity, dataWikidata, null, matchingRule, gsTraining);
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));

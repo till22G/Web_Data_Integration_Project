@@ -103,7 +103,7 @@ public class DataFusion_Main_Species {
         //strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 
         // add attribute fusers
-        strategy.addAttributeFuser(Species.SCIENTIFICNAME, new GenericAttributeFuser<>(new FavourSources<>(), Species::getScientificName, Species::setScientificName, Species.SCIENTIFICNAME), new StringEvaluationRuleLevenshtein(Species::getScientificName));
+        strategy.addAttributeFuser(Species.SCIENTIFICNAME, new GenericAttributeFuser<>(new Voting<>(), Species::getScientificName, Species::setScientificName, Species.SCIENTIFICNAME), new StringEvaluationRuleLevenshtein(Species::getScientificName));
         strategy.addAttributeFuser(Species.COMMONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getCommonNames, Species::setCommonNames, Species.COMMONNAMES), new ListElementEvaluationLevenshtein(Species::getCommonNames));
         strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new Voting<>(),Species::getCategory, Species::setCategory, Species.CATEGORY), new StringEvaluationRuleLevenshtein(Species::getCategory));
         strategy.addAttributeFuser(Species.ORDERS, new GenericAttributeFuser<>(new Voting<>(), Species::getOrders, Species::setOrders, Species.ORDERS), new ListEvaluationRuleEqual(Species::getOrders));
@@ -111,10 +111,9 @@ public class DataFusion_Main_Species {
         strategy.addAttributeFuser(Species.STATES, new GenericAttributeFuser<>(new Union<>(), Species::getStates, Species::setStates, Species.STATES), new ListEvaluationRuleEqual(Species::getStates));
         strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Union<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRuleEqual(Species::getRegions));
         strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListElementEvaluationLevenshtein(Species::getRegionNames));
-        strategy.addAttributeFuser(Species.LISTINGSTATUSES, new GenericAttributeFuser<>(new FavourSources<>(), Species::getListingStatuses, Species::setListingStatuses, Species.LISTINGSTATUSES), new ListEvaluationRuleEqual(Species::getListingStatuses));
+        strategy.addAttributeFuser(Species.LISTINGSTATUSES, new GenericAttributeFuser<>(new Voting<>(), Species::getListingStatuses, Species::setListingStatuses, Species.LISTINGSTATUSES), new ListEvaluationRuleEqual(Species::getListingStatuses));
         strategy.addAttributeFuser(Species.WHERELISTED, new GenericAttributeFuser<>(new Union<>(), Species::getWhereListed, Species::setWhereListed, Species.WHERELISTED), new ListElementEvaluationLevenshtein(Species::getWhereListed));
         strategy.addAttributeFuser(Species.DIFFERENTFROM, new GenericAttributeFuser<>(new Union<>(), Species::getDifferentFrom, Species::setDifferentFrom, Species.DIFFERENTFROM), new ListElementEvaluationLevenshtein(Species::getDifferentFrom));
-        strategy.addAttributeFuser(Species.ENDEMICTO, new GenericAttributeFuser<>(new Union<>(), Species::getEndemicTo, Species::setEndemicTo, Species.ENDEMICTO), new ListElementEvaluationLevenshtein(Species::getEndemicTo));
 
         // create the fusion engine
         DataFusionEngine<Species, Attribute> engine = new DataFusionEngine<>(strategy);
