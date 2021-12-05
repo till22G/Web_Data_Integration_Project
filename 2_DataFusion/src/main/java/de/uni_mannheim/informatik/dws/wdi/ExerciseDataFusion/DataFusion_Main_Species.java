@@ -111,7 +111,7 @@ public class DataFusion_Main_Species {
         strategy.addAttributeFuser(Species.COMMONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getCommonNames, Species::setCommonNames, Species.COMMONNAMES), new ListElementEvaluationLevenshtein(Species::getCommonNames));
         strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new Voting<>(),Species::getCategory, Species::setCategory, Species.CATEGORY), new StringEvaluationRuleLevenshtein(Species::getCategory));
         strategy.addAttributeFuser(Species.ORDERS, new GenericAttributeFuser<>(new Voting<>(), Species::getOrders, Species::setOrders, Species.ORDERS), new ListEvaluationRuleEqual(Species::getOrders));
-        strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Voting<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRuleEqual(Species::getFamilies));
+        strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Voting<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListElementEvaluationLevenshtein(Species::getFamilies));
         strategy.addAttributeFuser(Species.STATES, new GenericAttributeFuser<>(new Union<>(), Species::getStates, Species::setStates, Species.STATES), new ListEvaluationRuleEqual(Species::getStates));
         strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Union<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRuleEqual(Species::getRegions));
         strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListElementEvaluationLevenshtein(Species::getRegionNames));
@@ -145,7 +145,7 @@ public class DataFusion_Main_Species {
 
         fusedDataSet.printDataSetDensityReport();
 
-        System.out.println(fusedDataSet.size());
+        //System.out.println(fusedDataSet.size());
 
     }
 }
