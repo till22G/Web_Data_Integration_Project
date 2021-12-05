@@ -37,7 +37,7 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> imp
 	 * @see de.uni_mannheim.informatik.wdi.model.io.XMLMatchableReader#initialiseDataset(de.uni_mannheim.informatik.wdi.model.DataSet)
 	 */
 	@Override
-	protected void initialiseDataset(DataSet<Species, Attribute> dataset) {
+	public void initialiseDataset(DataSet<Species, Attribute> dataset) {
 		super.initialiseDataset(dataset);
 
 		// the schema is defined in the Species class and not interpreted from the file, so we have to set the attributes manually
@@ -47,10 +47,10 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> imp
 		dataset.addAttribute(Species.ORDERS);
 		dataset.addAttribute(Species.FAMILIES);
 		dataset.addAttribute(Species.STATES);
-		dataset.addAttribute(Species.LABELS);
+//		dataset.addAttribute(Species.LABELS);
 		dataset.addAttribute(Species.WHERELISTED);
 		dataset.addAttribute(Species.DIFFERENTFROM);
-		dataset.addAttribute(Species.ENDEMICTO);
+//		dataset.addAttribute(Species.ENDEMICTO);
 		dataset.addAttribute(Species.REGIONS);
 		dataset.addAttribute(Species.REGIONNAMES);
 		dataset.addAttribute(Species.LISTINGSTATUSES);
@@ -126,5 +126,7 @@ public class SpeciesXMLReader extends XMLMatchableReader<Species, Attribute> imp
 
 		return new Species(mergedId, "fused");
 	}
+
+
 
 }
