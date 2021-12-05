@@ -2,6 +2,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ListElementEvaluationLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ListEvaluationRuleEqual;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ListEvaluationRuleLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.StringEvaluationRuleLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.GenericAttributeFuser;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Species;
@@ -29,7 +30,7 @@ import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
 import java.util.Locale;
 
-public class DataFusion_Main_Species {
+public class DataFusion_Main_Species_Miriam {
     /*
      * Logging Options:
      * 		default: 	level INFO	- console
@@ -64,9 +65,9 @@ public class DataFusion_Main_Species {
         // Maintain Provenance
         // Scores (e.g. from rating)
 
-        // Scores can be adjusted here
+
         ds1.setScore(2.0);
-        ds2.setScore(2.0);
+        ds2.setScore(1.0);
         ds3.setScore(1.0);
 
         // Date (e.g. last update)
@@ -83,8 +84,8 @@ public class DataFusion_Main_Species {
 
         // load correspondences
         CorrespondenceSet<Species, Attribute> correspondences = new CorrespondenceSet<>();
-        correspondences.loadCorrespondences(new File("data/correspondences/biodiversity_endangeredSpecies_correspondences_final.csv"), ds2, ds1);
-        correspondences.loadCorrespondences(new File("data/correspondences/wikidata_biodiversity_correspondences_final.csv"), ds2, ds3);
+        correspondences.loadCorrespondences(new File("data/correspondences/biodiversity_endangeredSpecies_correspondences.csv"), ds2, ds1);
+        correspondences.loadCorrespondences(new File("data/correspondences/wikidata_biodiversity_correspondences.csv"), ds2, ds3);
 
         // write group size distribution
         correspondences.printGroupSizeDistribution();
@@ -107,13 +108,13 @@ public class DataFusion_Main_Species {
         //strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 
         // add attribute fusers
-        strategy.addAttributeFuser(Species.SCIENTIFICNAME, new GenericAttributeFuser<>(new FavourSources<>(), Species::getScientificName, Species::setScientificName, Species.SCIENTIFICNAME), new StringEvaluationRuleLevenshtein(Species::getScientificName));
+        strategy.addAttributeFuser(Species.SCIENTIFICNAME, new GenericAttributeFuser<>(new Voting<>(), Species::getScientificName, Species::setScientificName, Species.SCIENTIFICNAME), new StringEvaluationRuleLevenshtein(Species::getScientificName));
         strategy.addAttributeFuser(Species.COMMONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getCommonNames, Species::setCommonNames, Species.COMMONNAMES), new ListElementEvaluationLevenshtein(Species::getCommonNames));
-        strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new Voting<>(),Species::getCategory, Species::setCategory, Species.CATEGORY), new StringEvaluationRuleLevenshtein(Species::getCategory));
-        strategy.addAttributeFuser(Species.ORDERS, new GenericAttributeFuser<>(new Voting<>(), Species::getOrders, Species::setOrders, Species.ORDERS), new ListEvaluationRuleEqual(Species::getOrders));
-        strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Voting<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRuleEqual(Species::getFamilies));
-        strategy.addAttributeFuser(Species.STATES, new GenericAttributeFuser<>(new Union<>(), Species::getStates, Species::setStates, Species.STATES), new ListEvaluationRuleEqual(Species::getStates));
-        strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Union<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRuleEqual(Species::getRegions));
+        strategy.addAttributeFuser(Species.CATEGORY, new GenericAttributeFuser<>(new Voting<>(),Species::getCategory, Species::setCategory, Species.CATEGORY), new StringEvaluationRuleLevenshtein( Species::getCategory));
+        strategy.addAttributeFuser(Species.ORDERS, new GenericAttributeFuser<>(new Voting<>(), Species::getOrders, Species::setOrders, Species.ORDERS), new ListEvaluationRuleLevenshtein(Species::getOrders));
+        strategy.addAttributeFuser(Species.FAMILIES, new GenericAttributeFuser<>(new Voting<>(), Species::getFamilies, Species::setFamilies, Species.FAMILIES), new ListEvaluationRuleLevenshtein(Species::getFamilies));
+        strategy.addAttributeFuser(Species.STATES, new GenericAttributeFuser<>(new Union<>(), Species::getStates, Species::setStates, Species.STATES), new ListEvaluationRuleLevenshtein(Species::getStates));
+        strategy.addAttributeFuser(Species.REGIONS, new GenericAttributeFuser<>(new Union<>(), Species::getRegions, Species::setRegions, Species.REGIONS), new ListEvaluationRuleLevenshtein(Species::getRegions));
         strategy.addAttributeFuser(Species.REGIONNAMES, new GenericAttributeFuser<>(new Union<>(), Species::getRegionNames, Species::setRegionNames, Species.REGIONNAMES), new ListElementEvaluationLevenshtein(Species::getRegionNames));
         strategy.addAttributeFuser(Species.LISTINGSTATUSES, new GenericAttributeFuser<>(new FavourSources<>(), Species::getListingStatuses, Species::setListingStatuses, Species.LISTINGSTATUSES), new ListEvaluationRuleEqual(Species::getListingStatuses));
         strategy.addAttributeFuser(Species.WHERELISTED, new GenericAttributeFuser<>(new Union<>(), Species::getWhereListed, Species::setWhereListed, Species.WHERELISTED), new ListElementEvaluationLevenshtein(Species::getWhereListed));
@@ -124,7 +125,6 @@ public class DataFusion_Main_Species {
         DataFusionEngine<Species, Attribute> engine = new DataFusionEngine<>(strategy);
 
         // print consistency report
-        logger.info("*\tprinting consistency report\t*");
         engine.printClusterConsistencyReport(correspondences, null);
 
         // print record groups sorted by consistency
@@ -135,7 +135,7 @@ public class DataFusion_Main_Species {
         FusibleDataSet<Species, Attribute> fusedDataSet = engine.run(correspondences, null);
 
         // write the result
-        new SpeciesXMLFormatter().writeXML(new File("data/output/fused_final.xml"), fusedDataSet);
+        new SpeciesXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
 
         // evaluate
         DataFusionEvaluator<Species, Attribute> evaluator = new DataFusionEvaluator<>(strategy, new RecordGroupFactory<Species, Attribute>());
@@ -143,10 +143,5 @@ public class DataFusion_Main_Species {
         double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
 
         logger.info(String.format("*\tAccuracy: %.2f", accuracy));
-
-        fusedDataSet.printDataSetDensityReport();
-
-        System.out.println(fusedDataSet.size());
-
     }
 }

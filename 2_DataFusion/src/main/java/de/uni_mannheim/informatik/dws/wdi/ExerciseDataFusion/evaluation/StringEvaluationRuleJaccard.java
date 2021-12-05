@@ -11,7 +11,6 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Species;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -20,9 +19,6 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 import java.util.function.Function;
 
 
