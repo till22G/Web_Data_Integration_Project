@@ -131,7 +131,7 @@ public class DataFusion_Main_Species {
         FusibleDataSet<Species, Attribute> fusedDataSet = engine.run(correspondences, null);
 
         // write the result
-        new SpeciesXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
+        new SpeciesXMLFormatter().writeXML(new File("data/output/fused_final.xml"), fusedDataSet);
 
         // evaluate
         DataFusionEvaluator<Species, Attribute> evaluator = new DataFusionEvaluator<>(strategy, new RecordGroupFactory<Species, Attribute>());
